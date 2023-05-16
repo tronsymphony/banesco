@@ -23,7 +23,7 @@ import mImg from './assets/image-mobile.png'
  */
 
 export default function Edit({ attributes, setAttributes }) {
-	const { title, content, image, mImage, appstore, googleplay } = attributes
+	const { title, content, image, mImage, appstore, googleplay , socialIcons } = attributes
 
 	return (
 		<div {...useBlockProps()}>
@@ -124,6 +124,18 @@ export default function Edit({ attributes, setAttributes }) {
 								onClick={() => setAttributes({ mImage: 'image-mobile.png' })}
 							/>
 						</BaseControl>
+					</div>
+					<div className="row">
+						<CheckboxControl
+							label="Hide Social Icons"
+							checked={socialIcons.hidden}
+							onChange={(value) => {
+								const newValue = { ...socialIcons }
+								newValue.hidden = value
+								setAttributes({ socialIcons: newValue })
+							}}
+							className="checkbox"
+						/>
 					</div>
 				</Placeholder>
 			</div>

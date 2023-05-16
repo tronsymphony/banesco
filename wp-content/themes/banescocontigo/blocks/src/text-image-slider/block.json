@@ -37,6 +37,13 @@
 		"mImage": {
 			"type": "string",
 			"default": "image-mobile.png"
+		},
+		"socialIcons": {
+			"type": "object",
+			"default": {
+				"hidden": false
+			}
 		}
+		
 	}
 }

@@ -131,7 +131,8 @@ function Edit(_ref) {
     image,
     mImage,
     appstore,
-    googleplay
+    googleplay,
+    socialIcons
   } = attributes;
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "text-image-slider-editor"
@@ -251,7 +252,22 @@ function Edit(_ref) {
     onClick: () => setAttributes({
       mImage: 'image-mobile.png'
     })
-  }))))));
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.CheckboxControl, {
+    label: "Hide Social Icons",
+    checked: socialIcons.hidden,
+    onChange: value => {
+      const newValue = {
+        ...socialIcons
+      };
+      newValue.hidden = value;
+      setAttributes({
+        socialIcons: newValue
+      });
+    },
+    className: "checkbox"
+  })))));
 }
 
 /***/ }),
@@ -320,7 +336,8 @@ function save(_ref) {
     image,
     mImage,
     googleplay,
-    appstore
+    appstore,
+    socialIcons
   } = attributes;
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "text-image-slider"
@@ -488,7 +505,7 @@ module.exports = window["wp"]["element"];
   \*************************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/text-image-slider","version":"1.0.0","title":"Text Image Slider","category":"widgets","icon":"warning","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/text-image-slider.js","editorStyle":"file:../../../blocks/build/text-image-slider.css","style":"file:../../../blocks/build/style-text-image-slider.css","attributes":{"title":{"type":"string","default":"Gestiona tus cuentas en segundos"},"content":{"type":"string","default":"<ul><li>Autoafíliate a la banca en línea en tres simples pasos.</li><li>Elige un nombre de usuario que sea para ti fácil recordar, por ejemplo, tu correo electrónico.</li><li>Registro biométrico para login y autorización de transacciones.</li><li>Consulta tus balances recientes, movimientos del mes y detalles de tus productos.</li><li>Busca tus transacciones por monto o rango de fecha.</li><li>Consultar tus puntos verdes acumulados.</li></ul>"},"appstore":{"type":"string","default":"/"},"googleplay":{"type":"string","default":"/"},"image":{"type":"string","default":"image.png"},"mImage":{"type":"string","default":"image-mobile.png"}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/text-image-slider","version":"1.0.0","title":"Text Image Slider","category":"widgets","icon":"warning","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/text-image-slider.js","editorStyle":"file:../../../blocks/build/text-image-slider.css","style":"file:../../../blocks/build/style-text-image-slider.css","attributes":{"title":{"type":"string","default":"Gestiona tus cuentas en segundos"},"content":{"type":"string","default":"<ul><li>Autoafíliate a la banca en línea en tres simples pasos.</li><li>Elige un nombre de usuario que sea para ti fácil recordar, por ejemplo, tu correo electrónico.</li><li>Registro biométrico para login y autorización de transacciones.</li><li>Consulta tus balances recientes, movimientos del mes y detalles de tus productos.</li><li>Busca tus transacciones por monto o rango de fecha.</li><li>Consultar tus puntos verdes acumulados.</li></ul>"},"appstore":{"type":"string","default":"/"},"googleplay":{"type":"string","default":"/"},"image":{"type":"string","default":"image.png"},"mImage":{"type":"string","default":"image-mobile.png"},"socialIcons":{"type":"object","default":{"hidden":false}}}}');
 
 /***/ })
 

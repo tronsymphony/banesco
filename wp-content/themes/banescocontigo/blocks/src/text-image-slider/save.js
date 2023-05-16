@@ -7,7 +7,7 @@ import app from './assets/appstore.png'
 import google from './assets/googleplay.png'
 
 export default function save({ attributes }) {
-	const { title, content, image, mImage, googleplay, appstore } = attributes
+	const { title, content, image, mImage, googleplay, appstore, socialIcons } = attributes
 
 	return (
 		<section {...useBlockProps.save()}>
@@ -47,6 +47,9 @@ export default function save({ attributes }) {
 								{content && (
 									<div className="text-image-slider__content" dangerouslySetInnerHTML={{ __html: content }} />
 								)}
+								
+								 
+
 								<div className="text-image-slider__buttons">
 									<a href={appstore} className="text-image-slider__appstore">
 										<img src={app} alt={'appstore'} />
@@ -55,6 +58,7 @@ export default function save({ attributes }) {
 										<img src={google} alt={'googleplay'} />
 									</a>
 								</div>
+
 							</div>
 						)}
 					</div>
