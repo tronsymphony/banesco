@@ -141,6 +141,10 @@
 		"bigImages": {
 			"type": "boolean",
 			"default": false
+		},
+		"columns": {
+			"type": "object",
+			"default": false
 		}
 	}
 }

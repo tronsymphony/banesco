@@ -11,7 +11,7 @@
 ?>
 
 <section <?php echo wp_kses_data(get_block_wrapper_attributes()); ?>>
-  <div class="features" style="
+  <div class="features features-column-count_<?= ($attributes['columns']) ? $attributes['columns']['type'] : '5' ?>" style="
       --paddings-top: <?= ($attributes['paddings']['desktop']['top']) ? $attributes['paddings']['desktop']['top'] : '0px' ?>;
       --paddings-top--mobile: <?= ($attributes['paddings']['mobile']['top']) ? $attributes['paddings']['mobile']['top'] : '0px' ?>;
       --paddings-bottom: <?= ($attributes['paddings']['desktop']['bottom']) ? $attributes['paddings']['desktop']['bottom'] : '0px' ?>;
