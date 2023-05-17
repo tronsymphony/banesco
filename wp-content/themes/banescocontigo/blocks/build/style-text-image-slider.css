@@ -24,6 +24,7 @@
 .text-image-slider__text {
   position: relative;
   margin-left: 148px;
+  width: 50%;
 }
 @media (max-width: 767.98px) {
   .text-image-slider__text {
@@ -56,7 +57,6 @@
 }
 @media (max-width: 767.98px) {
   .text-image-slider__title {
-    padding-left: 84px;
     margin-top: 0;
   }
 }
@@ -93,6 +93,14 @@
     margin-top: 28px;
   }
 }
+.text-image-slider__modal {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #219963;
+  margin: 1rem 10px 0;
+}
 .text-image-slider__buttons {
   margin-top: 39px;
   display: flex;
@@ -122,8 +130,7 @@
   margin-right: 18px;
 }
 .text-image-slider__image {
-  width: 476px;
-  height: 734px;
+  width: 50%;
 }
 @media (max-width: 767.98px) {
   .text-image-slider__image {
@@ -137,6 +144,71 @@
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.text-image-slider__modal {
+  position: relative;
+  cursor: pointer;
+}
+.text-image-slider__modal-content {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background: #FFFFFF;
+  border: 1px solid #DCE1E9;
+  border-radius: 10px;
+  padding: 50px 65px;
+  right: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4A5264;
+  z-index: 900;
+  max-width: 750px;
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.text-image-slider__modal-content.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+.text-image-slider__modal-content-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  color: #3A4454;
+  margin: 0 0 1rem;
+}
+.text-image-slider__modal-content-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: #000;
+  opacity: 0;
+  transition: all 0.6s;
+  visibility: hidden;
+}
+.text-image-slider__modal-content-overlay.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+.text-image-slider__modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  cursor: pointer;
+}
+.text-image-slider__modal-close svg {
+  width: 15px;
+  height: 15px;
 }
 
 /*# sourceMappingURL=style-text-image-slider.css.map*/

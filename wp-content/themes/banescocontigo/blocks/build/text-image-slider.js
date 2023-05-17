@@ -132,7 +132,9 @@ function Edit(_ref) {
     mImage,
     appstore,
     googleplay,
-    socialIcons
+    socialIcons,
+    enablePopup,
+    topIcon
   } = attributes;
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "text-image-slider-editor"
@@ -255,6 +257,21 @@ function Edit(_ref) {
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "row"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.CheckboxControl, {
+    label: "Hide Top Icon",
+    checked: topIcon.hidden,
+    onChange: value => {
+      const newValue = {
+        ...topIcon
+      };
+      newValue.hidden = value;
+      setAttributes({
+        topIcon: newValue
+      });
+    },
+    className: "checkbox"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.CheckboxControl, {
     label: "Hide Social Icons",
     checked: socialIcons.hidden,
     onChange: value => {
@@ -264,6 +281,21 @@ function Edit(_ref) {
       newValue.hidden = value;
       setAttributes({
         socialIcons: newValue
+      });
+    },
+    className: "checkbox"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.CheckboxControl, {
+    label: "Enable Popup",
+    checked: enablePopup.hidden,
+    onChange: value => {
+      const newValue = {
+        ...enablePopup
+      };
+      newValue.hidden = value;
+      setAttributes({
+        enablePopup: newValue
       });
     },
     className: "checkbox"
@@ -337,9 +369,11 @@ function save(_ref) {
     mImage,
     googleplay,
     appstore,
-    socialIcons
+    socialIcons,
+    enablePopup,
+    topIcon
   } = attributes;
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "text-image-slider"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "container"
@@ -363,7 +397,7 @@ function save(_ref) {
     alt: mImage.alt
   }) : ''), (title || content) && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "text-image-slider__text"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, topIcon?.hidden === false && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "text-image-slider__icon"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: _assets_icon_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
@@ -378,7 +412,9 @@ function save(_ref) {
     dangerouslySetInnerHTML: {
       __html: content
     }
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }), enablePopup?.hidden === true && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "text-image-slider__modal text-image-slider__modal-popup"
+  }, "+ Ver todos los detalles"), socialIcons?.hidden === false && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "text-image-slider__buttons"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: appstore,
@@ -392,7 +428,24 @@ function save(_ref) {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: _assets_googleplay_png__WEBPACK_IMPORTED_MODULE_6__,
     alt: 'googleplay'
-  }))))))));
+  })))))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "text-image-slider__modal-content"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "text-image-slider__modal-content-title"
+  }, "Otros beneficios de DANI"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Realizar un retiro del monto disponible de tu multicr\xE9dito hacia tu cuenta personal. Activar tus tarjetas de cr\xE9dito y d\xE9bito de forma inmediata. Recibir asistencia directa de un representante (sujeto a disponibilidad horario). * La funcionalidad de desembolso est\xE1 disponible para clientes de Tarjeta de Cr\xE9dito con MultiCr\xE9dito, que posean cuenta de ahorro o corriente en Banesco."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    className: "text-image-slider__modal-close"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+    width: "20",
+    height: "18",
+    viewBox: "0 0 20 18",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+    d: "M12.1159 9.22559L18.5659 3.10827C18.8483 2.83976 19.007 2.47558 19.007 2.09585C19.007 1.71611 18.8483 1.35193 18.5659 1.08342C18.2834 0.814911 17.9003 0.664062 17.5009 0.664062C17.1014 0.664062 16.7183 0.814911 16.4359 1.08342L10.0009 7.215L3.56589 1.08342C3.28343 0.814911 2.90034 0.664062 2.50089 0.664062C2.10143 0.664063 1.71834 0.814911 1.43588 1.08342C1.15343 1.35193 0.994747 1.71611 0.994747 2.09585C0.994747 2.47558 1.15343 2.83976 1.43588 3.10827L7.88589 9.22559L1.43588 15.3429C1.29529 15.4755 1.1837 15.6332 1.10755 15.8069C1.0314 15.9807 0.992188 16.1671 0.992188 16.3553C0.992188 16.5436 1.0314 16.73 1.10755 16.9037C1.1837 17.0775 1.29529 17.2352 1.43588 17.3678C1.57533 17.5014 1.74123 17.6075 1.92402 17.6799C2.10681 17.7523 2.30287 17.7895 2.50089 17.7895C2.6989 17.7895 2.89496 17.7523 3.07775 17.6799C3.26054 17.6075 3.42644 17.5014 3.56589 17.3678L10.0009 11.2362L16.4359 17.3678C16.5753 17.5014 16.7412 17.6075 16.924 17.6799C17.1068 17.7523 17.3029 17.7895 17.5009 17.7895C17.6989 17.7895 17.895 17.7523 18.0778 17.6799C18.2605 17.6075 18.4264 17.5014 18.5659 17.3678C18.7065 17.2352 18.8181 17.0775 18.8942 16.9037C18.9704 16.73 19.0096 16.5436 19.0096 16.3553C19.0096 16.1671 18.9704 15.9807 18.8942 15.8069C18.8181 15.6332 18.7065 15.4755 18.5659 15.3429L12.1159 9.22559Z",
+    fill: "#708090"
+  })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "text-image-slider__modal-content-overlay"
+  }));
 }
 
 /***/ }),
@@ -505,7 +558,7 @@ module.exports = window["wp"]["element"];
   \*************************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/text-image-slider","version":"1.0.0","title":"Text Image Slider","category":"widgets","icon":"warning","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/text-image-slider.js","editorStyle":"file:../../../blocks/build/text-image-slider.css","style":"file:../../../blocks/build/style-text-image-slider.css","attributes":{"title":{"type":"string","default":"Gestiona tus cuentas en segundos"},"content":{"type":"string","default":"<ul><li>Autoafíliate a la banca en línea en tres simples pasos.</li><li>Elige un nombre de usuario que sea para ti fácil recordar, por ejemplo, tu correo electrónico.</li><li>Registro biométrico para login y autorización de transacciones.</li><li>Consulta tus balances recientes, movimientos del mes y detalles de tus productos.</li><li>Busca tus transacciones por monto o rango de fecha.</li><li>Consultar tus puntos verdes acumulados.</li></ul>"},"appstore":{"type":"string","default":"/"},"googleplay":{"type":"string","default":"/"},"image":{"type":"string","default":"image.png"},"mImage":{"type":"string","default":"image-mobile.png"},"socialIcons":{"type":"object","default":{"hidden":false}}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/text-image-slider","version":"1.0.0","title":"Text Image Slider","category":"widgets","icon":"warning","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/text-image-slider.js","editorStyle":"file:../../../blocks/build/text-image-slider.css","style":"file:../../../blocks/build/style-text-image-slider.css","attributes":{"title":{"type":"string","default":"Gestiona tus cuentas en segundos"},"content":{"type":"string","default":"<ul><li>Autoafíliate a la banca en línea en tres simples pasos.</li><li>Elige un nombre de usuario que sea para ti fácil recordar, por ejemplo, tu correo electrónico.</li><li>Registro biométrico para login y autorización de transacciones.</li><li>Consulta tus balances recientes, movimientos del mes y detalles de tus productos.</li><li>Busca tus transacciones por monto o rango de fecha.</li><li>Consultar tus puntos verdes acumulados.</li></ul>"},"appstore":{"type":"string","default":"/"},"googleplay":{"type":"string","default":"/"},"image":{"type":"string","default":"image.png"},"mImage":{"type":"string","default":"image-mobile.png"},"topIcon":{"type":"object","default":{"hidden":false}},"socialIcons":{"type":"object","default":{"hidden":false}},"enablePopup":{"type":"object","default":{"hidden":false}}}}');
 
 /***/ })
 

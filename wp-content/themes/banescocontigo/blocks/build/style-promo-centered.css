@@ -29,6 +29,9 @@
   text-align: center;
   max-width: 707px;
 }
+.promo-centered__icon {
+  margin-bottom: 24px;
+}
 .promo-centered__title {
   font-weight: 300;
   font-size: 40px;

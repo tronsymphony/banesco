@@ -1,0 +1,19 @@
+{
+  "name": "acf/disclosure-with-button-new",
+  "title": "Disclosure with button new",
+  "category": "design",
+  "icon": "image-filter",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "disclosure-with-button.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

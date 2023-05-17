@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/cards",
+	"version": "1.0.0",
+	"title": "Cards",
+	"category": "widgets",
+	"icon": "screenoptions",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/cards.js",
+	"editorStyle": "file:../../../blocks/build/cards.css",
+	"style": "file:../../../blocks/build/style-cards.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "105px",
+					"bottom": "200px"
+				},
+				"mobile": {
+					"top": "45px",
+					"bottom": "45px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#f7f9fb"
+		},
+		"filter1": {
+			"type": "string",
+			"default": "Compañía"
+		},
+		"filter2": {
+			"type": "string",
+			"default": "Nivel de tarjeta"
+		},
+		"filter3": {
+			"type": "string",
+			"default": "Tipo de tarjeta"
+		}
+	}
+}

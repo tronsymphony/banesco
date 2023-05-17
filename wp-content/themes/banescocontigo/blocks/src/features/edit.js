@@ -316,8 +316,7 @@ export default function Edit({ attributes, setAttributes }) {
 				</div>
 				<div className="row">
 					<SelectControl
-						label="Increase images size"
-
+						label="Select number of columns"
 						value={columns.type}
 						className="input"
 						onChange={(value) => {

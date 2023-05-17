@@ -1,0 +1,105 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-images",
+	"version": "1.0.0",
+	"title": "Banner images",
+	"category": "widgets",
+	"icon": "excerpt-view",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-images.js",
+	"editorStyle": "file:../../../blocks/build/banner-images.css",
+	"style": "file:../../../blocks/build/style-banner-images.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Image #1",
+					"height": "610px",
+					"mHeight": "auto",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "image-1.jpg"
+					},
+					"vertical": false
+				},
+				{
+					"name": "tab2",
+					"title": "Image #2",
+					"height": "610px",
+					"mHeight": "auto",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "image-2.jpg"
+					},
+					"vertical": false
+				},
+				{
+					"name": "tab3",
+					"title": "Image #3",
+					"height": "610px",
+					"mHeight": "auto",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "image-3.jpg"
+					},
+					"vertical": false
+				},
+				{
+					"name": "tab4",
+					"title": "Image #4",
+					"height": "610px",
+					"mHeight": "auto",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "image-4.jpg"
+					},
+					"vertical": false
+				}
+			]
+		}
+	}
+}

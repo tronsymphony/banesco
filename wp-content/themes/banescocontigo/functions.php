@@ -9,7 +9,7 @@
  */
 
 if (!defined('_S_VERSION')) {
-	define('_S_VERSION', '1.0.3');
+	define('_S_VERSION', '1.0.4');
 }
 
 function banescocontigo_setup()
@@ -83,7 +83,7 @@ function banescocontigo_scripts()
 {
 	wp_enqueue_style('banescocontigo-swiper-style', '//cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css', [], _S_VERSION);
 	wp_enqueue_style('banescocontigo-slider-style', '//cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.css', [], _S_VERSION);
-	wp_enqueue_style('banescocontigo-style', get_stylesheet_uri(), [], _S_VERSION);
+	wp_enqueue_style('banescocontigo-style', get_stylesheet_uri(), [], time());
 
 	wp_enqueue_script('banescocontigo-swiper-script', '//cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js', [], _S_VERSION, true);
 	wp_enqueue_script('banescocontigo-wnumb-script', '//cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js', [], _S_VERSION, true);

@@ -26,7 +26,7 @@
       <?php if ($attributes['title']) : ?>
         <h2 class="banner-with-buttons__title"><?= $attributes['title'] ?></h2>
       <?php endif; ?>
-      <div class="banner-with-buttons__inner">
+      <div class="banner-with-buttons__inner <?= ($attributes['whiteBg']) ? 'banner-with-buttons__inner-white' : '' ?> "> 
         <?php if ($attributes['items']) : ?>
           <div class="banner-with-buttons__items">
             <?php foreach ($attributes['items'] as $item) : ?>

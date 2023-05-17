@@ -341,7 +341,9 @@ function Edit(_ref) {
     extraText,
     extraLink,
     extraLinkTarget,
-    bigSpacing
+    bigSpacing,
+    whiteBg,
+    columns
   } = attributes;
   const setItemAttribute = (tab, attribute, value) => {
     setAttributes({
@@ -795,6 +797,15 @@ function Edit(_ref) {
       bigSpacing: value
     }),
     className: "checkbox"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.CheckboxControl, {
+    label: "White icon background",
+    checked: whiteBg,
+    onChange: value => setAttributes({
+      whiteBg: value
+    }),
+    className: "checkbox"
   })))));
 }
 
@@ -893,7 +904,7 @@ module.exports = window["wp"]["element"];
   \***************************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/banner-with-buttons","version":"1.0.0","title":"Banner with buttons","category":"widgets","icon":"align-wide","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/banner-with-buttons.js","editorStyle":"file:../../../blocks/build/banner-with-buttons.css","style":"file:../../../blocks/build/style-banner-with-buttons.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"title":{"type":"string","default":"Title"},"items":{"type":"array","default":[{"name":"tab1","title":"Title #1","description":"Description","button":"","target":"","widths":{"title":"290px","mTitle":"100%","text":"290px","mText":"100%"},"image":{"alt":"","url":"card.svg"}},{"name":"tab2","title":"Title #2","description":"Description","button":"","target":"","widths":{"title":"290px","mTitle":"100%","text":"290px","mText":"100%"},"image":{"alt":"","url":"pdf.svg"}},{"name":"tab3","title":"Title #3","description":"Description","button":"","target":"","widths":{"title":"290px","mTitle":"100%","text":"290px","mText":"100%"},"image":{"alt":"","url":"page.svg"}}]},"extra":{"type":"object","default":{"button":"","content":""}},"outlinedButton":{"type":"string","default":"Outlined button"},"outlinedButtonTarget":{"type":"string","default":"/"},"primaryButton":{"type":"string","default":"Primary button"},"primaryButtonTarget":{"type":"string","default":"/"},"extraText":{"type":"string","default":""},"extraLink":{"type":"string","default":""},"extraLinkTarget":{"type":"string","default":""},"bigSpacing":{"type":"boolean","default":false}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/banner-with-buttons","version":"1.0.0","title":"Banner with buttons","category":"widgets","icon":"align-wide","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/banner-with-buttons.js","editorStyle":"file:../../../blocks/build/banner-with-buttons.css","style":"file:../../../blocks/build/style-banner-with-buttons.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"title":{"type":"string","default":"Title"},"items":{"type":"array","default":[{"name":"tab1","title":"Title #1","description":"Description","button":"","target":"","widths":{"title":"290px","mTitle":"100%","text":"290px","mText":"100%"},"image":{"alt":"","url":"card.svg"}},{"name":"tab2","title":"Title #2","description":"Description","button":"","target":"","widths":{"title":"290px","mTitle":"100%","text":"290px","mText":"100%"},"image":{"alt":"","url":"pdf.svg"}},{"name":"tab3","title":"Title #3","description":"Description","button":"","target":"","widths":{"title":"290px","mTitle":"100%","text":"290px","mText":"100%"},"image":{"alt":"","url":"page.svg"}},{"name":"tab4","title":"Title #4","description":"Description","button":"","target":"","widths":{"title":"290px","mTitle":"100%","text":"290px","mText":"100%"},"image":{"alt":"","url":"page.svg"}}]},"extra":{"type":"object","default":{"button":"","content":""}},"outlinedButton":{"type":"string","default":"Outlined button"},"outlinedButtonTarget":{"type":"string","default":"/"},"primaryButton":{"type":"string","default":"Primary button"},"primaryButtonTarget":{"type":"string","default":"/"},"extraText":{"type":"string","default":""},"extraLink":{"type":"string","default":""},"extraLinkTarget":{"type":"string","default":""},"bigSpacing":{"type":"boolean","default":false},"whiteBg":{"type":"boolean","default":false},"columns":{"type":"object","default":false}}}');
 
 /***/ })
 

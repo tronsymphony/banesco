@@ -50,25 +50,33 @@
   position: relative;
   border: 1px solid #dce1e9;
   border-radius: 10px;
-  padding: 53px 45px 45px 45px;
+  padding: 53px 130px 45px;
 }
 @media (max-width: 767.98px) {
   .banner-with-buttons__inner {
     padding: 32px 14px 31px 24px;
   }
 }
+.banner-with-buttons__inner-white {
+  background-color: #fff;
+}
 .banner-with-buttons__items {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 36px 0;
+}
+@media (min-width: 1199.98px) {
+  .banner-with-buttons__items {
+    grid-auto-flow: column;
+  }
 }
 @media (max-width: 1199.98px) {
   .banner-with-buttons__items {
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .banner-with-buttons__items {
-    align-items: flex-start;
+    grid-template-columns: 1fr;
   }
 }
 .banner-with-buttons__item {
@@ -139,7 +147,6 @@
 @media (max-width: 1199.98px) {
   .banner-with-buttons__item + .banner-with-buttons__item {
     margin-left: 0;
-    margin-top: 36px;
   }
 }
 .banner-with-buttons__buttons {

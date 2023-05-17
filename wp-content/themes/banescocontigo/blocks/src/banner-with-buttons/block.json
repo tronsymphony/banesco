@@ -101,6 +101,23 @@
 						"alt": "",
 						"url": "page.svg"
 					}
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"description": "Description",
+					"button": "",
+					"target": "",
+					"widths": {
+						"title": "290px",
+						"mTitle": "100%",
+						"text": "290px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "page.svg"
+					}
 				}
 			]
 		},
@@ -141,6 +158,14 @@
 		},
 		"bigSpacing": {
 			"type": "boolean",
+			"default": false
+		},
+		"whiteBg": {
+			"type": "boolean",
+			"default": false
+		},
+		"columns": {
+			"type": "object",
 			"default": false
 		}
 	}

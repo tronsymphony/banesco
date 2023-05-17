@@ -1,0 +1,19 @@
+{
+  "name": "acf/banner-with-buttons-tabs-new",
+  "title": "Banner with buttons tabs new",
+  "category": "design",
+  "icon": "reddit",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "banner-with-buttons-tabs-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

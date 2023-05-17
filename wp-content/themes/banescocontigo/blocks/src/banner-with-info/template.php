@@ -26,9 +26,12 @@
       <?php if ($attributes['title']) : ?>
         <h2 class="banner-with-info__title"><?= $attributes['title'] ?></h2>
       <?php endif; ?>
+
+      <?php if ($attributes['bannerTitle'] || $attributes['bannerContent']) : ?>
       <div class="banner-with-info__inner">
         <div class="banner-with-info__content">
           <div class="banner-with-info__content-top">
+
             <?php if ($attributes['bannerIcon']['url']) : ?>
               <div class="banner-with-info__content-icon">
                 <?php if ($attributes['bannerIcon']['url'] == 'icon.svg') : ?>
@@ -38,6 +41,7 @@
                 <?php endif; ?>
               </div>
             <?php endif; ?>
+
             <?php if ($attributes['bannerTitle'] || $attributes['bannerSubtitle']) : ?>
               <div class="banner-with-info__content-titles">
                 <?php if ($attributes['bannerTitle']) : ?>
@@ -79,6 +83,7 @@
           </div>
         <?php endif; ?>
       </div>
+      <?php endif; ?>
       <?php if ($attributes['extraText']) : ?>
         <div class="banner-with-info__extra-text">
           <?= $attributes['extraText'] ?>

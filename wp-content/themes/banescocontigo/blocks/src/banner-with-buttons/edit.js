@@ -8,6 +8,7 @@ import {
 	TextControl,
 	TextareaControl,
 	CheckboxControl,
+	SelectControl,
 	Button,
 } from '@wordpress/components'
 
@@ -42,6 +43,8 @@ export default function Edit({ attributes, setAttributes }) {
 		extraLink,
 		extraLinkTarget,
 		bigSpacing,
+		whiteBg,
+		columns
 	} = attributes
 
 	const setItemAttribute = (tab, attribute, value) => {
@@ -471,6 +474,15 @@ export default function Edit({ attributes, setAttributes }) {
 							className="checkbox"
 						/>
 					</div>
+					<div className="row">
+						<CheckboxControl
+							label="White icon background"
+							checked={whiteBg}
+							onChange={(value) => setAttributes({ whiteBg: value })}
+							className="checkbox"
+						/>
+					</div>
+					
 				</div>
 			</Placeholder>
 		</div>

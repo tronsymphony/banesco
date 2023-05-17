@@ -1,0 +1,7 @@
+.editor-styles-wrapper .acf-actions .button,
+.editor-styles-wrapper .acf-link .button,
+.editor-styles-wrapper .hide-if-value .button {
+  height: 30px;
+  text-align: center;
+  color: #000;
+}

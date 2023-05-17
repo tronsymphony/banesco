@@ -1,0 +1,16 @@
+{
+  "name": "acf/steps-new",
+  "title": "Steps new",
+  "category": "design",
+  "icon": "pets",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "steps-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit"
+    }
+  },
+  "pacificScripts": false
+}
