@@ -18,6 +18,12 @@
 		align-items: center;
 		gap: 50px;
 	}
+
+	.table_area {
+		width: 100%;
+		overflow: auto;
+		max-width: 100%;
+	}
 	
 	.title {
 		font-style: normal;

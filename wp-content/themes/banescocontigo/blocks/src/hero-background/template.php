@@ -37,6 +37,7 @@
     <div class="container">
       <div class="hero-background__inner">
         <div class="hero-background__content">
+
           <?php if ($attributes['title']['desktop'] || $attributes['title']['mobile']) : ?>
             <h2 class="hero-background__title">
               <?php if ($attributes['title']['desktop']) : ?>
@@ -47,6 +48,7 @@
               <?php endif; ?>
             </h2>
           <?php endif; ?>
+
           <?php if ($attributes['description']['desktop'] || $attributes['description']['mobile']) : ?>
             <div class="hero-background__description text">
               <?php if ($attributes['description']['desktop']) : ?>
@@ -71,36 +73,57 @@
           <?php endif; ?>
         </div>
       </div>
+
       <?php if ($attributes['background']['desktop']['url'] || $attributes['background']['mobile']['url']) : ?>
         <div class="hero-background__background">
           <?php if ($attributes['background']['desktop']['url']) : ?>
-            <?php if ($attributes['background']['desktop']['url'] == 'background-0.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-0.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-1.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-1.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-2.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-2.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-3.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-3.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-4.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-4.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-5.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-5.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-6.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-6.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-7.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-7.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-8.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-8.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-9.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-9.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url'] == 'background-10.jpg') : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-10.jpg" alt="background" />
-            <?php elseif ($attributes['background']['desktop']['url']) : ?>
-              <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?= $attributes['background']['desktop']['url'] ?>" alt="background" />
+
+          <?php 
+          $extension = pathinfo($attributes['background']['desktop']['url'], PATHINFO_EXTENSION);
+          ?>
+            <?php if($extension == 'mp4'): ?>
+              <video class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" autoplay loop muted preload src="<?php echo $attributes['background']['desktop']['url']; ?>"></video>  
+            <?php else:  ?>
+              <?php if ($attributes['background']['desktop']['url'] == 'background-0.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-0.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-1.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-1.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-2.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-2.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-3.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-3.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-4.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-4.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-5.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-5.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-6.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-6.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-7.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-7.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-8.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-8.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-9.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-9.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url'] == 'background-10.jpg') : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?php the_block_url(__DIR__); ?>/assets/background-10.jpg" alt="background" />
+              <?php elseif ($attributes['background']['desktop']['url']) : ?>
+                <img class="<?= ($attributes['background']['mobile']['url']) ? 'only-desktop' : '' ?>" src="<?= $attributes['background']['desktop']['url'] ?>" alt="background" />
+              <?php endif; ?>
             <?php endif; ?>
+
           <?php endif; ?>
+
+
           <?php if ($attributes['background']['mobile']['url']) : ?>
+
+
+          <?php 
+          $extensionMobile = pathinfo($attributes['background']['mobile']['url'], PATHINFO_EXTENSION);
+          ?>
+          <?php if($extensionMobile == 'mp4'): ?>
+              <video class="only-mobile" autoplay loop muted preload src="<?php echo $attributes['background']['desktop']['url']; ?>"></video>  
+            <?php else:  ?>
+
             <?php if ($attributes['background']['mobile']['url'] == 'background-0-mobile.jpg') : ?>
               <img class="only-mobile" src="<?php the_block_url(__DIR__); ?>/assets/background-0-mobile.jpg" alt="background" />
             <?php elseif ($attributes['background']['mobile']['url'] == 'background-1-mobile.jpg') : ?>
@@ -127,6 +150,9 @@
               <img class="only-mobile" src="<?= $attributes['background']['mobile']['url'] ?>" alt="background" />
             <?php endif; ?>
           <?php endif; ?>
+
+          <?php endif; ?>
+
         </div>
       <?php endif; ?>
     </div>

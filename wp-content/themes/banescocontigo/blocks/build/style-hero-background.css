@@ -89,6 +89,7 @@
   height: 100%;
   z-index: 1;
 }
+.hero-background__background video,
 .hero-background__background img {
   width: 100%;
   height: 100%;

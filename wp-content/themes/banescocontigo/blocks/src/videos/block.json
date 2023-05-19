@@ -87,29 +87,8 @@
 						"url": "video-3.jpg",
 						"alt": ""
 					}
-				},
-				{
-					"name": "tab4",
-					"link": "/",
-					"title": "Title #4",
-					"text": "Very very very very very very very long description.",
-					"maxLines": "2",
-					"image": {
-						"url": "video-4.jpg",
-						"alt": ""
-					}
-				},
-				{
-					"name": "tab5",
-					"link": "/",
-					"title": "Title #5",
-					"text": "Very very very very very very very long description.",
-					"maxLines": "2",
-					"image": {
-						"url": "video-5.jpg",
-						"alt": ""
-					}
 				}
+				
 			]
 		},
 		"link": {

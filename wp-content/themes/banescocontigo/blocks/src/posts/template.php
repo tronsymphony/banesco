@@ -141,7 +141,7 @@
         <?php if ($attributes['items2']) : ?>
           <div class="posts__right">
             <?php foreach ($attributes['items2'] as $item2) : ?>
-              <div class="posts__item" data-size="<?= ($item2['big']) ? 'big' : 'small' ?>" data-green="<?= ($item2['green']) ? 'true' : 'false' ?>" data-color="<?= ($item2['whiteText']) ? 'white' : 'default' ?>" data-mhidden="<?= ($item2['mHide']) ? 'true' : 'false' ?>">
+              <div class="posts__item" data-size="<?= ($item2['big']) ? 'big' : 'small' ?>" data-green="<?php if(isset($item2['green'])){ echo 'true'; } else { echo 'false'; } ?>" data-color="<?= ($item2['whiteText']) ? 'white' : 'default' ?>" data-mhidden="<?= ($item2['mHide']) ? 'true' : 'false' ?>">
                 <?php if ($item2['image']['url'] || $item2['mImage']['url']) : ?>
                   <div class="posts__item-image">
                     <?php if ($item2['image']['url']) : ?>

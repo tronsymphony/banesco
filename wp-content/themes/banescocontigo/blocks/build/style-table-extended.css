@@ -22,6 +22,11 @@
   align-items: center;
   gap: 50px;
 }
+.table-extended .table_area {
+  width: 100%;
+  overflow: auto;
+  max-width: 100%;
+}
 .table-extended .title {
   font-style: normal;
   font-weight: 300;

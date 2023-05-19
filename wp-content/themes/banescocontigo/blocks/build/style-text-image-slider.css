@@ -29,6 +29,7 @@
 @media (max-width: 767.98px) {
   .text-image-slider__text {
     margin-left: 0;
+    width: 100%;
   }
 }
 .text-image-slider__icon {
@@ -169,11 +170,19 @@
   margin: 0 auto;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.6s;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0%, -20%);
+}
+@media (max-width: 767.98px) {
+  .text-image-slider__modal-content {
+    margin: 0 50px;
+    padding: 50px 20px;
+  }
 }
 .text-image-slider__modal-content.active-modal {
   opacity: 1;
   visibility: visible;
+  transform: translate(0%, -50%);
 }
 .text-image-slider__modal-content-title {
   font-style: normal;
@@ -189,9 +198,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10;
-  background: #000;
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
+  z-index: 100;
   transition: all 0.6s;
   visibility: hidden;
 }
