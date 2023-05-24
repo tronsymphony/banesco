@@ -127,6 +127,8 @@ function Edit(_ref) {
         title: 'New',
         text: '',
         maxLines: '2',
+        module_title: '',
+        module_description: '',
         image: {
           url: '',
           alt: ''
@@ -325,6 +327,20 @@ function Edit(_ref) {
     value: tab.maxLines,
     className: "input",
     onChange: value => setItemAttribute(tab, 'maxLines', value)
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+    label: "Module Title",
+    value: tab.module_title,
+    className: "input",
+    onChange: value => setItemAttribute(tab, 'module_title', value)
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
+    label: "Module Description",
+    value: tab.module_description,
+    className: "input",
+    onChange: value => setItemAttribute(tab, 'module_description', value)
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "row"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
@@ -810,7 +826,7 @@ module.exports = window["wp"]["element"];
   \**************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/videos","version":"1.0.0","title":"Videos","category":"widgets","icon":"images-alt2","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/videos.js","editorStyle":"file:../../../blocks/build/videos.css","style":"file:../../../blocks/build/style-videos.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"title":{"type":"object","default":{"desktop":"Title","mobile":"","mIncrease":false}},"items":{"type":"array","default":[{"name":"tab1","link":"/","title":"Title #1","text":"Very very very very very very very long description.","maxLines":"2","image":{"url":"video-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #2","text":"Very very very very very very very long description.","maxLines":"2","image":{"url":"video-2.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #3","text":"Very very very very very very very long description.","maxLines":"2","image":{"url":"video-3.jpg","alt":""}}]},"link":{"type":"object","default":{"enable":false,"title":{"desktop":"Extra link","mobile":""},"image":{"url":"youtube.svg","alt":""},"target":"/"}}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/videos","version":"1.0.0","title":"Videos","category":"widgets","icon":"images-alt2","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/videos.js","editorStyle":"file:../../../blocks/build/videos.css","style":"file:../../../blocks/build/style-videos.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"title":{"type":"object","default":{"desktop":"Title","mobile":"","mIncrease":false}},"items":{"type":"array","default":[{"name":"tab1","link":"/","title":"Title #1","text":"Very very very very very very very long description.","maxLines":"2","module_title":"Title","module_description":"Description","image":{"url":"video-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #2","text":"Very very very very very very very long description.","maxLines":"2","module_title":"Title","module_description":"Description","image":{"url":"video-2.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #3","text":"Very very very very very very very long description.","maxLines":"2","module_title":"Title","module_description":"Description","image":{"url":"video-3.jpg","alt":""}}]},"link":{"type":"object","default":{"enable":false,"title":{"desktop":"Extra link","mobile":""},"image":{"url":"youtube.svg","alt":""},"target":"/"}}}}');
 
 /***/ })
 

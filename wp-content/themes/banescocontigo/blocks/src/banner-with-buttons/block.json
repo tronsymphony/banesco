@@ -55,6 +55,8 @@
 					"name": "tab1",
 					"title": "Title #1",
 					"description": "Description",
+					"module_title": "Title",
+					"module_description": "Description",
 					"button": "",
 					"target": "",
 					"widths": {
@@ -72,6 +74,8 @@
 					"name": "tab2",
 					"title": "Title #2",
 					"description": "Description",
+					"module_title": "Title",
+					"module_description": "Description",
 					"button": "",
 					"target": "",
 					"widths": {
@@ -89,6 +93,8 @@
 					"name": "tab3",
 					"title": "Title #3",
 					"description": "Description",
+					"module_title": "Title",
+					"module_description": "Description",
 					"button": "",
 					"target": "",
 					"widths": {

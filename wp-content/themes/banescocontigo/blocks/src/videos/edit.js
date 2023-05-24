@@ -7,6 +7,7 @@ import {
 	TabPanel,
 	TextControl,
 	CheckboxControl,
+	TextareaControl,
 	Button,
 } from '@wordpress/components'
 
@@ -62,6 +63,8 @@ export default function Edit({ attributes, setAttributes }) {
 					title: 'New',
 					text: '',
 					maxLines: '2',
+					module_title:'',
+					module_description:'',
 					image: {
 						url: '',
 						alt: '',
@@ -260,6 +263,24 @@ export default function Edit({ attributes, setAttributes }) {
 										onChange={(value) => setItemAttribute(tab, 'maxLines', value)}
 									/>
 								</div>
+
+								<div className="row">
+									<TextareaControl
+										label="Module Title"
+										value={tab.module_title}
+										className="input"
+										onChange={(value) => setItemAttribute(tab, 'module_title', value)}
+									/>
+								</div>
+								<div className="row">
+									<TextareaControl
+										label="Module Description"
+										value={tab.module_description}
+										className="input"
+										onChange={(value) => setItemAttribute(tab, 'module_description', value)}
+									/>
+								</div>
+
 								<div className="row">
 									<TextControl
 										label="Link"

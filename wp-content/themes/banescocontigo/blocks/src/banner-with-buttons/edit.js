@@ -75,6 +75,8 @@ export default function Edit({ attributes, setAttributes }) {
 					name: name,
 					title: 'New',
 					description: '',
+					module_title:'',
+					module_description:'',
 					widths: {
 						title: '300px',
 						mTitle: '100%',
@@ -245,6 +247,23 @@ export default function Edit({ attributes, setAttributes }) {
 										onChange={(value) => setItemAttribute(tab, 'description', value)}
 									/>
 								</div>
+								<div className="row">
+									<TextareaControl
+										label="Module Title"
+										value={tab.module_title}
+										className="input"
+										onChange={(value) => setItemAttribute(tab, 'module_title', value)}
+									/>
+								</div>
+								<div className="row">
+									<TextareaControl
+										label="Module Description"
+										value={tab.module_description}
+										className="input"
+										onChange={(value) => setItemAttribute(tab, 'module_description', value)}
+									/>
+								</div>
+
 								<div className="block">
 									<div className="row">
 										<TextControl

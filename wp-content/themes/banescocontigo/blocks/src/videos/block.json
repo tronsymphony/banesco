@@ -61,6 +61,8 @@
 					"title": "Title #1",
 					"text": "Very very very very very very very long description.",
 					"maxLines": "2",
+					"module_title": "Title",
+					"module_description": "Description",
 					"image": {
 						"url": "video-1.jpg",
 						"alt": ""
@@ -72,6 +74,8 @@
 					"title": "Title #2",
 					"text": "Very very very very very very very long description.",
 					"maxLines": "2",
+					"module_title": "Title",
+					"module_description": "Description",
 					"image": {
 						"url": "video-2.jpg",
 						"alt": ""
@@ -83,6 +87,8 @@
 					"title": "Title #3",
 					"text": "Very very very very very very very long description.",
 					"maxLines": "2",
+					"module_title": "Title",
+					"module_description": "Description",
 					"image": {
 						"url": "video-3.jpg",
 						"alt": ""

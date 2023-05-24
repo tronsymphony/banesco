@@ -280,22 +280,23 @@ document.querySelectorAll('.counter').forEach(function(counter) {
 	})
 })
 
-document.querySelectorAll('.text-image-slider__modal-popup').forEach(function(item) {
+const elements = document.getElementsByClassName("text-image-slider__modal-popup");
+
+if (elements.length > 0) {
+	document.querySelectorAll('.text-image-slider__modal-popup').forEach(function(item) {
+		item.addEventListener('click', function (e) {
+			e.preventDefault()
 	
-
-	item.addEventListener('click', function (e) {
-		e.preventDefault()
-
-		document.querySelector('.text-image-slider__modal-content').classList.add('active-modal')
-		document.querySelector('.text-image-slider__modal-content-overlay').classList.add('active-modal')
+			document.querySelector('.text-image-slider__modal-content').classList.add('active-modal')
+			document.querySelector('.text-image-slider__modal-content-overlay').classList.add('active-modal')
+		})
 	})
-
-
+	document.querySelector('.text-image-slider__modal-close').addEventListener('click', function (e) {
+		e.preventDefault()
 	
-})
-document.querySelector('.text-image-slider__modal-close').addEventListener('click', function (e) {
-	e.preventDefault()
+		document.querySelector('.text-image-slider__modal-content').classList.remove('active-modal')
+		document.querySelector('.text-image-slider__modal-content-overlay').classList.remove('active-modal')
+	})
+}
 
-	document.querySelector('.text-image-slider__modal-content').classList.remove('active-modal')
-	document.querySelector('.text-image-slider__modal-content-overlay').classList.remove('active-modal')
-})
+

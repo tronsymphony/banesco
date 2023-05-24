@@ -60,93 +60,15 @@
 			"type": "string",
 			"default": "Cuenta de Pensionados"
 		},
-		"items1": {
-			"type": "array",
-			"default": [
-				{
-					"name": "tab1",
-					"title": "Title #1",
-					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
-					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
-				},
-				{
-					"name": "tab2",
-					"title": "Title #2",
-					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
-					"iframe": ""
-				},
-				{
-					"name": "tab3",
-					"title": "Title #3",
-					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
-					"iframe": ""
-				},
-				{
-					"name": "tab4",
-					"title": "Title #4",
-					"content": "<h3>Subtitle</h3>",
-					"iframe": ""
-				}
-			]
+		"title4": {
+			"type": "string",
+			"default": "Cuenta de Pensionados"
 		},
-		"items2": {
-			"type": "array",
-			"default": [
-				{
-					"name": "tab1",
-					"title": "Title #5",
-					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
-					"iframe": ""
-				},
-				{
-					"name": "tab2",
-					"title": "Title #6",
-					"content": "<h3>Subtitle</h3>",
-					"iframe": ""
-				},
-				{
-					"name": "tab3",
-					"title": "Title #7",
-					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
-					"iframe": ""
-				},
-				{
-					"name": "tab4",
-					"title": "Title #8",
-					"content": "<h3>Subtitle</h3>",
-					"iframe": ""
-				}
-			]
+		"title5": {
+			"type": "string",
+			"default": "Cuenta de Pensionados"
 		},
-		"items3": {
-			"type": "array",
-			"default": [
-				{
-					"name": "tab1",
-					"title": "Title #9",
-					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
-					"iframe": ""
-				},
-				{
-					"name": "tab2",
-					"title": "Title #10",
-					"content": "<h3>Subtitle</h3>",
-					"iframe": ""
-				},
-				{
-					"name": "tab3",
-					"title": "Title #11",
-					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
-					"iframe": ""
-				},
-				{
-					"name": "tab4",
-					"title": "Title #12",
-					"content": "<h3>Subtitle</h3>",
-					"iframe": ""
-				}
-			]
-		},
+		
 		"columns": {
 			"type": "string",
 			"default": "1"

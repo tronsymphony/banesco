@@ -243,4 +243,77 @@
   transition: 0.3s;
 }
 
+.aqui__modal {
+  position: relative;
+  cursor: pointer;
+}
+.aqui__modal--content {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background: #FFFFFF;
+  border: 1px solid #DCE1E9;
+  border-radius: 10px;
+  padding: 50px 65px;
+  right: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4A5264;
+  z-index: 900;
+  max-width: 750px;
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0%, -20%);
+}
+@media (max-width: 767.98px) {
+  .aqui__modal--content {
+    margin: 0 50px;
+    padding: 50px 20px;
+  }
+}
+.aqui__modal--content.active-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0%, -50%);
+}
+.aqui__modal--content-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  color: #3A4454;
+  margin: 0 0 1rem;
+}
+.aqui__modal--content-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: 100;
+  transition: all 0.6s;
+  visibility: hidden;
+}
+.aqui__modal--content-overlay.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+.aqui__modal--close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  cursor: pointer;
+}
+.aqui__modal--close svg {
+  width: 15px;
+  height: 15px;
+}
+
 /*# sourceMappingURL=style-banner-with-buttons.css.map*/
