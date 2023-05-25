@@ -349,3 +349,14 @@ require get_template_directory() . '/inc/customizers/customizer_404.php';
 require get_template_directory() . '/inc/customizers/customizer_chat.php';
 require get_template_directory() . '/inc/customizers/customizer_currency.php';
 require get_template_directory() . '/inc/customizers/customizer_banner.php';
+
+require_once( get_template_directory() . '/inc/utils/pacific_gutenberg.php' );
+require_once( get_template_directory() . '/inc/utils/pacific_theme_setup.php' );
+require_once( get_template_directory() . '/inc/helpers/pacific_helper.php' );
+$theme_setup = new Pacific_theme_setup;
+
+// App style
+if ( file_exists( get_template_directory() . '/dist/css/app.min.css' ) ) :
+    $csstime = filemtime( get_template_directory() . '/dist/css/app.min.css' );
+    wp_enqueue_style( 'app', get_template_directory_uri() . '/dist/css/app.min.css', array(), $csstime );
+  endif;

@@ -1,0 +1,220 @@
+.calculator-simulator-new {
+  margin-top: -85px;
+  z-index: 10;
+  position: relative;
+  $self: &;
+
+  &__inner-wrapper {
+    background: $white;
+    border: 1px solid $light2;
+    border-radius: 10px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 32px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 12px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: $heading-color;
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    margin-bottom: 24px;
+  }
+
+  &__form-controller {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 250px;
+    }
+
+    &:nth-child(4) {
+      @include media-breakpoint-up(sm) {
+        max-width: 288px;
+      }
+    }
+
+    &:nth-child(1) {
+      position: relative;
+
+      &:after {
+        content: '';
+        background: url('../../assets/images/icons/arrow-down.svg');
+        width: 12px;
+        height: 7px;
+        display: block;
+        position: absolute;
+        right: 12px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        pointer-events: none;
+
+        @include media-breakpoint-up(md) {
+          top: 40%;
+        }
+
+        @include media-breakpoint-down(md) {
+          top: 65%;
+        }
+      }
+    }
+  }
+
+  &__input-wrapper {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media-breakpoint-down(xl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__input-label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: $heading-color;
+    margin-bottom: 12px;
+  }
+
+  select#{$self}__input-field {
+    padding: 0 40px 0 12px;
+    cursor: pointer;
+  }
+
+  &__input-field {
+    background: $white;
+    border: 1px solid $gray4;
+    border-radius: 5px;
+    height: 48px;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $heading-color;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 250px;
+    }
+  }
+
+  &__input-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $body-text;
+    margin-top: 12px;
+  }
+
+  &__slide-field {
+    display: flex;
+    gap: 8px;
+    padding: 4px;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 288px;
+    }
+  }
+
+  &__slide-item {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border-radius: 5px;
+    color: $gray5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+    &.active {
+      background: $green;
+      box-shadow: 0px 1px 2px $box-shadow, 0px 2px 4px $box-shadow;
+      color: $white;
+    }
+  }
+
+  &__button-controller {
+    display: flex;
+    gap: 24px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__form-button {
+    cursor: pointer;
+  }
+
+  &__result-wrapper {
+    background: linear-gradient(90.53deg, $main-green -8.4%, $blue 112.02%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 24px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+
+  &__result-text {
+    line-height: 100%;
+    color: $white;
+
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+
+    &--left {
+      font-weight: 700;
+    }
+
+    &--right {
+      font-weight: 400;
+    }
+  }
+
+  &__disclaimer-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $body-text;
+  }
+}
