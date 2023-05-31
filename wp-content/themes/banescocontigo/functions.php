@@ -360,3 +360,25 @@ if ( file_exists( get_template_directory() . '/dist/css/app.min.css' ) ) :
     $csstime = filemtime( get_template_directory() . '/dist/css/app.min.css' );
     wp_enqueue_style( 'app', get_template_directory_uri() . '/dist/css/app.min.css', array(), $csstime );
   endif;
+
+  add_action('admin_head', 'my_custom_fonts');
+
+function my_custom_fonts() {
+  ?><style>
+	html .acf-input  .button,
+  html .editor-styles-wrapper .acf-actions .button {
+	display: block;
+    border-radius: 2px;
+    border: 1px solid #757575;
+    background: #007cba;
+    padding: inherit;
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    min-width: 0;
+    display: inline-flex;
+}
+  </style>
+  <?php
+}

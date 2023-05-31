@@ -405,7 +405,7 @@ export default function Edit({ attributes, setAttributes }) {
 											type="image"
 											render={({ open }) => (
 												<Button className="button" onClick={open}>
-													{tab.image.url == 'pin.svg' ? (
+													{tab.image?.url == 'pin.svg' ? (
 														<img src={SVG1} alt={'icon'} />
 													) : tab.image.url == 'mail.svg' ? (
 														<img src={SVG2} alt={'icon'} />

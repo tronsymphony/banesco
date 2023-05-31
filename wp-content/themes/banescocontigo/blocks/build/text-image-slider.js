@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,12 +6,11 @@
 /*!******************************************************!*\
   !*** ./blocks/src/text-image-slider/assets/icon.svg ***!
   \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ReactComponent": () => (/* binding */ SvgIcon),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "ReactComponent": function() { return /* binding */ SvgIcon; }
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -85,7 +84,7 @@ var SvgIcon = function SvgIcon(props) {
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjIiIGhlaWdodD0iNjEiIHZpZXdCb3g9IjAgMCA2MiA2MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ5LjAyMDMgNi41MzkyOFYzMi4zOTQ1QzQ5LjAyMDMgMzUuNDU1MSA0Ni41NDE2IDM3LjkzMzggNDMuNDgxMSAzNy45MzM4SDYuNTM5MjhDMy40Nzg3MyAzNy45MzM4IDEgMzUuNDQ3MSAxIDMyLjM5NDVWNi41MzkyOEMxIDMuNDc4NzMgMy40Nzg3MyAxIDYuNTM5MjggMUg0My40ODExQzQ2LjU0MTYgMSA0OS4wMjAzIDMuNDc4NzMgNDkuMDIwMyA2LjUzOTI4WiIgc3Ryb2tlPSIjMjE5OTYzIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik02LjUzOTM1IDMwLjM5NDZDNS4zNzU3IDMwLjM5NDYgNC40MjcyNSAyOS40NDYxIDQuNDI3MjUgMjguMjgyNVY2LjUzOTgzQzQuNDI3MjUgNS4zNzYxOSA1LjM3NTcgNC40Mjc3MyA2LjUzOTM1IDQuNDI3NzNINDMuNDgxMUM0NC42NDQ4IDQuNDI3NzMgNDUuNTkzMiA1LjM3NjE5IDQ1LjU5MzIgNi41Mzk4M1YyOC4yODI1QzQ1LjU5MzIgMjkuNDQ2MSA0NC42NDQ4IDMwLjM5NDYgNDMuNDgxMSAzMC4zOTQ2SDYuNTM5MzVWMzAuMzk0NloiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMzcuOTQxOSA0Ny4xNzA1QzM3Ljk0MTkgNDguMTkwNyAzNy4xMjA5IDQ5LjAxOTYgMzYuMDkyOCA0OS4wMTk2SDEzLjkyNzdDMTIuOTA3NSA0OS4wMTk2IDEyLjA3ODYgNDguMTk4NyAxMi4wNzg2IDQ3LjE3MDVDMTIuMDc4NiA0Ni4xNTA0IDEyLjg5OTUgNDUuMzIxNSAxMy45Mjc3IDQ1LjMyMTVIMTYuMDMxOEwxNy4yNTkyIDM3LjkzMzFIMzIuNzUzM0wzMy45NzI3IDQ1LjMyMTVIMzYuMDkyOEMzNy4xMTMgNDUuMzI5NCAzNy45NDE5IDQ2LjE1ODMgMzcuOTQxOSA0Ny4xNzA1WiIgc3Ryb2tlPSIjMjE5OTYzIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yNS4yNTM5IDI2LjI5NjNDMjkuOTI4NiAyNi4yOTYzIDMzLjcxODIgMjIuNTA2NyAzMy43MTgyIDE3LjgzMkMzMy43MTgyIDEzLjE1NzMgMjkuOTI4NiA5LjM2NzY4IDI1LjI1MzkgOS4zNjc2OEMyMC41NzkyIDkuMzY3NjggMTYuNzg5NiAxMy4xNTczIDE2Ljc4OTYgMTcuODMyQzE2Ljc4OTYgMjIuNTA2NyAyMC41NzkyIDI2LjI5NjMgMjUuMjUzOSAyNi4yOTYzWiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjUuMjUzOSAyMS40OTc2VjIyLjQyMjEiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjUuMjUzOSAxMy4yMzk3VjE0LjE1NjMiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjMuNDA0OCAxOS42NjI1QzIzLjQwNDggMjAuNjc0NyAyNC4yMjU3IDIxLjQ5NTcgMjUuMjM3OSAyMS40OTU3QzI2LjI1MDEgMjEuNDk1NyAyNy4wNzExIDIwLjY3NDcgMjcuMDcxMSAxOS42NjI1QzI3LjA3MTEgMTguNjUwMyAyNi4yNTAxIDE3LjgyOTQgMjUuMjM3OSAxNy44Mjk0QzI0LjIyNTcgMTcuODI5NCAyMy40MDQ4IDE3LjAwODQgMjMuNDA0OCAxNS45OTYyQzIzLjQwNDggMTQuOTg0IDI0LjIyNTcgMTQuMTYzMSAyNS4yMzc5IDE0LjE2MzFDMjYuMjUwMSAxNC4xNjMxIDI3LjA3MTEgMTQuOTg0IDI3LjA3MTEgMTUuOTk2MiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTIzLjQwNDggMTkuNjYyNUMyMy40MDQ4IDIwLjY3NDcgMjQuMjI1NyAyMS40OTU3IDI1LjIzNzkgMjEuNDk1N0MyNi4yNTAxIDIxLjQ5NTcgMjcuMDcxMSAyMC42NzQ3IDI3LjA3MTEgMTkuNjYyNUMyNy4wNzExIDE4LjY1MDMgMjYuMjUwMSAxNy44Mjk0IDI1LjIzNzkgMTcuODI5NEMyNC4yMjU3IDE3LjgyOTQgMjMuNDA0OCAxNy4wMDg0IDIzLjQwNDggMTUuOTk2MkMyMy40MDQ4IDE0Ljk4NCAyNC4yMjU3IDE0LjE2MzEgMjUuMjM3OSAxNC4xNjMxQzI2LjI1MDEgMTQuMTYzMSAyNy4wNzExIDE0Ljk4NCAyNy4wNzExIDE1Ljk5NjIiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik02MS4wMDAzIDMwLjA0MTNWNTYuOTA4N0M2MS4wMDAzIDU4LjY3ODEgNTkuNTY1NyA2MC4xMDQ4IDU3LjgwNDMgNjAuMTA0OEg0NS4wMjgxQzQzLjI1ODcgNjAuMTA0OCA0MS44MzIgNTguNjcwMiA0MS44MzIgNTYuOTA4N1YzMC4wNDEzQzQxLjgzMiAyOC4yNzE5IDQzLjI2NjcgMjYuODQ1MiA0NS4wMjgxIDI2Ljg0NTJINTcuODEyMkM1OS41NzM3IDI2Ljg0NTIgNjEuMDAwMyAyOC4yNzk4IDYxLjAwMDMgMzAuMDQxM1oiIGZpbGw9IndoaXRlIiBzdHJva2U9IiMyMTk5NjMiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNDguOTY1OCAzMC4xMzA0SDUzLjg2NzUiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik01MS40MTMxIDU4Ljg0NTdDNTIuMTIxOCA1OC44NDU3IDUyLjY5NjMgNTguMjcxMiA1Mi42OTYzIDU3LjU2MjVDNTIuNjk2MyA1Ni44NTM4IDUyLjEyMTggNTYuMjc5MyA1MS40MTMxIDU2LjI3OTNDNTAuNzA0NCA1Ni4yNzkzIDUwLjEyOTkgNTYuODUzOCA1MC4xMjk5IDU3LjU2MjVDNTAuMTI5OSA1OC4yNzEyIDUwLjcwNDQgNTguODQ1NyA1MS40MTMxIDU4Ljg0NTdaIiBmaWxsPSIjMjE5OTYzIi8+CjxwYXRoIGQ9Ik00MS44MjQyIDU0LjU4MTVINjEuMDAwNSIgc3Ryb2tlPSIjMjE5OTYzIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjIiIGhlaWdodD0iNjEiIHZpZXdCb3g9IjAgMCA2MiA2MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ5LjAyMDMgNi41MzkyOFYzMi4zOTQ1QzQ5LjAyMDMgMzUuNDU1MSA0Ni41NDE2IDM3LjkzMzggNDMuNDgxMSAzNy45MzM4SDYuNTM5MjhDMy40Nzg3MyAzNy45MzM4IDEgMzUuNDQ3MSAxIDMyLjM5NDVWNi41MzkyOEMxIDMuNDc4NzMgMy40Nzg3MyAxIDYuNTM5MjggMUg0My40ODExQzQ2LjU0MTYgMSA0OS4wMjAzIDMuNDc4NzMgNDkuMDIwMyA2LjUzOTI4WiIgc3Ryb2tlPSIjMjE5OTYzIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik02LjUzOTM1IDMwLjM5NDZDNS4zNzU3IDMwLjM5NDYgNC40MjcyNSAyOS40NDYxIDQuNDI3MjUgMjguMjgyNVY2LjUzOTgzQzQuNDI3MjUgNS4zNzYxOSA1LjM3NTcgNC40Mjc3MyA2LjUzOTM1IDQuNDI3NzNINDMuNDgxMUM0NC42NDQ4IDQuNDI3NzMgNDUuNTkzMiA1LjM3NjE5IDQ1LjU5MzIgNi41Mzk4M1YyOC4yODI1QzQ1LjU5MzIgMjkuNDQ2MSA0NC42NDQ4IDMwLjM5NDYgNDMuNDgxMSAzMC4zOTQ2SDYuNTM5MzVWMzAuMzk0NloiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMzcuOTQxOSA0Ny4xNzA1QzM3Ljk0MTkgNDguMTkwNyAzNy4xMjA5IDQ5LjAxOTYgMzYuMDkyOCA0OS4wMTk2SDEzLjkyNzdDMTIuOTA3NSA0OS4wMTk2IDEyLjA3ODYgNDguMTk4NyAxMi4wNzg2IDQ3LjE3MDVDMTIuMDc4NiA0Ni4xNTA0IDEyLjg5OTUgNDUuMzIxNSAxMy45Mjc3IDQ1LjMyMTVIMTYuMDMxOEwxNy4yNTkyIDM3LjkzMzFIMzIuNzUzM0wzMy45NzI3IDQ1LjMyMTVIMzYuMDkyOEMzNy4xMTMgNDUuMzI5NCAzNy45NDE5IDQ2LjE1ODMgMzcuOTQxOSA0Ny4xNzA1WiIgc3Ryb2tlPSIjMjE5OTYzIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yNS4yNTM5IDI2LjI5NjNDMjkuOTI4NiAyNi4yOTYzIDMzLjcxODIgMjIuNTA2NyAzMy43MTgyIDE3LjgzMkMzMy43MTgyIDEzLjE1NzMgMjkuOTI4NiA5LjM2NzY4IDI1LjI1MzkgOS4zNjc2OEMyMC41NzkyIDkuMzY3NjggMTYuNzg5NiAxMy4xNTczIDE2Ljc4OTYgMTcuODMyQzE2Ljc4OTYgMjIuNTA2NyAyMC41NzkyIDI2LjI5NjMgMjUuMjUzOSAyNi4yOTYzWiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjUuMjUzOSAyMS40OTc2VjIyLjQyMjEiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjUuMjUzOSAxMy4yMzk3VjE0LjE1NjMiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjMuNDA0OCAxOS42NjI1QzIzLjQwNDggMjAuNjc0NyAyNC4yMjU3IDIxLjQ5NTcgMjUuMjM3OSAyMS40OTU3QzI2LjI1MDEgMjEuNDk1NyAyNy4wNzExIDIwLjY3NDcgMjcuMDcxMSAxOS42NjI1QzI3LjA3MTEgMTguNjUwMyAyNi4yNTAxIDE3LjgyOTQgMjUuMjM3OSAxNy44Mjk0QzI0LjIyNTcgMTcuODI5NCAyMy40MDQ4IDE3LjAwODQgMjMuNDA0OCAxNS45OTYyQzIzLjQwNDggMTQuOTg0IDI0LjIyNTcgMTQuMTYzMSAyNS4yMzc5IDE0LjE2MzFDMjYuMjUwMSAxNC4xNjMxIDI3LjA3MTEgMTQuOTg0IDI3LjA3MTEgMTUuOTk2MiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTIzLjQwNDggMTkuNjYyNUMyMy40MDQ4IDIwLjY3NDcgMjQuMjI1NyAyMS40OTU3IDI1LjIzNzkgMjEuNDk1N0MyNi4yNTAxIDIxLjQ5NTcgMjcuMDcxMSAyMC42NzQ3IDI3LjA3MTEgMTkuNjYyNUMyNy4wNzExIDE4LjY1MDMgMjYuMjUwMSAxNy44Mjk0IDI1LjIzNzkgMTcuODI5NEMyNC4yMjU3IDE3LjgyOTQgMjMuNDA0OCAxNy4wMDg0IDIzLjQwNDggMTUuOTk2MkMyMy40MDQ4IDE0Ljk4NCAyNC4yMjU3IDE0LjE2MzEgMjUuMjM3OSAxNC4xNjMxQzI2LjI1MDEgMTQuMTYzMSAyNy4wNzExIDE0Ljk4NCAyNy4wNzExIDE1Ljk5NjIiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik02MS4wMDAzIDMwLjA0MTNWNTYuOTA4N0M2MS4wMDAzIDU4LjY3ODEgNTkuNTY1NyA2MC4xMDQ4IDU3LjgwNDMgNjAuMTA0OEg0NS4wMjgxQzQzLjI1ODcgNjAuMTA0OCA0MS44MzIgNTguNjcwMiA0MS44MzIgNTYuOTA4N1YzMC4wNDEzQzQxLjgzMiAyOC4yNzE5IDQzLjI2NjcgMjYuODQ1MiA0NS4wMjgxIDI2Ljg0NTJINTcuODEyMkM1OS41NzM3IDI2Ljg0NTIgNjEuMDAwMyAyOC4yNzk4IDYxLjAwMDMgMzAuMDQxM1oiIGZpbGw9IndoaXRlIiBzdHJva2U9IiMyMTk5NjMiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNDguOTY1OCAzMC4xMzA0SDUzLjg2NzUiIHN0cm9rZT0iIzIxOTk2MyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik01MS40MTMxIDU4Ljg0NTdDNTIuMTIxOCA1OC44NDU3IDUyLjY5NjMgNTguMjcxMiA1Mi42OTYzIDU3LjU2MjVDNTIuNjk2MyA1Ni44NTM4IDUyLjEyMTggNTYuMjc5MyA1MS40MTMxIDU2LjI3OTNDNTAuNzA0NCA1Ni4yNzkzIDUwLjEyOTkgNTYuODUzOCA1MC4xMjk5IDU3LjU2MjVDNTAuMTI5OSA1OC4yNzEyIDUwLjcwNDQgNTguODQ1NyA1MS40MTMxIDU4Ljg0NTdaIiBmaWxsPSIjMjE5OTYzIi8+CjxwYXRoIGQ9Ik00MS44MjQyIDU0LjU4MTVINjEuMDAwNSIgc3Ryb2tlPSIjMjE5OTYzIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
 
 /***/ }),
 
@@ -93,11 +92,11 @@ var SvgIcon = function SvgIcon(props) {
 /*!**********************************************!*\
   !*** ./blocks/src/text-image-slider/edit.js ***!
   \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */   "default": function() { return /* binding */ Edit; }
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -308,7 +307,7 @@ function Edit(_ref) {
 /*!***********************************************!*\
   !*** ./blocks/src/text-image-slider/index.js ***!
   \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
@@ -336,11 +335,11 @@ const {
 /*!**********************************************!*\
   !*** ./blocks/src/text-image-slider/save.js ***!
   \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ save)
+/* harmony export */   "default": function() { return /* binding */ save; }
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -454,7 +453,7 @@ function save(_ref) {
 /*!*************************************************!*\
   !*** ./blocks/src/text-image-slider/style.scss ***!
   \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
@@ -466,7 +465,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************************************************!*\
   !*** ./blocks/src/text-image-slider/assets/appstore.png ***!
   \**********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/appstore.cc69d127.png";
 
@@ -476,7 +475,7 @@ module.exports = __webpack_require__.p + "images/appstore.cc69d127.png";
 /*!************************************************************!*\
   !*** ./blocks/src/text-image-slider/assets/googleplay.png ***!
   \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/googleplay.d8effdf2.png";
 
@@ -486,7 +485,7 @@ module.exports = __webpack_require__.p + "images/googleplay.d8effdf2.png";
 /*!**************************************************************!*\
   !*** ./blocks/src/text-image-slider/assets/image-mobile.png ***!
   \**************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image-mobile.318dfe82.png";
 
@@ -496,7 +495,7 @@ module.exports = __webpack_require__.p + "images/image-mobile.318dfe82.png";
 /*!*******************************************************!*\
   !*** ./blocks/src/text-image-slider/assets/image.png ***!
   \*******************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image.582d9233.png";
 
@@ -506,7 +505,7 @@ module.exports = __webpack_require__.p + "images/image.582d9233.png";
 /*!************************!*\
   !*** external "React" ***!
   \************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["React"];
 
@@ -516,7 +515,7 @@ module.exports = window["React"];
 /*!*************************************!*\
   !*** external ["wp","blockEditor"] ***!
   \*************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blockEditor"];
 
@@ -526,7 +525,7 @@ module.exports = window["wp"]["blockEditor"];
 /*!********************************!*\
   !*** external ["wp","blocks"] ***!
   \********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blocks"];
 
@@ -536,7 +535,7 @@ module.exports = window["wp"]["blocks"];
 /*!************************************!*\
   !*** external ["wp","components"] ***!
   \************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["components"];
 
@@ -546,7 +545,7 @@ module.exports = window["wp"]["components"];
 /*!*********************************!*\
   !*** external ["wp","element"] ***!
   \*********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["element"];
 
@@ -556,7 +555,7 @@ module.exports = window["wp"]["element"];
 /*!*************************************************!*\
   !*** ./blocks/src/text-image-slider/block.json ***!
   \*************************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/text-image-slider","version":"1.0.0","title":"Text Image Slider","category":"widgets","icon":"warning","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/text-image-slider.js","editorStyle":"file:../../../blocks/build/text-image-slider.css","style":"file:../../../blocks/build/style-text-image-slider.css","attributes":{"title":{"type":"string","default":"Gestiona tus cuentas en segundos"},"content":{"type":"string","default":"<ul><li>Autoafíliate a la banca en línea en tres simples pasos.</li><li>Elige un nombre de usuario que sea para ti fácil recordar, por ejemplo, tu correo electrónico.</li><li>Registro biométrico para login y autorización de transacciones.</li><li>Consulta tus balances recientes, movimientos del mes y detalles de tus productos.</li><li>Busca tus transacciones por monto o rango de fecha.</li><li>Consultar tus puntos verdes acumulados.</li></ul>"},"appstore":{"type":"string","default":"/"},"googleplay":{"type":"string","default":"/"},"image":{"type":"string","default":"image.png"},"mImage":{"type":"string","default":"image-mobile.png"},"topIcon":{"type":"object","default":{"hidden":false}},"socialIcons":{"type":"object","default":{"hidden":false}},"enablePopup":{"type":"object","default":{"hidden":false}}}}');
 
@@ -593,9 +592,9 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 		__webpack_require__.O = function(result, chunkIds, fn, priority) {
 /******/ 			if(chunkIds) {
 /******/ 				priority = priority || 0;
 /******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
@@ -604,10 +603,12 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			var notFulfilled = Infinity;
 /******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
 /******/ 				var fulfilled = true;
 /******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every(function(key) { return __webpack_require__.O[key](chunkIds[j]); })) {
 /******/ 						chunkIds.splice(j--, 1);
 /******/ 					} else {
 /******/ 						fulfilled = false;
@@ -622,34 +623,34 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			return result;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__webpack_require__.n = function(module) {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -658,38 +659,35 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__webpack_require__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var scriptUrl;
 /******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
+/******/ 				scriptUrl = document.currentScript.src
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -697,10 +695,10 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded and loading chunks
@@ -721,15 +719,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		
 /******/ 		// no HMR manifest
 /******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
 /******/ 		
 /******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 			if(chunkIds.some(function(id) { return installedChunks[id] !== 0; })) {
 /******/ 				for(moduleId in moreModules) {
 /******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
 /******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
@@ -748,17 +748,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkbanescocontigo"] = globalThis["webpackChunkbanescocontigo"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkbanescocontigo"] = self["webpackChunkbanescocontigo"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-text-image-slider"], () => (__webpack_require__("./blocks/src/text-image-slider/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-text-image-slider"], function() { return __webpack_require__("./blocks/src/text-image-slider/index.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

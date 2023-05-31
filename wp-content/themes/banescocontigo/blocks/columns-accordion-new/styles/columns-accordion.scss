@@ -1,0 +1,133 @@
+.columns-accordion {
+  .tabs_header {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width:768px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .tabs_header_item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    padding: 16px 5px;
+    color: #708090;
+    background: #F5F5F5;
+    border-bottom: 1px solid #DCE1E9;
+    border-radius: 0px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tabs_content_item.active {
+    display: grid;
+  }
+
+  .tabs_content_item {
+    display: grid;
+    grid-template-columns: 1fr;
+    display: none;
+
+    @media screen and (min-width:768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  figure {
+    display: flex;
+    margin: 0;
+  }
+
+  .tabs {
+    background: linear-gradient(90deg, #ECECE8 0%, #FAFAFA 100%);
+    border: 1px solid #DCE1E9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .columns-accordion {
+    padding: 110px 0;
+  }
+
+  .tabs_content {
+    padding: 67px 1rem 0;
+  }
+}
+
+.columns-accordion .tabs_header_item.active {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  border: none;
+  text-align: center;
+  color: #219963;
+  border-right: 1px solid #DCE1E9;
+  border-left: 1px solid #DCE1E9;
+  border-radius: 10px 0px 0px 0px;
+}
+
+.container {}
+
+
+.tabs_content_item__text {
+  width: 100%;
+  padding: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4A5264;
+
+  ol,
+  ul {
+    list-style: initial;
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+.tabs_content_item__image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional_content_content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all .6s;
+}
+
+.additional_content_content.active {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.additional_content_trigger {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #219963;
+  border-bottom: 1px solid;
+  display: inline-flex;
+  padding-bottom: 5px;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.additional_content_trigger:before {
+  content: '+';
+  padding-right: 5px;
+}
+
+.additional_content_trigger.active:before {
+  content: '-';
+}

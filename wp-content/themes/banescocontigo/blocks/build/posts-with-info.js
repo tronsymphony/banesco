@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,12 +6,11 @@
 /*!****************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/icon.svg ***!
   \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ReactComponent": () => (/* binding */ SvgIcon),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "ReactComponent": function() { return /* binding */ SvgIcon; }
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -41,7 +40,7 @@ var SvgIcon = function SvgIcon(props) {
   })))));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA3MCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNjdfMTIyOTQpIj4KPHBhdGggZD0iTTQ2LjA4MjUgNDlINC43Njg5MkMyLjEzODU1IDQ5IDAgNDYuODc4MiAwIDQ0LjI3MVY0MC44MjE3QzAgNDAuMDY3OCAwLjYwNDc2NyAzOS40NjExIDEuMzUxNjIgMzkuNDYxMUgyNS4zNDU2QzI1LjcxMzUgMzkuNDYxMSAyNi4wNjMzIDM5LjYxMTkgMjYuMzE4MyAzOS44NzY2TDI4LjA2MzQgNDEuNzA0Mkg0MS4yMzM1QzQxLjk4MDMgNDEuNzA0MiA0Mi41ODUxIDQyLjMxMSA0Mi41ODUxIDQzLjA2NDhDNDIuNTg1MSA0My44MTg3IDQxLjk4MDMgNDQuNDI1NCA0MS4yMzM1IDQ0LjQyNTRIMjcuNDg3OEMyNy4xMTk4IDQ0LjQyNTQgMjYuNzcwMSA0NC4yNzQ3IDI2LjUxNSA0NC4wMDk5TDI0Ljc3IDQyLjE4MjNIMi43MDMyNFY0NC4yNzFDMi43MDMyNCA0NS4zNzc5IDMuNjI4NiA0Ni4yNzUxIDQuNzY4OTIgNDYuMjc1MUg0Ni4wODI1QzQ2LjgyOTQgNDYuMjc1MSA0Ny40MzQyIDQ2Ljg4MTkgNDcuNDM0MiA0Ny42MzU3QzQ3LjQzNDIgNDguMzg5NiA0Ni44Mjk0IDQ4Ljk5NjMgNDYuMDgyNSA0OC45OTYzVjQ5Wk00NS42ODU0IDQyLjE4MjNINDQuNjU0NEM0My45MDc2IDQyLjE4MjMgNDMuMzAyOCA0MS41NzU1IDQzLjMwMjggNDAuODIxN0M0My4zMDI4IDQwLjA2NzggNDMuOTA3NiAzOS40NjExIDQ0LjY1NDQgMzkuNDYxMUg0NS42ODU0QzQ2LjQzMjMgMzkuNDYxMSA0Ny4wMzcxIDQwLjA2NzggNDcuMDM3MSA0MC44MjE3QzQ3LjAzNzEgNDEuNTc1NSA0Ni40MzIzIDQyLjE4MjMgNDUuNjg1NCA0Mi4xODIzWiIgZmlsbD0iIzIxOTk2MyIvPgo8cGF0aCBkPSJNNC41Mjc0IDM4LjI1MTNDMy43ODA1NSAzOC4yNTEzIDMuMTc1NzggMzcuNjQ0NSAzLjE3NTc4IDM2Ljg5MDdWNC44OTA4MUMzLjE3NTc4IDIuMTk1MzUgNS4zNTA3NiAwIDguMDI0ODUgMEg2MS45NzNDNjQuNjQ3MSAwIDY2LjgyMjEgMi4xOTUzNSA2Ni44MjIxIDQuODkwODFWMTAuMTgyNEM2Ni44MjIxIDEwLjkzNjMgNjYuMjE3MyAxMS41NDY3IDY1LjQ3MDUgMTEuNTQ2N0M2NC43MjM2IDExLjU0NjcgNjQuMTE4OCAxMC45MzYzIDY0LjExODggMTAuMTgyNFY0Ljg5MDgxQzY0LjExODggMy43MTc3NSA2My4xMzUyIDIuNzI0ODggNjEuOTczIDIuNzI0ODhIOC4wMjQ4NUM2Ljg2MjY4IDIuNzI0ODggNS44NzkwMiAzLjcxNzc1IDUuODc5MDIgNC44OTA4MVYzNi44OTA3QzUuODc5MDIgMzcuNjQ0NSA1LjI3NDI1IDM4LjI1MTMgNC41Mjc0IDM4LjI1MTNaIiBmaWxsPSIjMjE5OTYzIi8+CjxwYXRoIGQ9Ik02MS4yNTg5IDcuNzc3NTFINC41Mjc0QzMuNzgwNTUgNy43Nzc1MSAzLjE3NTc4IDcuMTY3MDcgMy4xNzU3OCA2LjQxMzIzQzMuMTc1NzggNS42NTkzOCAzLjc4MDU1IDUuMDQ4OTUgNC41Mjc0IDUuMDQ4OTVINjEuMjU4OUM2Mi4wMDU4IDUuMDQ4OTUgNjIuNjEwNiA1LjY1OTM4IDYyLjYxMDYgNi40MTMyM0M2Mi42MTA2IDcuMTY3MDcgNjIuMDA1OCA3Ljc3NzUxIDYxLjI1ODkgNy43Nzc1MVoiIGZpbGw9IiMyMTk5NjMiLz4KPHBhdGggZD0iTTY2LjU4MjYgNDlINTEuODA1OUM0OS45MzMzIDQ5IDQ4LjQ2ODggNDcuNTIxNyA0OC40Njg4IDQ1LjYzMTZWMTYuMzYwM0M0OC40Njg4IDE0LjQ1OTIgNDkuOTY2MSAxMi45MTEgNTEuODA1OSAxMi45MTFINjYuNTgyNkM2OC40MzM0IDEyLjkxMSA2OS45OTk5IDE0LjQ5MjIgNjkuOTk5OSAxNi4zNjAzVjI3LjEwNTRDNjkuOTk5OSAyNy44NTkyIDY5LjM5NTIgMjguNDY2IDY4LjY0ODMgMjguNDY2QzY3LjkwMTUgMjguNDY2IDY3LjI5NjcgMjcuODU5MiA2Ny4yOTY3IDI3LjEwNTRWMTYuMzYwM0M2Ny4yOTY3IDE1Ljk4ODkgNjYuOTUwNiAxNS42Mzk2IDY2LjU4MjYgMTUuNjM5Nkg1MS44MDU5QzUxLjQ1OTggMTUuNjM5NiA1MS4xNzIgMTUuOTcwNSA1MS4xNzIgMTYuMzYwM1Y0NS42MzE2QzUxLjE3MiA0NS45OTkzIDUxLjQ0NTIgNDYuMjc1MSA1MS44MDU5IDQ2LjI3NTFINjYuNTgyNkM2Ni45NzI0IDQ2LjI3NTEgNjcuMjk2NyA0NS45ODA5IDY3LjI5NjcgNDUuNjMxNlYzMS42NzYzQzY3LjI5NjcgMzAuOTIyNCA2Ny45MDE1IDMwLjMxNTcgNjguNjQ4MyAzMC4zMTU3QzY5LjM5NTIgMzAuMzE1NyA2OS45OTk5IDMwLjkyMjQgNjkuOTk5OSAzMS42NzYzVjQ1LjYzMTZDNjkuOTk5OSA0Ny40ODg2IDY4LjQ2NjEgNDkgNjYuNTgyNiA0OVoiIGZpbGw9IiMyMTk5NjMiLz4KPHBhdGggZD0iTTU5LjY2OTQgNDUuMDY5SDU4LjcxNDlDNTcuOTY4MSA0NS4wNjkgNTcuMzYzMyA0NC40NjIyIDU3LjM2MzMgNDMuNzA4NEM1Ny4zNjMzIDQyLjk1NDUgNTcuOTY4MSA0Mi4zNDc4IDU4LjcxNDkgNDIuMzQ3OEg1OS42Njk0QzYwLjQxNjMgNDIuMzQ3OCA2MS4wMjEgNDIuOTU0NSA2MS4wMjEgNDMuNzA4NEM2MS4wMjEgNDQuNDYyMiA2MC40MTYzIDQ1LjA2OSA1OS42Njk0IDQ1LjA2OVoiIGZpbGw9IiMyMTk5NjMiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTY3XzEyMjk0Ij4KPHJlY3Qgd2lkdGg9IjcwIiBoZWlnaHQ9IjQ5IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=");
+/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA3MCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNjdfMTIyOTQpIj4KPHBhdGggZD0iTTQ2LjA4MjUgNDlINC43Njg5MkMyLjEzODU1IDQ5IDAgNDYuODc4MiAwIDQ0LjI3MVY0MC44MjE3QzAgNDAuMDY3OCAwLjYwNDc2NyAzOS40NjExIDEuMzUxNjIgMzkuNDYxMUgyNS4zNDU2QzI1LjcxMzUgMzkuNDYxMSAyNi4wNjMzIDM5LjYxMTkgMjYuMzE4MyAzOS44NzY2TDI4LjA2MzQgNDEuNzA0Mkg0MS4yMzM1QzQxLjk4MDMgNDEuNzA0MiA0Mi41ODUxIDQyLjMxMSA0Mi41ODUxIDQzLjA2NDhDNDIuNTg1MSA0My44MTg3IDQxLjk4MDMgNDQuNDI1NCA0MS4yMzM1IDQ0LjQyNTRIMjcuNDg3OEMyNy4xMTk4IDQ0LjQyNTQgMjYuNzcwMSA0NC4yNzQ3IDI2LjUxNSA0NC4wMDk5TDI0Ljc3IDQyLjE4MjNIMi43MDMyNFY0NC4yNzFDMi43MDMyNCA0NS4zNzc5IDMuNjI4NiA0Ni4yNzUxIDQuNzY4OTIgNDYuMjc1MUg0Ni4wODI1QzQ2LjgyOTQgNDYuMjc1MSA0Ny40MzQyIDQ2Ljg4MTkgNDcuNDM0MiA0Ny42MzU3QzQ3LjQzNDIgNDguMzg5NiA0Ni44Mjk0IDQ4Ljk5NjMgNDYuMDgyNSA0OC45OTYzVjQ5Wk00NS42ODU0IDQyLjE4MjNINDQuNjU0NEM0My45MDc2IDQyLjE4MjMgNDMuMzAyOCA0MS41NzU1IDQzLjMwMjggNDAuODIxN0M0My4zMDI4IDQwLjA2NzggNDMuOTA3NiAzOS40NjExIDQ0LjY1NDQgMzkuNDYxMUg0NS42ODU0QzQ2LjQzMjMgMzkuNDYxMSA0Ny4wMzcxIDQwLjA2NzggNDcuMDM3MSA0MC44MjE3QzQ3LjAzNzEgNDEuNTc1NSA0Ni40MzIzIDQyLjE4MjMgNDUuNjg1NCA0Mi4xODIzWiIgZmlsbD0iIzIxOTk2MyIvPgo8cGF0aCBkPSJNNC41Mjc0IDM4LjI1MTNDMy43ODA1NSAzOC4yNTEzIDMuMTc1NzggMzcuNjQ0NSAzLjE3NTc4IDM2Ljg5MDdWNC44OTA4MUMzLjE3NTc4IDIuMTk1MzUgNS4zNTA3NiAwIDguMDI0ODUgMEg2MS45NzNDNjQuNjQ3MSAwIDY2LjgyMjEgMi4xOTUzNSA2Ni44MjIxIDQuODkwODFWMTAuMTgyNEM2Ni44MjIxIDEwLjkzNjMgNjYuMjE3MyAxMS41NDY3IDY1LjQ3MDUgMTEuNTQ2N0M2NC43MjM2IDExLjU0NjcgNjQuMTE4OCAxMC45MzYzIDY0LjExODggMTAuMTgyNFY0Ljg5MDgxQzY0LjExODggMy43MTc3NSA2My4xMzUyIDIuNzI0ODggNjEuOTczIDIuNzI0ODhIOC4wMjQ4NUM2Ljg2MjY4IDIuNzI0ODggNS44NzkwMiAzLjcxNzc1IDUuODc5MDIgNC44OTA4MVYzNi44OTA3QzUuODc5MDIgMzcuNjQ0NSA1LjI3NDI1IDM4LjI1MTMgNC41Mjc0IDM4LjI1MTNaIiBmaWxsPSIjMjE5OTYzIi8+CjxwYXRoIGQ9Ik02MS4yNTg5IDcuNzc3NTFINC41Mjc0QzMuNzgwNTUgNy43Nzc1MSAzLjE3NTc4IDcuMTY3MDcgMy4xNzU3OCA2LjQxMzIzQzMuMTc1NzggNS42NTkzOCAzLjc4MDU1IDUuMDQ4OTUgNC41Mjc0IDUuMDQ4OTVINjEuMjU4OUM2Mi4wMDU4IDUuMDQ4OTUgNjIuNjEwNiA1LjY1OTM4IDYyLjYxMDYgNi40MTMyM0M2Mi42MTA2IDcuMTY3MDcgNjIuMDA1OCA3Ljc3NzUxIDYxLjI1ODkgNy43Nzc1MVoiIGZpbGw9IiMyMTk5NjMiLz4KPHBhdGggZD0iTTY2LjU4MjYgNDlINTEuODA1OUM0OS45MzMzIDQ5IDQ4LjQ2ODggNDcuNTIxNyA0OC40Njg4IDQ1LjYzMTZWMTYuMzYwM0M0OC40Njg4IDE0LjQ1OTIgNDkuOTY2MSAxMi45MTEgNTEuODA1OSAxMi45MTFINjYuNTgyNkM2OC40MzM0IDEyLjkxMSA2OS45OTk5IDE0LjQ5MjIgNjkuOTk5OSAxNi4zNjAzVjI3LjEwNTRDNjkuOTk5OSAyNy44NTkyIDY5LjM5NTIgMjguNDY2IDY4LjY0ODMgMjguNDY2QzY3LjkwMTUgMjguNDY2IDY3LjI5NjcgMjcuODU5MiA2Ny4yOTY3IDI3LjEwNTRWMTYuMzYwM0M2Ny4yOTY3IDE1Ljk4ODkgNjYuOTUwNiAxNS42Mzk2IDY2LjU4MjYgMTUuNjM5Nkg1MS44MDU5QzUxLjQ1OTggMTUuNjM5NiA1MS4xNzIgMTUuOTcwNSA1MS4xNzIgMTYuMzYwM1Y0NS42MzE2QzUxLjE3MiA0NS45OTkzIDUxLjQ0NTIgNDYuMjc1MSA1MS44MDU5IDQ2LjI3NTFINjYuNTgyNkM2Ni45NzI0IDQ2LjI3NTEgNjcuMjk2NyA0NS45ODA5IDY3LjI5NjcgNDUuNjMxNlYzMS42NzYzQzY3LjI5NjcgMzAuOTIyNCA2Ny45MDE1IDMwLjMxNTcgNjguNjQ4MyAzMC4zMTU3QzY5LjM5NTIgMzAuMzE1NyA2OS45OTk5IDMwLjkyMjQgNjkuOTk5OSAzMS42NzYzVjQ1LjYzMTZDNjkuOTk5OSA0Ny40ODg2IDY4LjQ2NjEgNDkgNjYuNTgyNiA0OVoiIGZpbGw9IiMyMTk5NjMiLz4KPHBhdGggZD0iTTU5LjY2OTQgNDUuMDY5SDU4LjcxNDlDNTcuOTY4MSA0NS4wNjkgNTcuMzYzMyA0NC40NjIyIDU3LjM2MzMgNDMuNzA4NEM1Ny4zNjMzIDQyLjk1NDUgNTcuOTY4MSA0Mi4zNDc4IDU4LjcxNDkgNDIuMzQ3OEg1OS42Njk0QzYwLjQxNjMgNDIuMzQ3OCA2MS4wMjEgNDIuOTU0NSA2MS4wMjEgNDMuNzA4NEM2MS4wMjEgNDQuNDYyMiA2MC40MTYzIDQ1LjA2OSA1OS42Njk0IDQ1LjA2OVoiIGZpbGw9IiMyMTk5NjMiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTY3XzEyMjk0Ij4KPHJlY3Qgd2lkdGg9IjcwIiBoZWlnaHQ9IjQ5IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=");
 
 /***/ }),
 
@@ -49,12 +48,11 @@ var SvgIcon = function SvgIcon(props) {
 /*!****************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/mail.svg ***!
   \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ReactComponent": () => (/* binding */ SvgMail),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "ReactComponent": function() { return /* binding */ SvgMail; }
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -73,7 +71,7 @@ var SvgMail = function SvgMail(props) {
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA0OCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuOTYwOTM4IDExLjIyMDlWMzkuMDYxM1YzOS4zMjIzQzAuOTYwOTM4IDQwLjQyNjkgMS44NTYzNyA0MS4zMjIzIDIuOTYwOTQgNDEuMzIyM0g0NS4wNDA5QzQ2LjE0NTUgNDEuMzIyMyA0Ny4wNDA5IDQwLjQyNjkgNDcuMDQwOSAzOS4zMjIzVjM5LjA2MTNWMTEuMjIwOVY4LjkzNDg5QzQ3LjA0MDkgNy44MzAzMiA0Ni4xNDU1IDYuOTM0ODkgNDUuMDQwOSA2LjkzNDg5SDIuOTYwOTRDMS44NTYzNyA2LjkzNDg5IDAuOTYwOTM4IDcuODMwMzIgMC45NjA5MzggOC45MzQ4OVYxMS4yMjA5Wk0yLjg4MDk0IDEyLjcxNjhMMTcuODU2OSAyNC4zNzg5TDIuODgwOTQgMzcuMzkyNlYxMi43MTY4Wk0zLjQ3NjE0IDM5LjQxMTlMMTkuMzk2OCAyNS41Nzc2TDI0LjAwMDkgMjkuMTYyNUwyOC42MDUxIDI1LjU3NzZMNDQuNTI1NyAzOS40MTE5SDMuNDc2MTRaTTQ1LjEyMDkgMzcuMzkyNkwzMC4xNDQ5IDI0LjM3NzlMNDUuMTIwOSAxMi43MTU4VjM3LjM5MjZaTTIuODgwOTQgOC44NDUzSDQ1LjEyMDlWMTAuMjkwNUwyNC4wMDA5IDI2LjczNjNMMi44ODA5NCAxMC4yOTA1VjguODQ1M1oiIGZpbGw9IiMyMTk5NjMiLz4KPC9zdmc+Cg==");
+/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCA0OCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuOTYwOTM4IDExLjIyMDlWMzkuMDYxM1YzOS4zMjIzQzAuOTYwOTM4IDQwLjQyNjkgMS44NTYzNyA0MS4zMjIzIDIuOTYwOTQgNDEuMzIyM0g0NS4wNDA5QzQ2LjE0NTUgNDEuMzIyMyA0Ny4wNDA5IDQwLjQyNjkgNDcuMDQwOSAzOS4zMjIzVjM5LjA2MTNWMTEuMjIwOVY4LjkzNDg5QzQ3LjA0MDkgNy44MzAzMiA0Ni4xNDU1IDYuOTM0ODkgNDUuMDQwOSA2LjkzNDg5SDIuOTYwOTRDMS44NTYzNyA2LjkzNDg5IDAuOTYwOTM4IDcuODMwMzIgMC45NjA5MzggOC45MzQ4OVYxMS4yMjA5Wk0yLjg4MDk0IDEyLjcxNjhMMTcuODU2OSAyNC4zNzg5TDIuODgwOTQgMzcuMzkyNlYxMi43MTY4Wk0zLjQ3NjE0IDM5LjQxMTlMMTkuMzk2OCAyNS41Nzc2TDI0LjAwMDkgMjkuMTYyNUwyOC42MDUxIDI1LjU3NzZMNDQuNTI1NyAzOS40MTE5SDMuNDc2MTRaTTQ1LjEyMDkgMzcuMzkyNkwzMC4xNDQ5IDI0LjM3NzlMNDUuMTIwOSAxMi43MTU4VjM3LjM5MjZaTTIuODgwOTQgOC44NDUzSDQ1LjEyMDlWMTAuMjkwNUwyNC4wMDA5IDI2LjczNjNMMi44ODA5NCAxMC4yOTA1VjguODQ1M1oiIGZpbGw9IiMyMTk5NjMiLz4KPC9zdmc+Cg==");
 
 /***/ }),
 
@@ -81,12 +79,11 @@ var SvgMail = function SvgMail(props) {
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/pin.svg ***!
   \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ReactComponent": () => (/* binding */ SvgPin),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "ReactComponent": function() { return /* binding */ SvgPin; }
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -108,7 +105,7 @@ var SvgPin = function SvgPin(props) {
   })));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCAzNCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNTYxMzMgMjUuOTM0M0wxNS42MjY5IDQ3LjY5MjFDMTUuODMyMSA0OC4wMzQzIDE2LjIwMjEgNDguMjQ1NCAxNi42MDI3IDQ4LjI0ODRDMTYuNjA1NyA0OC4yNDg0IDE2LjYwOTYgNDguMjQ4NCAxNi42MTI2IDQ4LjI0ODRDMTcuMDA5NCA0OC4yNDg0IDE3LjM3ODYgNDguMDQ0MiAxNy41ODg0IDQ3LjcwODlMMzEuMTg4NiAyNS45NTFDMzEuMjIyMyAyNS44OTY5IDMxLjI1MTQgMjUuODQwNSAzMS4yNzQ0IDI1Ljc4MzRDMzIuOTAwNSAyMy4xNDExIDMzLjc1ODQgMjAuMTIzMSAzMy43NTg0IDE3LjA0MThDMzMuNzU4NCA3Ljc4MjAyIDI2LjE4NTQgMC4yNDg0NDQgMTYuODc2OSAwLjI0ODQ0NEM3LjU3MTM5IDAuMjQ4NDQ0IDAgNy43ODIwMiAwIDE3LjA0MThDMCAyMC4xMjM4IDAuODU4NjI2IDIzLjE0MjYgMi40ODU1IDI1Ljc4NTZDMi41MDY5NCAyNS44MzY3IDIuNTMyMjIgMjUuODg2MiAyLjU2MTMzIDI1LjkzNDNaTTE2Ljg3NzYgMi41MzU1N0MyNC45MTkzIDIuNTM1NTcgMzEuNDYxMyA5LjA0MzM0IDMxLjQ2MTMgMTcuMDQyNkMzMS40NjEzIDE5Ljc1OTUgMzAuNjg2OSAyMi40MjE2IDI5LjIyMjQgMjQuNzRDMjkuMTg3MiAyNC43OTQ5IDI5LjE1ODEgMjQuODUyIDI5LjEzNDMgMjQuOTExNUwxNi42MzI1IDQ0LjkwOTZMNC42MzMyMSAyNC45Mjc1QzQuNjA3MTcgMjQuODYyNyA0LjU3NTc3IDI0Ljc5OTUgNC41Mzc0NyAyNC43MzkzQzMuMDcyOTggMjIuNDIwOSAyLjI5ODYxIDE5Ljc1OTUgMi4yOTg2MSAxNy4wNDE4QzIuMjk4NjEgOS4wNDMzNCA4LjgzOTAzIDIuNTM1NTcgMTYuODc3NiAyLjUzNTU3WiIgZmlsbD0iIzIxOTk2MyIvPgo8cGF0aCBkPSJNMTYuODgwMSAyMy4yODY2QzIwLjMzOTkgMjMuMjg2NiAyMy4xNTQ3IDIwLjQ4NTggMjMuMTU0NyAxNy4wNDMzQzIzLjE1NDcgMTMuNjAwOCAyMC4zMzk5IDEwLjggMTYuODgwMSAxMC44QzEzLjQyMDMgMTAuOCAxMC42MDU1IDEzLjYwMDggMTAuNjA1NSAxNy4wNDMzQzEwLjYwNTUgMjAuNDg1OCAxMy40MjAzIDIzLjI4NjYgMTYuODgwMSAyMy4yODY2Wk0xNi44ODAxIDEzLjA4NjRDMTkuMDczIDEzLjA4NjQgMjAuODU2OSAxNC44NjE0IDIwLjg1NjkgMTcuMDQzM0MyMC44NTY5IDE5LjIyNTMgMTkuMDczIDIxLjAwMDMgMTYuODgwMSAyMS4wMDAzQzE0LjY4NzIgMjEuMDAwMyAxMi45MDMzIDE5LjIyNTMgMTIuOTAzMyAxNy4wNDMzQzEyLjkwMjUgMTQuODYxNCAxNC42ODcyIDEzLjA4NjQgMTYuODgwMSAxMy4wODY0WiIgZmlsbD0iIzIxOTk2MyIvPgo8L3N2Zz4K");
+/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCAzNCA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuNTYxMzMgMjUuOTM0M0wxNS42MjY5IDQ3LjY5MjFDMTUuODMyMSA0OC4wMzQzIDE2LjIwMjEgNDguMjQ1NCAxNi42MDI3IDQ4LjI0ODRDMTYuNjA1NyA0OC4yNDg0IDE2LjYwOTYgNDguMjQ4NCAxNi42MTI2IDQ4LjI0ODRDMTcuMDA5NCA0OC4yNDg0IDE3LjM3ODYgNDguMDQ0MiAxNy41ODg0IDQ3LjcwODlMMzEuMTg4NiAyNS45NTFDMzEuMjIyMyAyNS44OTY5IDMxLjI1MTQgMjUuODQwNSAzMS4yNzQ0IDI1Ljc4MzRDMzIuOTAwNSAyMy4xNDExIDMzLjc1ODQgMjAuMTIzMSAzMy43NTg0IDE3LjA0MThDMzMuNzU4NCA3Ljc4MjAyIDI2LjE4NTQgMC4yNDg0NDQgMTYuODc2OSAwLjI0ODQ0NEM3LjU3MTM5IDAuMjQ4NDQ0IDAgNy43ODIwMiAwIDE3LjA0MThDMCAyMC4xMjM4IDAuODU4NjI2IDIzLjE0MjYgMi40ODU1IDI1Ljc4NTZDMi41MDY5NCAyNS44MzY3IDIuNTMyMjIgMjUuODg2MiAyLjU2MTMzIDI1LjkzNDNaTTE2Ljg3NzYgMi41MzU1N0MyNC45MTkzIDIuNTM1NTcgMzEuNDYxMyA5LjA0MzM0IDMxLjQ2MTMgMTcuMDQyNkMzMS40NjEzIDE5Ljc1OTUgMzAuNjg2OSAyMi40MjE2IDI5LjIyMjQgMjQuNzRDMjkuMTg3MiAyNC43OTQ5IDI5LjE1ODEgMjQuODUyIDI5LjEzNDMgMjQuOTExNUwxNi42MzI1IDQ0LjkwOTZMNC42MzMyMSAyNC45Mjc1QzQuNjA3MTcgMjQuODYyNyA0LjU3NTc3IDI0Ljc5OTUgNC41Mzc0NyAyNC43MzkzQzMuMDcyOTggMjIuNDIwOSAyLjI5ODYxIDE5Ljc1OTUgMi4yOTg2MSAxNy4wNDE4QzIuMjk4NjEgOS4wNDMzNCA4LjgzOTAzIDIuNTM1NTcgMTYuODc3NiAyLjUzNTU3WiIgZmlsbD0iIzIxOTk2MyIvPgo8cGF0aCBkPSJNMTYuODgwMSAyMy4yODY2QzIwLjMzOTkgMjMuMjg2NiAyMy4xNTQ3IDIwLjQ4NTggMjMuMTU0NyAxNy4wNDMzQzIzLjE1NDcgMTMuNjAwOCAyMC4zMzk5IDEwLjggMTYuODgwMSAxMC44QzEzLjQyMDMgMTAuOCAxMC42MDU1IDEzLjYwMDggMTAuNjA1NSAxNy4wNDMzQzEwLjYwNTUgMjAuNDg1OCAxMy40MjAzIDIzLjI4NjYgMTYuODgwMSAyMy4yODY2Wk0xNi44ODAxIDEzLjA4NjRDMTkuMDczIDEzLjA4NjQgMjAuODU2OSAxNC44NjE0IDIwLjg1NjkgMTcuMDQzM0MyMC44NTY5IDE5LjIyNTMgMTkuMDczIDIxLjAwMDMgMTYuODgwMSAyMS4wMDAzQzE0LjY4NzIgMjEuMDAwMyAxMi45MDMzIDE5LjIyNTMgMTIuOTAzMyAxNy4wNDMzQzEyLjkwMjUgMTQuODYxNCAxNC42ODcyIDEzLjA4NjQgMTYuODgwMSAxMy4wODY0WiIgZmlsbD0iIzIxOTk2MyIvPgo8L3N2Zz4K");
 
 /***/ }),
 
@@ -116,12 +113,11 @@ var SvgPin = function SvgPin(props) {
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/tel.svg ***!
   \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ReactComponent": () => (/* binding */ SvgTel),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "ReactComponent": function() { return /* binding */ SvgTel; }
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -151,7 +147,7 @@ var SvgTel = function SvgTel(props) {
   })))));
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNjdfMTIzMDQpIj4KPHBhdGggZD0iTTI3LjU5MSA5LjIwNjc4QzI5LjM4MTcgOS41NDgyMSAzMS4wMjczIDEwLjQwNDEgMzIuMzE3NCAxMS42NjQ4QzMzLjYwNzUgMTIuOTI1NiAzNC40ODMzIDE0LjUzMzkgMzQuODMyNiAxNi4yODM5TTI3LjU5MSAyLjA0MDEyQzMxLjMxMTMgMi40NDQwMiAzNC43ODA2IDQuMDcyMTggMzcuNDI5MSA2LjY1NzI1QzQwLjA3NzYgOS4yNDIzMyA0MS43NDggMTIuNjMwNyA0Mi4xNjYgMTYuMjY1OU00MC4zMzI2IDMwLjU2MzVWMzUuOTM4NUM0MC4zMzQ3IDM2LjQzNzQgNDAuMjMwMSAzNi45MzEzIDQwLjAyNTYgMzcuMzg4NUMzOS44MjEgMzcuODQ1NyAzOS41MjEgMzguMjU2MSAzOS4xNDQ4IDM4LjU5MzVDMzguNzY4NSAzOC45MzA4IDM4LjMyNDQgMzkuMTg3NiAzNy44NDA3IDM5LjM0NzVDMzcuMzU3IDM5LjUwNzMgMzYuODQ0NSAzOS41NjY3IDM2LjMzNiAzOS41MjE4QzMwLjY5NDUgMzguOTIyNyAyNS4yNzU1IDM3LjAzODggMjAuNTE0MyAzNC4wMjE0QzE2LjA4NDcgMzEuMjcwNiAxMi4zMjkxIDI3LjYwMDMgOS41MTQzMSAyMy4yNzE0QzYuNDE1OTMgMTguNTk3MyA0LjQ4Nzc1IDEzLjI3NTYgMy44ODU5NyA3LjczNzYyQzMuODQwMTYgNy4yNDIxNiAzLjkwMDQxIDYuNzQyODEgNC4wNjI4OSA2LjI3MTM2QzQuMjI1MzcgNS43OTk5MSA0LjQ4NjUyIDUuMzY2NjggNC44Mjk3MSA0Ljk5OTI3QzUuMTcyOSA0LjYzMTg2IDUuNTkwNjIgNC4zMzgzIDYuMDU2MjYgNC4xMzczQzYuNTIxOSAzLjkzNjMgNy4wMjUyNyAzLjgzMjI1IDcuNTM0MzEgMy44MzE3OEgxMy4wMzQzQzEzLjkyNCAzLjgyMzIyIDE0Ljc4NjYgNC4xMzExMyAxNS40NjEyIDQuNjk4MTFDMTYuMTM1OCA1LjI2NTA5IDE2LjU3NjQgNi4wNTI0NiAxNi43MDEgNi45MTM0NUMxNi45MzMxIDguNjMzNTcgMTcuMzYzNiAxMC4zMjI1IDE3Ljk4NDMgMTEuOTQ4QzE4LjIzMSAxMi41ODkzIDE4LjI4NDQgMTMuMjg2MyAxOC4xMzgxIDEzLjk1NjNDMTcuOTkxOSAxNC42MjYzIDE3LjY1MjIgMTUuMjQxMyAxNy4xNTkzIDE1LjcyODRMMTQuODMxIDE4LjAwMzlDMTcuNDQwOCAyMi40ODk0IDIxLjI0MTEgMjYuMjAzMyAyNS44MzEgMjguNzUzOUwyOC4xNTkzIDI2LjQ3ODVDMjguNjU3OCAyNS45OTY3IDI5LjI4NzEgMjUuNjY0OCAyOS45NzI3IDI1LjUyMTlDMzAuNjU4MyAyNS4zNzkgMzEuMzcxNCAyNS40MzExIDMyLjAyNzYgMjUuNjcyMkMzMy42OTEgMjYuMjc4OCAzNS40MTkyIDI2LjY5OTUgMzcuMTc5MyAyNi45MjY0QzM4LjA2OTkgMjcuMDQ5MSAzOC44ODMyIDI3LjQ4NzUgMzkuNDY0NiAyOC4xNTgxQzQwLjA0NiAyOC44Mjg3IDQwLjM1NDkgMjkuNjg0OCA0MC4zMzI2IDMwLjU2MzVaIiBzdHJva2U9IiMyMTk5NjMiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTY3XzEyMzA0Ij4KPHJlY3Qgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQzIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwLjI0ODQ0NCkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K");
+/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNjdfMTIzMDQpIj4KPHBhdGggZD0iTTI3LjU5MSA5LjIwNjc4QzI5LjM4MTcgOS41NDgyMSAzMS4wMjczIDEwLjQwNDEgMzIuMzE3NCAxMS42NjQ4QzMzLjYwNzUgMTIuOTI1NiAzNC40ODMzIDE0LjUzMzkgMzQuODMyNiAxNi4yODM5TTI3LjU5MSAyLjA0MDEyQzMxLjMxMTMgMi40NDQwMiAzNC43ODA2IDQuMDcyMTggMzcuNDI5MSA2LjY1NzI1QzQwLjA3NzYgOS4yNDIzMyA0MS43NDggMTIuNjMwNyA0Mi4xNjYgMTYuMjY1OU00MC4zMzI2IDMwLjU2MzVWMzUuOTM4NUM0MC4zMzQ3IDM2LjQzNzQgNDAuMjMwMSAzNi45MzEzIDQwLjAyNTYgMzcuMzg4NUMzOS44MjEgMzcuODQ1NyAzOS41MjEgMzguMjU2MSAzOS4xNDQ4IDM4LjU5MzVDMzguNzY4NSAzOC45MzA4IDM4LjMyNDQgMzkuMTg3NiAzNy44NDA3IDM5LjM0NzVDMzcuMzU3IDM5LjUwNzMgMzYuODQ0NSAzOS41NjY3IDM2LjMzNiAzOS41MjE4QzMwLjY5NDUgMzguOTIyNyAyNS4yNzU1IDM3LjAzODggMjAuNTE0MyAzNC4wMjE0QzE2LjA4NDcgMzEuMjcwNiAxMi4zMjkxIDI3LjYwMDMgOS41MTQzMSAyMy4yNzE0QzYuNDE1OTMgMTguNTk3MyA0LjQ4Nzc1IDEzLjI3NTYgMy44ODU5NyA3LjczNzYyQzMuODQwMTYgNy4yNDIxNiAzLjkwMDQxIDYuNzQyODEgNC4wNjI4OSA2LjI3MTM2QzQuMjI1MzcgNS43OTk5MSA0LjQ4NjUyIDUuMzY2NjggNC44Mjk3MSA0Ljk5OTI3QzUuMTcyOSA0LjYzMTg2IDUuNTkwNjIgNC4zMzgzIDYuMDU2MjYgNC4xMzczQzYuNTIxOSAzLjkzNjMgNy4wMjUyNyAzLjgzMjI1IDcuNTM0MzEgMy44MzE3OEgxMy4wMzQzQzEzLjkyNCAzLjgyMzIyIDE0Ljc4NjYgNC4xMzExMyAxNS40NjEyIDQuNjk4MTFDMTYuMTM1OCA1LjI2NTA5IDE2LjU3NjQgNi4wNTI0NiAxNi43MDEgNi45MTM0NUMxNi45MzMxIDguNjMzNTcgMTcuMzYzNiAxMC4zMjI1IDE3Ljk4NDMgMTEuOTQ4QzE4LjIzMSAxMi41ODkzIDE4LjI4NDQgMTMuMjg2MyAxOC4xMzgxIDEzLjk1NjNDMTcuOTkxOSAxNC42MjYzIDE3LjY1MjIgMTUuMjQxMyAxNy4xNTkzIDE1LjcyODRMMTQuODMxIDE4LjAwMzlDMTcuNDQwOCAyMi40ODk0IDIxLjI0MTEgMjYuMjAzMyAyNS44MzEgMjguNzUzOUwyOC4xNTkzIDI2LjQ3ODVDMjguNjU3OCAyNS45OTY3IDI5LjI4NzEgMjUuNjY0OCAyOS45NzI3IDI1LjUyMTlDMzAuNjU4MyAyNS4zNzkgMzEuMzcxNCAyNS40MzExIDMyLjAyNzYgMjUuNjcyMkMzMy42OTEgMjYuMjc4OCAzNS40MTkyIDI2LjY5OTUgMzcuMTc5MyAyNi45MjY0QzM4LjA2OTkgMjcuMDQ5MSAzOC44ODMyIDI3LjQ4NzUgMzkuNDY0NiAyOC4xNTgxQzQwLjA0NiAyOC44Mjg3IDQwLjM1NDkgMjkuNjg0OCA0MC4zMzI2IDMwLjU2MzVaIiBzdHJva2U9IiMyMTk5NjMiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTY3XzEyMzA0Ij4KPHJlY3Qgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQzIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwLjI0ODQ0NCkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K");
 
 /***/ }),
 
@@ -159,11 +155,11 @@ var SvgTel = function SvgTel(props) {
 /*!********************************************!*\
   !*** ./blocks/src/posts-with-info/edit.js ***!
   \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */   "default": function() { return /* binding */ Edit; }
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -1551,7 +1547,7 @@ function Edit(_ref) {
 /*!*********************************************!*\
   !*** ./blocks/src/posts-with-info/index.js ***!
   \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
@@ -1576,7 +1572,7 @@ const {
 /*!***********************************************!*\
   !*** ./blocks/src/posts-with-info/style.scss ***!
   \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
@@ -1588,7 +1584,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/1.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/1.43f1a75f.jpg";
 
@@ -1598,7 +1594,7 @@ module.exports = __webpack_require__.p + "images/1.43f1a75f.jpg";
 /*!**************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/10.jpg ***!
   \**************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/10.5ce0bfbd.jpg";
 
@@ -1608,7 +1604,7 @@ module.exports = __webpack_require__.p + "images/10.5ce0bfbd.jpg";
 /*!**************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/11.jpg ***!
   \**************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/11.e903d2c9.jpg";
 
@@ -1618,7 +1614,7 @@ module.exports = __webpack_require__.p + "images/11.e903d2c9.jpg";
 /*!**************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/12.jpg ***!
   \**************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/12.5dbde671.jpg";
 
@@ -1628,7 +1624,7 @@ module.exports = __webpack_require__.p + "images/12.5dbde671.jpg";
 /*!**************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/13.jpg ***!
   \**************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/13.38945bb8.jpg";
 
@@ -1638,7 +1634,7 @@ module.exports = __webpack_require__.p + "images/13.38945bb8.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/2.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/2.157f58e4.jpg";
 
@@ -1648,7 +1644,7 @@ module.exports = __webpack_require__.p + "images/2.157f58e4.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/3.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/3.ea0ba47d.jpg";
 
@@ -1658,7 +1654,7 @@ module.exports = __webpack_require__.p + "images/3.ea0ba47d.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/4.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/4.d53b0218.jpg";
 
@@ -1668,7 +1664,7 @@ module.exports = __webpack_require__.p + "images/4.d53b0218.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/5.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/5.ad235a5f.jpg";
 
@@ -1678,7 +1674,7 @@ module.exports = __webpack_require__.p + "images/5.ad235a5f.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/6.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/6.0366b555.jpg";
 
@@ -1688,7 +1684,7 @@ module.exports = __webpack_require__.p + "images/6.0366b555.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/7.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/7.a3511f7f.jpg";
 
@@ -1698,7 +1694,7 @@ module.exports = __webpack_require__.p + "images/7.a3511f7f.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/8.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/8.d16ca5f1.jpg";
 
@@ -1708,7 +1704,7 @@ module.exports = __webpack_require__.p + "images/8.d16ca5f1.jpg";
 /*!*************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/9.jpg ***!
   \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/9.c26769ef.jpg";
 
@@ -1718,7 +1714,7 @@ module.exports = __webpack_require__.p + "images/9.c26769ef.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-1.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-1.784cf445.jpg";
 
@@ -1728,7 +1724,7 @@ module.exports = __webpack_require__.p + "images/m-1.784cf445.jpg";
 /*!****************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-10.jpg ***!
   \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-10.c60f86f1.jpg";
 
@@ -1738,7 +1734,7 @@ module.exports = __webpack_require__.p + "images/m-10.c60f86f1.jpg";
 /*!****************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-11.jpg ***!
   \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-11.d4f415fe.jpg";
 
@@ -1748,7 +1744,7 @@ module.exports = __webpack_require__.p + "images/m-11.d4f415fe.jpg";
 /*!****************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-12.jpg ***!
   \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-12.2e5cf7eb.jpg";
 
@@ -1758,7 +1754,7 @@ module.exports = __webpack_require__.p + "images/m-12.2e5cf7eb.jpg";
 /*!****************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-13.jpg ***!
   \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-13.6548a57a.jpg";
 
@@ -1768,7 +1764,7 @@ module.exports = __webpack_require__.p + "images/m-13.6548a57a.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-2.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-2.02b30e99.jpg";
 
@@ -1778,7 +1774,7 @@ module.exports = __webpack_require__.p + "images/m-2.02b30e99.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-3.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-3.0adf8dc9.jpg";
 
@@ -1788,7 +1784,7 @@ module.exports = __webpack_require__.p + "images/m-3.0adf8dc9.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-4.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-4.784cf445.jpg";
 
@@ -1798,7 +1794,7 @@ module.exports = __webpack_require__.p + "images/m-4.784cf445.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-5.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-5.b0c658d6.jpg";
 
@@ -1808,7 +1804,7 @@ module.exports = __webpack_require__.p + "images/m-5.b0c658d6.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-6.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-6.75b025fb.jpg";
 
@@ -1818,7 +1814,7 @@ module.exports = __webpack_require__.p + "images/m-6.75b025fb.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-7.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-7.e69e2b9c.jpg";
 
@@ -1828,7 +1824,7 @@ module.exports = __webpack_require__.p + "images/m-7.e69e2b9c.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-8.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-8.9fc7d753.jpg";
 
@@ -1838,7 +1834,7 @@ module.exports = __webpack_require__.p + "images/m-8.9fc7d753.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/posts-with-info/assets/m-9.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-9.c443b783.jpg";
 
@@ -1848,7 +1844,7 @@ module.exports = __webpack_require__.p + "images/m-9.c443b783.jpg";
 /*!************************!*\
   !*** external "React" ***!
   \************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["React"];
 
@@ -1858,7 +1854,7 @@ module.exports = window["React"];
 /*!*************************************!*\
   !*** external ["wp","blockEditor"] ***!
   \*************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blockEditor"];
 
@@ -1868,7 +1864,7 @@ module.exports = window["wp"]["blockEditor"];
 /*!********************************!*\
   !*** external ["wp","blocks"] ***!
   \********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blocks"];
 
@@ -1878,7 +1874,7 @@ module.exports = window["wp"]["blocks"];
 /*!************************************!*\
   !*** external ["wp","components"] ***!
   \************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["components"];
 
@@ -1888,7 +1884,7 @@ module.exports = window["wp"]["components"];
 /*!*********************************!*\
   !*** external ["wp","element"] ***!
   \*********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["element"];
 
@@ -1898,7 +1894,7 @@ module.exports = window["wp"]["element"];
 /*!***********************************************!*\
   !*** ./blocks/src/posts-with-info/block.json ***!
   \***********************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/posts-with-info","version":"1.0.0","title":"Posts with info","category":"widgets","icon":"align-center","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/posts-with-info.js","editorStyle":"file:../../../blocks/build/posts-with-info.css","style":"file:../../../blocks/build/style-posts-with-info.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"title":{"type":"string","default":"Title"},"items1":{"type":"array","default":[{"name":"tab1","tags":"tag","title":"Title #1","description":"Very very very very very very very very very very very long description.","button":"Button","target":"/","primaryButton":"Primary Button","primaryTarget":"/","image":{"url":"1.jpg","alt":""},"mImage":{"url":"m-1.jpg","alt":""},"whiteText":true,"big":true,"mHide":false,"green":false}]},"items2":{"type":"array","default":[{"name":"tab2","tags":"tag","title":"Title #2","description":"Very very very very very very very very very very very long description.","button":"Button","target":"/","primaryButton":"Primary Button","primaryTarget":"/","image":{"url":"2.jpg","alt":""},"mImage":{"url":"m-2.jpg","alt":""},"whiteText":false,"big":false,"mHide":false,"green":false},{"name":"tab3","tags":"tag","title":"Title #3","description":"Very very very very very very very very very very very long description.","button":"Button","target":"/","primaryButton":"Primary Button","primaryTarget":"/","image":{"url":"3.jpg","alt":""},"mImage":{"url":"","alt":""},"whiteText":true,"big":false,"mHide":false,"green":false}]},"blue":{"type":"boolean","default":false},"items":{"type":"array","default":[{"name":"tab1","title":"Title #1","link":"Link","target":"/","text":"","image":{"alt":"","url":"pin.svg"}},{"name":"tab2","title":"Title #2","link":"Link","target":"/","text":"","image":{"alt":"","url":"mail.svg"}},{"name":"tab3","title":"Title #3","link":"Link","target":"/","text":"","image":{"alt":"","url":"tel.svg"}}]},"extraText":{"type":"string","default":""}}}');
 
@@ -1935,9 +1931,9 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 		__webpack_require__.O = function(result, chunkIds, fn, priority) {
 /******/ 			if(chunkIds) {
 /******/ 				priority = priority || 0;
 /******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
@@ -1946,10 +1942,12 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			var notFulfilled = Infinity;
 /******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
 /******/ 				var fulfilled = true;
 /******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every(function(key) { return __webpack_require__.O[key](chunkIds[j]); })) {
 /******/ 						chunkIds.splice(j--, 1);
 /******/ 					} else {
 /******/ 						fulfilled = false;
@@ -1964,34 +1962,34 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			return result;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__webpack_require__.n = function(module) {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -2000,38 +1998,35 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__webpack_require__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var scriptUrl;
 /******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
+/******/ 				scriptUrl = document.currentScript.src
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -2039,10 +2034,10 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded and loading chunks
@@ -2063,15 +2058,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		
 /******/ 		// no HMR manifest
 /******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
 /******/ 		
 /******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 			if(chunkIds.some(function(id) { return installedChunks[id] !== 0; })) {
 /******/ 				for(moduleId in moreModules) {
 /******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
 /******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
@@ -2090,17 +2087,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkbanescocontigo"] = globalThis["webpackChunkbanescocontigo"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkbanescocontigo"] = self["webpackChunkbanescocontigo"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-posts-with-info"], () => (__webpack_require__("./blocks/src/posts-with-info/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-posts-with-info"], function() { return __webpack_require__("./blocks/src/posts-with-info/index.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

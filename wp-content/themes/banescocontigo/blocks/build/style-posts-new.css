@@ -1,5 +1,5 @@
 /*!********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/src/posts-new/style.scss ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/posts-new/style.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************/
 .posts-new {
   overflow: hidden;
@@ -153,8 +153,8 @@
   top: auto;
   width: 338px;
   height: 405px;
-  right: -42px;
-  bottom: -56px;
+  right: 0;
+  bottom: 0;
   width: 509px;
   height: 530px;
 }
@@ -162,8 +162,8 @@
   .posts-new__item-image--big {
     width: 438px;
     height: 412px;
-    right: -37px;
-    bottom: -27px;
+    right: 0;
+    bottom: 0;
   }
 }
 .posts-new__item-image img {

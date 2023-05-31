@@ -93,6 +93,7 @@
         <div class="banner-with-info__items" style="<?= ($attributes['itemsInLine']) ? "justify-content: flex-start" : "" ?>">
           <?php foreach ($attributes['items'] as $item) : ?>
             <div class="banner-with-info__item" style="<?= ($attributes['itemsInLine']) ? "margin-right: 70px" : "" ?>">
+              
               <?php if ($item['image']['url']) : ?>
                 <div class="banner-with-info__item-image">
                   <?php if ($item['image']['url'] == 'pin.svg') : ?>
@@ -106,6 +107,7 @@
                   <?php endif; ?>
                 </div>
               <?php endif; ?>
+              
               <?php if ($item['title'] || $item['link']) : ?>
                 <div class="banner-with-info__item-content">
                   <?php if ($item['title']) : ?>

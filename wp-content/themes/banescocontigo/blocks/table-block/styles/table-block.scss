@@ -1,0 +1,43 @@
+.table-block {
+  .title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+
+    color: #3A4454;
+    margin: 0 0 4rem;
+    @media screen and (min-width:768px) {
+      font-size: 40px;
+    }
+  }
+
+  .table {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    overflow: auto;
+  }
+
+   thead {
+    background: #219963;
+    border-left: 1px solid #DCE1E9;
+    border-radius: 0px;
+    color: #fff;
+  }
+
+   td {
+    padding: 16px;
+    text-align: center;
+    border-left: 1px solid #DCE1E9;
+    border-bottom: 1px solid #DCE1E9;
+  }
+
+   table {
+    border-right: 1px solid #DCE1E9;
+    min-width: 500px;
+    
+  }
+}

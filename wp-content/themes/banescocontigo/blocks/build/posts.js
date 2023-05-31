@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,11 +6,11 @@
 /*!**********************************!*\
   !*** ./blocks/src/posts/edit.js ***!
   \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */   "default": function() { return /* binding */ Edit; }
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -1240,7 +1240,7 @@ function Edit(_ref) {
 /*!***********************************!*\
   !*** ./blocks/src/posts/index.js ***!
   \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
@@ -1265,7 +1265,7 @@ const {
 /*!*************************************!*\
   !*** ./blocks/src/posts/style.scss ***!
   \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
@@ -1277,7 +1277,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/1.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/1.43f1a75f.jpg";
 
@@ -1287,7 +1287,7 @@ module.exports = __webpack_require__.p + "images/1.43f1a75f.jpg";
 /*!****************************************!*\
   !*** ./blocks/src/posts/assets/10.jpg ***!
   \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/10.5ce0bfbd.jpg";
 
@@ -1297,7 +1297,7 @@ module.exports = __webpack_require__.p + "images/10.5ce0bfbd.jpg";
 /*!****************************************!*\
   !*** ./blocks/src/posts/assets/11.jpg ***!
   \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/11.e903d2c9.jpg";
 
@@ -1307,7 +1307,7 @@ module.exports = __webpack_require__.p + "images/11.e903d2c9.jpg";
 /*!****************************************!*\
   !*** ./blocks/src/posts/assets/12.jpg ***!
   \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/12.5dbde671.jpg";
 
@@ -1317,7 +1317,7 @@ module.exports = __webpack_require__.p + "images/12.5dbde671.jpg";
 /*!****************************************!*\
   !*** ./blocks/src/posts/assets/13.jpg ***!
   \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/13.38945bb8.jpg";
 
@@ -1327,7 +1327,7 @@ module.exports = __webpack_require__.p + "images/13.38945bb8.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/2.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/2.157f58e4.jpg";
 
@@ -1337,7 +1337,7 @@ module.exports = __webpack_require__.p + "images/2.157f58e4.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/3.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/3.ea0ba47d.jpg";
 
@@ -1347,7 +1347,7 @@ module.exports = __webpack_require__.p + "images/3.ea0ba47d.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/4.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/4.d53b0218.jpg";
 
@@ -1357,7 +1357,7 @@ module.exports = __webpack_require__.p + "images/4.d53b0218.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/5.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/5.ad235a5f.jpg";
 
@@ -1367,7 +1367,7 @@ module.exports = __webpack_require__.p + "images/5.ad235a5f.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/6.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/6.0366b555.jpg";
 
@@ -1377,7 +1377,7 @@ module.exports = __webpack_require__.p + "images/6.0366b555.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/7.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/7.a3511f7f.jpg";
 
@@ -1387,7 +1387,7 @@ module.exports = __webpack_require__.p + "images/7.a3511f7f.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/8.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/8.d16ca5f1.jpg";
 
@@ -1397,7 +1397,7 @@ module.exports = __webpack_require__.p + "images/8.d16ca5f1.jpg";
 /*!***************************************!*\
   !*** ./blocks/src/posts/assets/9.jpg ***!
   \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/9.c26769ef.jpg";
 
@@ -1407,7 +1407,7 @@ module.exports = __webpack_require__.p + "images/9.c26769ef.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-1.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-1.784cf445.jpg";
 
@@ -1417,7 +1417,7 @@ module.exports = __webpack_require__.p + "images/m-1.784cf445.jpg";
 /*!******************************************!*\
   !*** ./blocks/src/posts/assets/m-10.jpg ***!
   \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-10.c60f86f1.jpg";
 
@@ -1427,7 +1427,7 @@ module.exports = __webpack_require__.p + "images/m-10.c60f86f1.jpg";
 /*!******************************************!*\
   !*** ./blocks/src/posts/assets/m-11.jpg ***!
   \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-11.d4f415fe.jpg";
 
@@ -1437,7 +1437,7 @@ module.exports = __webpack_require__.p + "images/m-11.d4f415fe.jpg";
 /*!******************************************!*\
   !*** ./blocks/src/posts/assets/m-12.jpg ***!
   \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-12.2e5cf7eb.jpg";
 
@@ -1447,7 +1447,7 @@ module.exports = __webpack_require__.p + "images/m-12.2e5cf7eb.jpg";
 /*!******************************************!*\
   !*** ./blocks/src/posts/assets/m-13.jpg ***!
   \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-13.6548a57a.jpg";
 
@@ -1457,7 +1457,7 @@ module.exports = __webpack_require__.p + "images/m-13.6548a57a.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-2.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-2.02b30e99.jpg";
 
@@ -1467,7 +1467,7 @@ module.exports = __webpack_require__.p + "images/m-2.02b30e99.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-3.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-3.0adf8dc9.jpg";
 
@@ -1477,7 +1477,7 @@ module.exports = __webpack_require__.p + "images/m-3.0adf8dc9.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-4.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-4.784cf445.jpg";
 
@@ -1487,7 +1487,7 @@ module.exports = __webpack_require__.p + "images/m-4.784cf445.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-5.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-5.b0c658d6.jpg";
 
@@ -1497,7 +1497,7 @@ module.exports = __webpack_require__.p + "images/m-5.b0c658d6.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-6.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-6.75b025fb.jpg";
 
@@ -1507,7 +1507,7 @@ module.exports = __webpack_require__.p + "images/m-6.75b025fb.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-7.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-7.e69e2b9c.jpg";
 
@@ -1517,7 +1517,7 @@ module.exports = __webpack_require__.p + "images/m-7.e69e2b9c.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-8.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-8.9fc7d753.jpg";
 
@@ -1527,7 +1527,7 @@ module.exports = __webpack_require__.p + "images/m-8.9fc7d753.jpg";
 /*!*****************************************!*\
   !*** ./blocks/src/posts/assets/m-9.jpg ***!
   \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/m-9.c443b783.jpg";
 
@@ -1537,7 +1537,7 @@ module.exports = __webpack_require__.p + "images/m-9.c443b783.jpg";
 /*!*************************************!*\
   !*** external ["wp","blockEditor"] ***!
   \*************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blockEditor"];
 
@@ -1547,7 +1547,7 @@ module.exports = window["wp"]["blockEditor"];
 /*!********************************!*\
   !*** external ["wp","blocks"] ***!
   \********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blocks"];
 
@@ -1557,7 +1557,7 @@ module.exports = window["wp"]["blocks"];
 /*!************************************!*\
   !*** external ["wp","components"] ***!
   \************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["components"];
 
@@ -1567,7 +1567,7 @@ module.exports = window["wp"]["components"];
 /*!*********************************!*\
   !*** external ["wp","element"] ***!
   \*********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["element"];
 
@@ -1577,7 +1577,7 @@ module.exports = window["wp"]["element"];
 /*!*************************************!*\
   !*** ./blocks/src/posts/block.json ***!
   \*************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/posts","version":"1.0.0","title":"Posts","category":"widgets","icon":"screenoptions","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/posts.js","editorStyle":"file:../../../blocks/build/posts.css","style":"file:../../../blocks/build/style-posts.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"title":{"type":"string","default":"Title"},"items1":{"type":"array","default":[{"name":"tab1","tags":"tag","title":"Title #1","description":"Very very very very very very very very very very very long description.","button":"Button","target":"/","primaryButton":"Primary Button","primaryTarget":"/","image":{"url":"1.jpg","alt":""},"mImage":{"url":"m-1.jpg","alt":""},"whiteText":true,"big":true,"mHide":false,"green":false}]},"items2":{"type":"array","default":[{"name":"tab2","tags":"tag","title":"Title #2","description":"Very very very very very very very very very very very long description.","button":"Button","target":"/","primaryButton":"Primary Button","primaryTarget":"/","image":{"url":"2.jpg","alt":""},"mImage":{"url":"m-2.jpg","alt":""},"whiteText":false,"big":false,"mHide":false,"green":false},{"name":"tab3","tags":"tag","title":"Title #3","description":"Very very very very very very very very very very very long description.","button":"Button","target":"/","primaryButton":"Primary Button","primaryTarget":"/","image":{"url":"3.jpg","alt":""},"mImage":{"url":"","alt":""},"whiteText":true,"big":false,"mHide":false,"green":false}]},"blue":{"type":"boolean","default":false}}}');
 
@@ -1614,9 +1614,9 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 		__webpack_require__.O = function(result, chunkIds, fn, priority) {
 /******/ 			if(chunkIds) {
 /******/ 				priority = priority || 0;
 /******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
@@ -1625,10 +1625,12 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			var notFulfilled = Infinity;
 /******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
 /******/ 				var fulfilled = true;
 /******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every(function(key) { return __webpack_require__.O[key](chunkIds[j]); })) {
 /******/ 						chunkIds.splice(j--, 1);
 /******/ 					} else {
 /******/ 						fulfilled = false;
@@ -1643,34 +1645,34 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			return result;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__webpack_require__.n = function(module) {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -1679,38 +1681,35 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__webpack_require__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var scriptUrl;
 /******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
+/******/ 				scriptUrl = document.currentScript.src
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -1718,10 +1717,10 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded and loading chunks
@@ -1742,15 +1741,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		
 /******/ 		// no HMR manifest
 /******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
 /******/ 		
 /******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 			if(chunkIds.some(function(id) { return installedChunks[id] !== 0; })) {
 /******/ 				for(moduleId in moreModules) {
 /******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
 /******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
@@ -1769,17 +1770,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkbanescocontigo"] = globalThis["webpackChunkbanescocontigo"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkbanescocontigo"] = self["webpackChunkbanescocontigo"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-posts"], () => (__webpack_require__("./blocks/src/posts/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-posts"], function() { return __webpack_require__("./blocks/src/posts/index.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

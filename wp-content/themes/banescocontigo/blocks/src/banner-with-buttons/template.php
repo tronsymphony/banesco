@@ -30,7 +30,11 @@
                 class="banner-with-buttons__inner <?= ($attributes['whiteBg']) ? 'banner-with-buttons__inner-white' : '' ?> ">
                 <?php if ($attributes['items']) : ?>
                 <div class="banner-with-buttons__items">
-                    <?php $module_count = 0; foreach ($attributes['items'] as $item) : ?>
+                    <?php $module_count = 0; foreach ($attributes['items'] as $item) : 
+                        if(!$item['title']){
+                            continue;
+                        }
+                        ?>
                     <div class="banner-with-buttons__item" style="
                 --widths-title: <?= ($item['widths']['title']) ? $item['widths']['title'] : '300px' ?>;
                 --widths-title--mobile: <?= ($item['widths']['mTitle']) ? $item['widths']['mTitle'] : '100%' ?>;
@@ -67,7 +71,7 @@
                             <?php if ($item['description']) : ?>
                             <div class="banner-with-buttons__item-description text"><?= $item['description'] ?>
 
-                            <?php if ($item['module_title']) : ?>
+                            <?php if (!empty($item['module_title'])) : ?>
                               <span class="link-module" data-module="<?= $module_count; ?>"><a href="#">aqui</a></span>
                             <?php endif; ?>
 

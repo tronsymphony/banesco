@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,11 +6,11 @@
 /*!****************************************!*\
   !*** ./blocks/src/collections/edit.js ***!
   \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */   "default": function() { return /* binding */ Edit; }
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -1675,7 +1675,7 @@ function Edit(_ref) {
 /*!*****************************************!*\
   !*** ./blocks/src/collections/index.js ***!
   \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
@@ -1700,7 +1700,7 @@ const {
 /*!*******************************************!*\
   !*** ./blocks/src/collections/style.scss ***!
   \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
@@ -1712,7 +1712,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./blocks/src/collections/assets/image-1.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image-1.3ede720d.jpg";
 
@@ -1722,7 +1722,7 @@ module.exports = __webpack_require__.p + "images/image-1.3ede720d.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/collections/assets/image-2.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image-2.58f1997d.jpg";
 
@@ -1732,7 +1732,7 @@ module.exports = __webpack_require__.p + "images/image-2.58f1997d.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/collections/assets/image-3.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image-3.539e5a19.jpg";
 
@@ -1742,7 +1742,7 @@ module.exports = __webpack_require__.p + "images/image-3.539e5a19.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/collections/assets/image-4.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image-4.389a1a88.jpg";
 
@@ -1752,7 +1752,7 @@ module.exports = __webpack_require__.p + "images/image-4.389a1a88.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/collections/assets/image-5.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image-5.b35e7b46.jpg";
 
@@ -1762,7 +1762,7 @@ module.exports = __webpack_require__.p + "images/image-5.b35e7b46.jpg";
 /*!***************************************************!*\
   !*** ./blocks/src/collections/assets/image-6.jpg ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/image-6.72178040.jpg";
 
@@ -1772,7 +1772,7 @@ module.exports = __webpack_require__.p + "images/image-6.72178040.jpg";
 /*!*************************************!*\
   !*** external ["wp","blockEditor"] ***!
   \*************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blockEditor"];
 
@@ -1782,7 +1782,7 @@ module.exports = window["wp"]["blockEditor"];
 /*!********************************!*\
   !*** external ["wp","blocks"] ***!
   \********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["blocks"];
 
@@ -1792,7 +1792,7 @@ module.exports = window["wp"]["blocks"];
 /*!************************************!*\
   !*** external ["wp","components"] ***!
   \************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["components"];
 
@@ -1802,7 +1802,7 @@ module.exports = window["wp"]["components"];
 /*!*********************************!*\
   !*** external ["wp","element"] ***!
   \*********************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = window["wp"]["element"];
 
@@ -1812,7 +1812,7 @@ module.exports = window["wp"]["element"];
 /*!*******************************************!*\
   !*** ./blocks/src/collections/block.json ***!
   \*******************************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/collections","version":"1.0.0","title":"Collections","category":"widgets","icon":"database","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/collections.js","editorStyle":"file:../../../blocks/build/collections.css","style":"file:../../../blocks/build/style-collections.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"title":{"type":"object","default":{"desktop":"Title","mobile":""}},"content":{"type":"object","default":{"desktop":"<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long paragraph.</p>\\n<br/>\\n<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long paragraph.</p>","mobile":""}},"items1":{"type":"array","default":[{"name":"tab1","link":"/","title":"Title #1","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #2","image":{"url":"image-2.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #3","image":{"url":"image-3.jpg","alt":""}},{"name":"tab4","link":"/","title":"Title #4","image":{"url":"image-4.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #5","image":{"url":"image-5.jpg","alt":""}},{"name":"tab6","link":"/","title":"Title #6","image":{"url":"image-6.jpg","alt":""}}]},"items2":{"type":"array","default":[{"name":"tab6","link":"/","title":"Title #7","image":{"url":"image-6.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #8","image":{"url":"image-3.jpg","alt":""}},{"name":"tab1","link":"/","title":"Title #9","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #10","image":{"url":"image-2.jpg","alt":""}},{"name":"tab4","link":"/","title":"Title #11","image":{"url":"image-4.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #12","image":{"url":"image-5.jpg","alt":""}}]},"items3":{"type":"array","default":[{"name":"tab3","link":"/","title":"Title #13","image":{"url":"image-3.jpg","alt":""}},{"name":"tab4","link":"/","title":"Title #14","image":{"url":"image-4.jpg","alt":""}},{"name":"tab1","link":"/","title":"Title #15","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #16","image":{"url":"image-2.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #17","image":{"url":"image-5.jpg","alt":""}},{"name":"tab6","link":"/","title":"Title #18","image":{"url":"image-6.jpg","alt":""}}]},"items4":{"type":"array","default":[{"name":"tab1","link":"/","title":"Title #19","image":{"url":"image-1.jpg","alt":""}},{"name":"tab4","link":"/","title":"Title #20","image":{"url":"image-4.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #21","image":{"url":"image-5.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #22","image":{"url":"image-2.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #23","image":{"url":"image-3.jpg","alt":""}},{"name":"tab6","link":"/","title":"Title #24","image":{"url":"image-6.jpg","alt":""}}]},"items5":{"type":"array","default":[{"name":"tab4","link":"/","title":"Title #25","image":{"url":"image-4.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #26","image":{"url":"image-5.jpg","alt":""}},{"name":"tab1","link":"/","title":"Title #27","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #28","image":{"url":"image-2.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #29","image":{"url":"image-3.jpg","alt":""}},{"name":"tab6","link":"/","title":"Title #30","image":{"url":"image-6.jpg","alt":""}}]},"items6":{"type":"array","default":[{"name":"tab6","link":"/","title":"Title #31","image":{"url":"image-6.jpg","alt":""}},{"name":"tab1","link":"/","title":"Title #32","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #33","image":{"url":"image-2.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #34","image":{"url":"image-3.jpg","alt":""}},{"name":"tab4","link":"/","title":"Title #35","image":{"url":"image-4.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #36","image":{"url":"image-5.jpg","alt":""}}]},"items7":{"type":"array","default":[{"name":"tab3","link":"/","title":"Title #37","image":{"url":"image-3.jpg","alt":""}},{"name":"tab1","link":"/","title":"Title #38","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #39","image":{"url":"image-2.jpg","alt":""}},{"name":"tab4","link":"/","title":"Title #40","image":{"url":"image-4.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #41","image":{"url":"image-5.jpg","alt":""}},{"name":"tab6","link":"/","title":"Title #42","image":{"url":"image-6.jpg","alt":""}}]},"items8":{"type":"array","default":[{"name":"tab3","link":"/","title":"Title #43","image":{"url":"image-3.jpg","alt":""}},{"name":"tab4","link":"/","title":"Title #44","image":{"url":"image-4.jpg","alt":""}},{"name":"tab1","link":"/","title":"Title #45","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #46","image":{"url":"image-2.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #47","image":{"url":"image-5.jpg","alt":""}},{"name":"tab6","link":"/","title":"Title #48","image":{"url":"image-6.jpg","alt":""}}]},"items9":{"type":"array","default":[{"name":"tab4","link":"/","title":"Title #49","image":{"url":"image-4.jpg","alt":""}},{"name":"tab5","link":"/","title":"Title #5","image":{"url":"image-5.jpg","alt":""}},{"name":"tab6","link":"/","title":"Title #50","image":{"url":"image-6.jpg","alt":""}},{"name":"tab1","link":"/","title":"Title #51","image":{"url":"image-1.jpg","alt":""}},{"name":"tab2","link":"/","title":"Title #52","image":{"url":"image-2.jpg","alt":""}},{"name":"tab3","link":"/","title":"Title #53","image":{"url":"image-3.jpg","alt":""}}]}}}');
 
@@ -1849,9 +1849,9 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 		__webpack_require__.O = function(result, chunkIds, fn, priority) {
 /******/ 			if(chunkIds) {
 /******/ 				priority = priority || 0;
 /******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
@@ -1860,10 +1860,12 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			var notFulfilled = Infinity;
 /******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
 /******/ 				var fulfilled = true;
 /******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every(function(key) { return __webpack_require__.O[key](chunkIds[j]); })) {
 /******/ 						chunkIds.splice(j--, 1);
 /******/ 					} else {
 /******/ 						fulfilled = false;
@@ -1878,34 +1880,34 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			return result;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__webpack_require__.n = function(module) {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -1914,38 +1916,35 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__webpack_require__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var scriptUrl;
 /******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
+/******/ 				scriptUrl = document.currentScript.src
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -1953,10 +1952,10 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded and loading chunks
@@ -1977,15 +1976,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		
 /******/ 		// no HMR manifest
 /******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
 /******/ 		
 /******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 			if(chunkIds.some(function(id) { return installedChunks[id] !== 0; })) {
 /******/ 				for(moduleId in moreModules) {
 /******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
 /******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
@@ -2004,17 +2005,17 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkbanescocontigo"] = globalThis["webpackChunkbanescocontigo"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkbanescocontigo"] = self["webpackChunkbanescocontigo"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-collections"], () => (__webpack_require__("./blocks/src/collections/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-collections"], function() { return __webpack_require__("./blocks/src/collections/index.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
