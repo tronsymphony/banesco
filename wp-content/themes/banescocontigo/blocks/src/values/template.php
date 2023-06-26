@@ -25,7 +25,8 @@
     <div class="container">
       <div class="values__inner">
         <?php if ($attributes['title']) : ?>
-          <div class="values__title"><?= $attributes['title'] ?></div>
+          <div class="values__title">Nuestros valores
+          </div>
         <?php endif; ?>
         <?php if ($attributes['items']) : ?>
           <div class="values__swiper swiper">

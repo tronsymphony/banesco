@@ -3,7 +3,7 @@
 	margin-bottom: var(--margins-bottom);
 	padding-top: var(--paddings-top);
 	padding-bottom: var(--paddings-bottom);
-	background: var(--gradient);
+	background: var(--bg);
 
 	@media (max-width: 767.98px) {
 		margin-top: var(--margins-top--mobile);
@@ -13,24 +13,35 @@
 	}
 
   > div{
-    padding: 50px 0;
-    background: #F7F9FB;
+    padding: 88px 0;
   }
 
+ header{
+  margin-bottom: 65px;
+
+
   
+  @media (max-width: 767.98px) {
+    margin-bottom: 34px;
+  }
+ }
+
+.other-cards-min__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #4A5264;
+}
     &__title {
       font-weight: 300;
       font-size: 40px;
       line-height: 100%;
       text-align: center;
       color: #3a4454;
-      margin-bottom: 65px;
-
-
-  
-      @media (max-width: 767.98px) {
-        margin-bottom: 34px;
-      }
+      margin-bottom: 21px;
+      
   
       @media (max-width: 575.98px) {
         font-size: 32px;
@@ -52,7 +63,7 @@
       display: inline-block;
       position: relative;
       width: 100%;
-      min-height: 233px;
+      min-height: 193px;
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
@@ -62,14 +73,15 @@
       border: 1px solid #dce1e9;
       border-radius: 10px;
       transition: 0.3s;
+      box-shadow: 0px 5px 25px rgba(15,35,52,.2);
   
       &:hover {
-        box-shadow: 0px 5px 25px rgb(15 35 52 / 20%);
+        box-shadow: 0px 5px 25px rgb(15 35 52 / 40%);
       }
   
       @media (max-width: 767.98px) {
-        padding: 25px 20px 100px;
-        min-height: 314px;
+        padding: 25px 20px 25px;
+        min-height: 114px;
         width: 100%;
       }
   

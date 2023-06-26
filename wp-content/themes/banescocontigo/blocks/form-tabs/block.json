@@ -1,0 +1,19 @@
+{
+  "name": "acf/form-blocks",
+  "title": "form blocks new",
+  "category": "widgets",
+  "icon": "calculator",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "form-blocks.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

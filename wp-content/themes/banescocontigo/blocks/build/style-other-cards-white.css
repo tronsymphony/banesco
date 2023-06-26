@@ -63,8 +63,8 @@
 }
 @media (max-width: 767.98px) {
   .other-cards-white__item {
-    padding: 25px 20px 100px;
-    min-height: 314px;
+    padding: 25px 20px 25px;
+    min-height: 114px;
     width: 100%;
   }
 }

@@ -251,7 +251,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #748994;
   margin-bottom: 20px;
 }
 
@@ -446,7 +445,6 @@
   line-height: 150%;
   /* or 24px */
   /* Body Text */
-  color: #748994;
   margin-top: 18px;
 }
 .cards__top-content-list {
@@ -462,7 +460,6 @@
   margin-right: 33px;
   /* identical to box height, or 16px */
   /* Body Text */
-  color: #748994;
 }
 .cards__top-content-list-item img {
   width: 16px;
@@ -546,7 +543,6 @@
   font-size: 12px;
   line-height: 100%;
   text-align: center;
-  color: #748994 !important;
 }
 
 #slider .noUi-connect {
@@ -573,7 +569,6 @@
   bottom: 23px;
   font-size: 12px;
   line-height: 100%;
-  color: #748994;
 }
 .slider__max {
   position: absolute;
@@ -581,7 +576,6 @@
   bottom: 23px;
   font-size: 12px;
   line-height: 100%;
-  color: #748994;
 }
 
 /*# sourceMappingURL=style-cards.css.map*/

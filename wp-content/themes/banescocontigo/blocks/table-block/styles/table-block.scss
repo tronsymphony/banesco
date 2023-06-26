@@ -1,17 +1,36 @@
 .table-block {
-  .title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 100%;
+  header{
+    margin: 0 0 4rem;
     text-align: center;
 
-    color: #3A4454;
-    margin: 0 0 4rem;
-    @media screen and (min-width:768px) {
-      font-size: 40px;
+    .title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 100%;
+      text-align: center;
+  
+      color: #3A4454;
+      margin-bottom: 1rem;
+      @media screen and (min-width:768px) {
+        font-size: 40px;
+      }
+    }
+  
+    .subtitle {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: right;
+      color: #3A4454;
+  
+     
+      
+
     }
   }
+  
 
   .table {
     font-style: normal;
@@ -21,23 +40,23 @@
     overflow: auto;
   }
 
-   thead {
+  thead {
     background: #219963;
     border-left: 1px solid #DCE1E9;
     border-radius: 0px;
     color: #fff;
   }
 
-   td {
+  td {
     padding: 16px;
     text-align: center;
     border-left: 1px solid #DCE1E9;
     border-bottom: 1px solid #DCE1E9;
   }
 
-   table {
+  table {
     border-right: 1px solid #DCE1E9;
     min-width: 500px;
-    
+
   }
 }

@@ -26,19 +26,27 @@ endif;
 
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="--bg: <?= get_field('bg_color') ? get_field('bg_color') : '#f7f9fb' ?>;">
     <div style="">
         <div class="container">
+        <?php if (get_field('title')) : ?>
+            <header>
             <?php if (get_field('title')) : ?>
             <h2 class="other-cards-min__title"><?= get_field('title') ?></h2>
             <?php endif; ?>
+
+            <?php if (get_field('subtitle')) : ?>
+            <p class="other-cards-min__subtitle"><?= get_field('subtitle') ?></p>
+            <?php endif; ?>
+            </header>
+            <?php endif; ?>
+            
 
             <?php if( have_rows('items') ):  ?>
             <div class="other-cards-min__inner">
 
                 <?php while( have_rows('items') ) : the_row(); ?>
-
-                <a class="other-cards-min__item" href="<?= get_field('link') ?>">
+                <a class="other-cards-min__item" href="<?= get_sub_field('link'); ?>">
 
                     <?php if (get_sub_field('title') || get_sub_field('text')) : ?>
 

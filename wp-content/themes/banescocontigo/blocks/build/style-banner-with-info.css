@@ -59,6 +59,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  object-position: center;
 }
 .banner-with-info__content {
   position: relative;
@@ -73,7 +74,7 @@
   margin-top: 27px;
   font-size: 16px;
   line-height: 150%;
-  color: #748994;
+  color: #4A5264;
   max-width: 534px;
 }
 @media (max-width: 767.98px) {
@@ -147,7 +148,7 @@
      object-fit: contain;
 }
 .banner-with-info__content-titles {
-  max-width: 300px;
+  max-width: 330px;
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
@@ -169,7 +170,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  color: #748994;
+  color: #4A5264;
 }
 @media (max-width: 767.98px) {
   .banner-with-info__content-subtitle {
@@ -247,9 +248,7 @@
      object-fit: contain;
 }
 .banner-with-info__item-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
 }
 .banner-with-info__item-title {
   font-weight: 700;

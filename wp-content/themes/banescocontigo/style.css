@@ -1,5 +1,5 @@
 /*!
-  Theme Name: Banesco Contigo
+  Theme Name: Banesco Contigo DR
   Theme URI: httsp://pacific54.com/
   Author: Max Marienko
   Author URI: https://pacific54.com/
@@ -100,7 +100,7 @@ body {
   background: #fff;
   font-family: "Lato", sans-serif;
   text-rendering: optimizeSpeed;
-  color: #748994; }
+  color: #4A5264; }
   body.overflow-hidden {
     overflow: hidden; }
   @media (max-width: 1199.98px) {
@@ -613,6 +613,9 @@ body {
   color: #219963;
   transition: 0.3s;
   transition-property: color, border-bottom-color; }
+  .link-button br{
+    display: none;
+  }
   .link-button:hover {
     color: #007953;
     padding-bottom: 0px;

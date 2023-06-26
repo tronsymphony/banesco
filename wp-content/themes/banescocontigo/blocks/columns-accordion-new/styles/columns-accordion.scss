@@ -42,6 +42,9 @@
   figure {
     display: flex;
     margin: 0;
+    img{
+      max-width: 100%;
+    }
   }
 
   .tabs {
@@ -89,13 +92,15 @@
   ul {
     list-style: initial;
     padding: 0 0 1rem 1rem;
+    display: grid;
+    gap: 1rem;
   }
 }
 
 .tabs_content_item__image {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 

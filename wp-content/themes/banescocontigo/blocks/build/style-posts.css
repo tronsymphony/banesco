@@ -31,15 +31,15 @@
 }
 .posts[data-blue-theme=true] .posts__item[data-color=white] .posts__item-primary-button .primary-button {
   background: #fff;
-  color: #1a61ab;
+  color: #007953;
 }
 .posts[data-blue-theme=true] .posts__item[data-color=white] .posts__item-primary-button .primary-button:hover {
   background: #fff;
-  color: #1c66b5;
+  color: #007953;
 }
 .posts[data-blue-theme=true] .posts__item[data-color=white] .posts__item-primary-button .primary-button:active {
   background: #fff;
-  color: #154d89;
+  color: #007953;
 }
 .posts[data-blue-theme=true] .posts__item[data-color=white] .posts__item-link-button .link-button {
   color: #ffffff;
@@ -111,10 +111,11 @@
   }
 }
 .posts__item[data-green=true] .posts__item-link-button a.link-button {
-  border-bottom-color: #219963;
+  border-bottom-color: #fff;
 }
 .posts__item[data-green=true] .posts__item-link-button a.link-button:hover {
-  border-bottom-color: #219963;
+  border-bottom-color: #fff;
+  font-weight: 900;
 }
 .posts__item[data-green=true] .posts__item-primary-button a.primary-button {
   background: #007953;

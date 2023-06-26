@@ -78,7 +78,7 @@
         <div class="cards__top cards__posts-item" data-slug="mastercard-black">
           <div class="cards__top-inner">
             <div class="cards__top-img cards__posts-item-image">
-              <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/image-16.png" alt="">
+              <img src="http://banesco.test/wp-content/uploads/2023/06/Mastercard-Black.jpg" alt="">
             </div>
             <div class="cards__top-content">
               <div class="cards__top-content-suptitle">Nuestra recomendación para ti</div>
@@ -86,21 +86,21 @@
               <div class="cards__top-content-descr">Bajada de línea, 3 lineas de texto: scelerisque sed nec a a praesent parturient class dui varius vivamus fringilla ut dictum est rhoncus eu dis potenti. </div>
               <div class="cards__top-content-list">
                 <div class="cards__top-content-list-item">
-                  <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" />
+                  <img src="http://banesco.test/wp-content/uploads/2023/06/check.png" alt="check" />
                   Tarjeta doble saldo
                 </div>
                 <div class="cards__top-content-list-item">
-                  <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" />
+                  <img src="http://banesco.test/wp-content/uploads/2023/06/check.png" alt="check" />
                   Multicrédito Banesco
                 </div>
                 <div class="cards__top-content-list-item">
-                  <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" />
+                  <img src="http://banesco.test/wp-content/uploads/2023/06/check.png" alt="check" />
                   Protección de compras
                 </div>
               </div>
               <div class="cards__top-content-bottom">
                 <button class="cards__top-content-label cards__posts-item-label">
-                  <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/Vector-Stroke.svg" />
+                  <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/06/vektor.svg" />
                   Comparar
                 </button>
                 <button class="cards__top-content-button primary-button">
@@ -128,7 +128,7 @@
                 <div class="cards__posts-item-body">
                   <div class="cards__posts-item-text"><?php the_excerpt(); ?></div>
                   <div class="cards__posts-item-label">
-                    <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/Vector-Stroke.svg" />
+                    <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/06/vektor.svg" />
                     Comparar
                   </div>
                 </div>
@@ -150,7 +150,7 @@
           </div>
           <div class="cards__popup-item">
             <div class="cards__popup-item-close">
-              <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/Close.svg" />
+              <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/06/close.svg" />
             </div>
             <div class="cards__popup-item-image">
               <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/6.jpg" alt="">
@@ -158,7 +158,7 @@
           </div>
           <div class="cards__popup-item">
             <div class="cards__popup-item-close">
-              <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/Close.svg" />
+              <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/06/close.svg" />
             </div>
             <div class="cards__popup-item-image">
               <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/6.jpg" alt="">

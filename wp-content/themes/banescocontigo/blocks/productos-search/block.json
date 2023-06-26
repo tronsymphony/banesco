@@ -1,0 +1,19 @@
+{
+  "name": "acf/productos-search",
+  "title": "Productos search New",
+  "category": "widgets",
+  "icon": "calculator",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "productos-search.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

@@ -24,12 +24,12 @@
   }
 }
 .videos__title {
+  margin-bottom: 49px;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 40px;
   line-height: 100%;
   text-align: center;
   color: #3a4454;
-  margin-bottom: 49px;
 }
 @media (max-width: 767.98px) {
   .videos__title {

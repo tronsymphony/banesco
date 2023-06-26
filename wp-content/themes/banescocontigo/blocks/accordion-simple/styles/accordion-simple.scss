@@ -1,0 +1,19 @@
+.accordion-simple {
+  .accordions {
+    margin: 48px 0 0;
+
+    &__item-title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 100%;
+      color: #007953;
+    }
+
+    &__item {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #DCE1E9;
+    }
+  }
+}

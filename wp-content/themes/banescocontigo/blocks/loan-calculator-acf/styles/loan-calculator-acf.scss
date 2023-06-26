@@ -1,7 +1,8 @@
 .loan-calculator-acf {
-  .tabs-loan{
+  .tabs-loan {
     background-color: transparent;
   }
+
   .container {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -19,16 +20,37 @@
         font-size: 40px;
       }
     }
+    #resetbtn {
+      background: transparent;
+      padding: 0;
+      color: #219963;
+  }
+  }
 
+  .tabs-loan__buttons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    @media (min-width: 500.98px) {
+      flex-direction: row;
+    }
   }
 
   .tabs-loan__content {
-    display: block;
+    display: block !important;
   }
 
   .counter_percent .counter__content:after {
     content: '.00 %';
   }
+
+
+  .counter {
+    min-width: 130px;
+    @media (min-width: 767.98px) {
+      min-width: 110px;
+    }
+}
 
 }
 
@@ -54,4 +76,12 @@
       z-index: -1;
     }
   }
+}
+
+.tabs-loan__line {
+  gap: 1rem;
+}
+
+.tabs-loan__item+.tabs-loan__item {
+  order: 0;
 }

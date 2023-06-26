@@ -151,14 +151,16 @@
 				top: auto;
 				width: 338px;
 				height: 405px;
-				right: 0;
-				bottom: 0;
+				right: -42px;
+				bottom: -56px;
 				width: 509px;
 				height: 530px;
 
 				@media (max-width: 767.98px) {
 					width: 438px;
 					height: 412px;
+					right: -37px;
+					bottom: -27px;
 				}
 			}
 

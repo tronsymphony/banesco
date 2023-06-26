@@ -44,7 +44,7 @@ $block_styling= get_field('block_styling');
       --margins-top: <?= ($block_styling['margins-top']) ? $block_styling['margins-top'].'px' : '0px' ?>;
       --margins-top--mobile: <?= ($block_styling['margins-top--mobile']) ? $block_styling['margins-top--mobile'].'px' : '0px' ?>;
       --margins-bottom: <?= ($block_styling['margins-bottom']) ? $block_styling['margins-bottom'].'px' : '0px' ?>;
-      --margins-bottom--mobile: <?= ($block_styling['margins-bottom--mobile']) ? $block_styling['margins-bottom-mobile'].'px' : '0px' ?>;
+      --margins-bottom--mobile: <?= ($block_styling['margins-bottom--mobile']) ? $block_styling['margins-bottom--mobile'].'px' : '0px' ?>;
       --gradient: <?= ($block_styling['gradient'])? $block_styling['gradient'].'px' : '#fff' ?>;
     ">
         <div class="container">
@@ -92,7 +92,7 @@ $block_styling= get_field('block_styling');
                             <?php endif; ?>
                             <?php if (get_sub_field('button')) : ?>
                             <div class="columns-block__item-buttons">
-                                <a class="columns-block__item-link-btn link-btn"
+                                <a class="columns-block__item-link-btn link-btn <?php if (get_sub_field('white_btn')){echo'link-btn-white';} ?>"
                                     href="<?= get_sub_field('target') ?>">
                                     <?= get_sub_field('button') ?>
                                 </a>

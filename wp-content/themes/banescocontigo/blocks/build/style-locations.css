@@ -235,7 +235,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #748994;
+  color: #4A5264;
 }
 .map__switcher.active::after {
   left: 20px;
@@ -380,7 +380,7 @@
   margin-top: 4px;
   font-size: 16px;
   line-height: 150%;
-  color: #748994;
+  color: #4A5264;
 }
 .map__block-tels {
   position: relative;
@@ -409,7 +409,7 @@
   font-size: 16px;
   line-height: 150%;
   display: flex;
-  color: #748994;
+  color: #4A5264;
 }
 .map__block-time img {
   width: 15px;
@@ -449,13 +449,13 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
-  color: #748994;
+  color: #4A5264;
   border-radius: 50%;
 }
 .map__pagination li:first-child, .map__pagination li:last-child {
   width: 14px;
   height: 14px;
-  stroke: #748994;
+  stroke: #4A5264;
   padding: 0;
   line-height: 100%;
 }

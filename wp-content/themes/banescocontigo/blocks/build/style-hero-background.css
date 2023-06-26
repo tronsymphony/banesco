@@ -95,6 +95,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+     object-position: bottom;
 }
 
 /*# sourceMappingURL=style-hero-background.css.map*/

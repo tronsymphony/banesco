@@ -1,0 +1,19 @@
+{
+  "name": "acf/text-image-columns-slider",
+  "title": "Text Image Columns Slider",
+  "category": "widgets",
+  "icon": "calculator",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "text-image-columns-slider.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

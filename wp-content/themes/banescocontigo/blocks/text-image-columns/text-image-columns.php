@@ -27,8 +27,23 @@ endif;
 $module_name = 'module_'.time();
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <div class="text-image-columns">
+<?php 
+$block_styling= get_field('block_styling'); 
+?>
+
+
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="
+      --padding-top: <?= ($block_styling['padding-top']) ? $block_styling['padding-top'].'px' : '20px' ?>;
+      --paddings-top--mobile: <?= ($block_styling['paddings-top--mobile']) ? $block_styling['paddings-top--mobile'].'px' : '20px' ?>;
+      --paddings-bottom: <?= ($block_styling['paddings-bottom']) ? $block_styling['paddings-bottom'].'px' : '20px' ?>;
+      --paddings-bottom--mobile: <?= ($block_styling['paddings-bottom--mobile']) ? $block_styling['paddings-bottom--mobile'].'px' : '20px' ?>;
+      --margins-top: <?= ($block_styling['margins-top']) ? $block_styling['margins-top'].'px' : '20px' ?>;
+      --margins-top--mobile: <?= ($block_styling['margins-top--mobile']) ? $block_styling['margins-top--mobile'].'px' : '20px' ?>;
+      --margins-bottom: <?= ($block_styling['margins-bottom']) ? $block_styling['margins-bottom'].'px' : '20px' ?>;
+      --margins-bottom--mobile: <?= ($block_styling['margins-bottom--mobile']) ? $block_styling['margins-bottom--mobile'].'px' : '20px' ?>;
+      --gradient: <?= ($block_styling['gradient'])? $block_styling['gradient'].'px' : '#fff' ?>;
+    ">
+    <div class="<?php if( get_field('reverse_image_and_columns') ){ _e('text-image-columns-reverse'); } ?>">
         <div class="container">
             <div class="text-image-columns__inner">
                 <div class="text-image-columns__image">

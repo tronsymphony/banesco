@@ -230,7 +230,9 @@
 	color: #219963;
 	transition: 0.3s;
 	transition-property: color, border-bottom-color;
-
+	br {
+		display: none;
+	}
 	&:hover {
 		color: #007953;
 		padding-bottom: 0px;

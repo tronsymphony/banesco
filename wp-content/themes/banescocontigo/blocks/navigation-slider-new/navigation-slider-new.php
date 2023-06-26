@@ -134,7 +134,7 @@ endif;
 
     </div>
 </section>
-
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script type="module">
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
@@ -144,6 +144,8 @@ const swiper = new Swiper('.swiper-tabs', {
         prevEl: '.swiper-button-prev',
     },
     loop:true,
+    watchSlidesProgress: true,
+ 
     slideToClickedSlide:true,
     breakpoints: {
         // when window width is >= 320px
@@ -161,13 +163,19 @@ const swiper = new Swiper('.swiper-tabs', {
             slidesPerView: 3.3,
             spaceBetween: 72,
         }
-    }
+    },
+  
 
 });
+
+
+
 const swiperMainContent = new Swiper('.swiper-main-content', {
     slidesPerView: 1,
     effect: 'fade',
-
+    autoHeight: true,
+    observer: true,
+  observeParents: true,
     fadeEffect: {
       crossFade: true
     },

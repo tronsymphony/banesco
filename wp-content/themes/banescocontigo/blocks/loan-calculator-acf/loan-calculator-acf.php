@@ -91,10 +91,10 @@ $module_name = 'module_'.time();
                                     <h3 class="tabs-loan__item-title">
                                         <span class="">Tasa</span>
                                     </h3>
-                                    <div class="tabs-loan__counter counter counter_percent" data-min="1" data-max="40" data-set="1">
+                                    <div class="tabs-loan__counter counter counter_percent" data-min="1" data-max="40" data-set="5">
                                         <input type="number" hidden="">
                                         <button class="counter__button counter__button--minus disabled"></button>
-                                        <div class="counter__content" id="interest">1</div>
+                                        <div class="counter__content" id="interest">5</div>
                                         <button class="counter__button counter__button--plus"></button>
                                     </div>
                                 </div>
@@ -103,6 +103,9 @@ $module_name = 'module_'.time();
                                     <div class="tabs-loan__buttons">
                                         <button class="tabs-loan__button primary-button button2" id="button2">
                                             <span class="">Simular otra vez</span>
+                                        </button>
+                                        <button class="tabs-loan__button primary-button button2" id="resetbtn">
+                                            <span class=""><?php _e('Limpiar Campos'); ?></span>
                                         </button>
                                     </div>
                                 </div>
@@ -167,66 +170,74 @@ function computeLoan(loanAmount,meses,interest){
 
 
         const loanSubmit = calculator.querySelector('#button2')
+        const setBtn = calculator.querySelector('#resetbtn')
 
         loanSubmit.addEventListener('click', function(e) {
                 let loanAmount = parseInt(document.querySelectorAll('.noUi-handle')[0].ariaValueNow);
                 let mesesAmount = parseInt(document.getElementById('meses').innerHTML);
                 let interestAmount = parseInt(document.getElementById('interest').innerHTML)
-            // console.log( parseInt(document.getElementById('meses').innerHTML) )
-            computeLoan(loanAmount,mesesAmount,interestAmount)
-            document.querySelector('#hidden_loan').classList.add('active')
+                computeLoan(loanAmount,mesesAmount,interestAmount)
+                document.querySelector('#hidden_loan').classList.add('active')
+        })
+
+        setBtn.addEventListener('click', function(e) {
+                document.querySelectorAll('.noUi-handle')[0].ariaValueNow = 50000;
+                document.getElementById('meses').innerHTML = 1;
+                document.getElementById('interest').innerHTML = 5;
+
+                document.querySelector('#hidden_loan').classList.remove('active')
         })
     })
     </script>
 
     <script>
-    new class Tabs {
+    // new class Tabs {
 
-        constructor() {
-            this.$wrapper;
-            this.$triggers;
-            this.$body;
-            this.init();
-        }
+    //     constructor() {
+    //         this.$wrapper;
+    //         this.$triggers;
+    //         this.$body;
+    //         this.init();
+    //     }
 
-        init() {
-            document.querySelectorAll('[data-tabs]').forEach((wrapper) => {
-                this.$wrapper = wrapper;
-                // this.$triggers = [...wrapper.querySelector('[data-triggers]').children];
-                this.$body = [...wrapper.querySelector('[data-body]').children];
-                this.$triggers[1].classList.add('active');
-                this.$body[1].classList.add('active');
-                this.update();
-                this.addListenerClick();
-                this.addListenerHash();
-            });
-        }
+    //     init() {
+    //         document.querySelectorAll('[data-tabs]').forEach((wrapper) => {
+    //             this.$wrapper = wrapper;
+    //             // this.$triggers = [...wrapper.querySelector('[data-triggers]').children];
+    //             this.$body = [...wrapper.querySelector('[data-body]').children];
+    //             this.$triggers[1].classList.add('active');
+    //             this.$body[1].classList.add('active');
+    //             this.update();
+    //             this.addListenerClick();
+    //             this.addListenerHash();
+    //         });
+    //     }
 
-        update(event) {
-            const trigger = this.$wrapper.querySelector(`a[href="${window.location.hash}"]`);
-            const content = this.$wrapper.querySelector(`[data-id="${window.location.hash}"]`);
+    //     update(event) {
+    //         const trigger = this.$wrapper.querySelector(`a[href="${window.location.hash}"]`);
+    //         const content = this.$wrapper.querySelector(`[data-id="${window.location.hash}"]`);
 
-            if (window.location.hash && trigger && content) {
+    //         if (window.location.hash && trigger && content) {
 
-                this.$triggers.forEach((trigger) => {
-                    trigger.classList.remove('active');
-                });
+    //             this.$triggers.forEach((trigger) => {
+    //                 trigger.classList.remove('active');
+    //             });
 
-                this.$body.forEach((content) => {
-                    content.classList.remove('active');
-                });
+    //             this.$body.forEach((content) => {
+    //                 content.classList.remove('active');
+    //             });
 
-                trigger.classList.add('active');
-                content.classList.add('active');
-            }
+    //             trigger.classList.add('active');
+    //             content.classList.add('active');
+    //         }
 
-            sessionStorage.setItem("last-url", event?.oldURL);
-        }
+    //         sessionStorage.setItem("last-url", event?.oldURL);
+    //     }
 
-        addListenerHash() {
-            window.addEventListener('hashchange', this.update.bind(this));
-        }
+    //     addListenerHash() {
+    //         window.addEventListener('hashchange', this.update.bind(this));
+    //     }
 
-    };
+    // };
     </script>
 </section>

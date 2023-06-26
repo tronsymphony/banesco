@@ -55,12 +55,12 @@
                     }
                   };  ?>
                   <?php if (isset($post1)) : ?> <div class="compare-cards__card-close compare-cards__card-close--1">
-                      <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/Close.svg" />
+                      <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/06/close.svg" />
                     </div>
                   <?php endif;  ?>
                   <div class="compare-cards__card-image">
                     <?php if (isset($post1)) : echo '<img src="' . wp_get_attachment_image_src(get_post_thumbnail_id($post1->ID), 'single-post-thumbnail')[0] . '" alt="card2" />'; ?>
-                    <?php else : echo '<img src="https://developer.pacific54.com/wp-content/uploads/2023/01/image-15.jpg" alt="card2" />'; ?>
+                    <?php else : echo '<img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/image-15.jpg" alt="card2" />'; ?>
                     <?php endif;  ?>
                   </div>
                   <div class="compare-cards__card-title"><?php if (isset($post1)) : echo $post1->post_title;
@@ -69,7 +69,7 @@
                                                             endif;  ?></div>
                   <?php if (isset($post1)) :   ?>
                     <div class="compare-cards__card-buttons">
-                      <a class="compare-cards__card-button primary-button" href="https://developer.pacific54.com/tarjetas-main/tarjetas-de-credito/">
+                      <a class="compare-cards__card-button primary-button" href="https://banesco.do.pacific54.com/tarjetas-main/tarjetas-de-credito/">
                         Me interesa
                       </a>
                     </div>
@@ -103,12 +103,12 @@
               <div class="compare-cards__data">
                 <div class="compare-cards__card">
                   <?php if (isset($post2)) : ?> <div class="compare-cards__card-close compare-cards__card-close--2">
-                      <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/Close.svg" />
+                      <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/06/close.svg" />
                     </div>
                   <?php endif;  ?>
                   <div class="compare-cards__card-image">
                     <?php if (isset($post2)) : echo '<img src="' . wp_get_attachment_image_src(get_post_thumbnail_id($post2->ID), 'single-post-thumbnail')[0] . '" alt="card2" />'; ?>
-                    <?php else : echo '<img src="https://developer.pacific54.com/wp-content/uploads/2023/01/image-15.jpg" alt="card2" />'; ?>
+                    <?php else : echo '<img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/image-15.jpg" alt="card2" />'; ?>
                     <?php endif;  ?>
                   </div>
                   <div class="compare-cards__card-title"><?php if (isset($post2)) : echo $post2->post_title;
@@ -117,7 +117,7 @@
                                                             endif;  ?></div>
                   <?php if (isset($post2)) :   ?>
                     <div class="compare-cards__card-buttons">
-                      <a class="compare-cards__card-button primary-button" href="https://developer.pacific54.com/tarjetas-main/tarjetas-de-credito/">
+                      <a class="compare-cards__card-button primary-button" href="https://banesco.do.pacific54.com/tarjetas-main/tarjetas-de-credito/">
                         Me interesa
                       </a>
                     </div>
@@ -151,12 +151,12 @@
               <div class="compare-cards__data">
                 <div class="compare-cards__card">
                   <?php if (isset($post3)) : ?> <div class="compare-cards__card-close compare-cards__card-close--3">
-                      <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/Close.svg" />
+                      <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/06/close.svg" />
                     </div>
                   <?php endif;  ?>
                   <div class="compare-cards__card-image">
                     <?php if (isset($post3)) : echo '<img src="' . wp_get_attachment_image_src(get_post_thumbnail_id($post3->ID), 'single-post-thumbnail')[0] . '" alt="card2" />'; ?>
-                    <?php else : echo '<img src="https://developer.pacific54.com/wp-content/uploads/2023/01/image-15.jpg" alt="card2" />'; ?>
+                    <?php else : echo '<img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/image-15.jpg" alt="card2" />'; ?>
                     <?php endif;  ?>
                   </div>
                   <div class="compare-cards__card-title"><?php if (isset($post3)) : echo $post3->post_title;
@@ -165,7 +165,7 @@
                                                             endif;  ?></div>
                   <?php if (isset($post3)) :   ?>
                     <div class="compare-cards__card-buttons">
-                      <a class="compare-cards__card-button primary-button" href="https://developer.pacific54.com/tarjetas-main/tarjetas-de-credito/">
+                      <a class="compare-cards__card-button primary-button" href="https://banesco.do.pacific54.com/tarjetas-main/tarjetas-de-credito/">
                         Me interesa
                       </a>
                     </div>
@@ -199,37 +199,37 @@
             </div>
             <div class="compare-cards__row">
               <div class="compare-cards__data">
-                <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/map.svg" alt="map" />
+                <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/map.svg" alt="map" />
                 <?= $attributes['internacional'] ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post1) && get_field('internacional', $post1->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post1) && get_field('internacional', $post1->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post2) && get_field('internacional', $post2->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post2) && get_field('internacional', $post2->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post3) && get_field('internacional', $post3->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post3) && get_field('internacional', $post3->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
             </div>
             <div class="compare-cards__row">
               <div class="compare-cards__data">
-                <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/nfc.svg" alt="nfc" />
+                <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/nfc.svg" alt="nfc" />
                 <?= $attributes['chip'] ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post1) && get_field('chip', $post1->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post1) && get_field('chip', $post1->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post2) && get_field('chip', $post2->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post2) && get_field('chip', $post2->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post3) && get_field('chip', $post3->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post3) && get_field('chip', $post3->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
             </div>
             <div class="compare-cards__row">
               <div class="compare-cards__data">
-                <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/money.svg" alt="money" />
+                <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/money.svg" alt="money" />
                 <?= $attributes['multicredito_banesco'] ?>
               </div>
               <div class="compare-cards__data">
@@ -244,37 +244,37 @@
             </div>
             <div class="compare-cards__row">
               <div class="compare-cards__data">
-                <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/smile.svg" alt="smile" />
+                <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/smile.svg" alt="smile" />
                 <?= $attributes['puntos_verdes'] ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post1) && get_field('puntos_verdes', $post1->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post1) && get_field('puntos_verdes', $post1->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post2) && get_field('puntos_verdes', $post2->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post2) && get_field('puntos_verdes', $post2->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post3) && get_field('puntos_verdes', $post3->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post3) && get_field('puntos_verdes', $post3->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
             </div>
             <div class="compare-cards__row">
               <div class="compare-cards__data">
-                <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/secure.svg" alt="secure" />
+                <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/secure.svg" alt="secure" />
                 <?= $attributes['proteccion_y_seguros'] ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post1) && get_field('proteccion_y_seguros', $post1->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post1) && get_field('proteccion_y_seguros', $post1->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post2) && get_field('proteccion_y_seguros', $post2->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post2) && get_field('proteccion_y_seguros', $post2->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
               <div class="compare-cards__data">
-                <?php if (isset($post3) && get_field('proteccion_y_seguros', $post3->ID)) : ?><img src="https://developer.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
+                <?php if (isset($post3) && get_field('proteccion_y_seguros', $post3->ID)) : ?><img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/check.svg" alt="check" /><?php endif; ?>
               </div>
             </div>
             <div class="compare-cards__row">
               <div class="compare-cards__data">
-                <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/support.svg" alt="support" />
+                <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/support.svg" alt="support" />
                 <?= $attributes['asistencia'] ?>
               </div>
               <div class="compare-cards__data">
@@ -289,7 +289,7 @@
             </div>
             <div class="compare-cards__row">
               <div class="compare-cards__data">
-                <img src="https://developer.pacific54.com/wp-content/uploads/2023/01/bonus.svg" alt="bonus" />
+                <img src="https://banesco.do.pacific54.com/wp-content/uploads/2023/01/bonus.svg" alt="bonus" />
                 <?= $attributes['mas_detalles'] ?>
               </div>
               <div class="compare-cards__data">

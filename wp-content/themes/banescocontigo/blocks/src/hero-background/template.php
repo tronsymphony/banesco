@@ -121,7 +121,7 @@
           $extensionMobile = pathinfo($attributes['background']['mobile']['url'], PATHINFO_EXTENSION);
           ?>
           <?php if($extensionMobile == 'mp4'): ?>
-              <video class="only-mobile" autoplay loop muted preload src="<?php echo $attributes['background']['desktop']['url']; ?>"></video>  
+              <video class="only-mobile" autoplay loop muted preload src="<?php echo $attributes['background']['mobile']['url']; ?>"></video>  
             <?php else:  ?>
 
             <?php if ($attributes['background']['mobile']['url'] == 'background-0-mobile.jpg') : ?>
