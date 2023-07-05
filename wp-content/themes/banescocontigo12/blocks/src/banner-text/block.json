@@ -1,0 +1,82 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-text",
+	"version": "1.0.0",
+	"title": "Banner Text",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-text.js",
+	"editorStyle": "file:../../../blocks/build/banner-text.css",
+	"style": "file:../../../blocks/build/style-banner-text.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "60px",
+					"bottom": "61px"
+				},
+				"mobile": {
+					"top": "34px",
+					"bottom": "283px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "-196px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "-370px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"title": {
+			"type": "string",
+			"default": "Asistencia"
+		},
+		"description": {
+			"type": "string",
+			"default": "<p>En caso de emergencia, comunícate al <a href='tel:366-8555'>366-8555</a> y solicita nuestros servicios de asistencia, según la póliza que hayas adquirido: Accidentes Personales, Automóvil, Combinado Residencial, Vida o Funerario.</p>"
+		},
+		"list1": {
+			"type": "string",
+			"default": "<ul><li>Ambulancia</li><li>Asistencia médica</li><li>Asistencia en viajes</li><li>Asistencia vial</li>"
+		},
+		"list2": {
+			"type": "string",
+			"default": "<ul><li>Cerrajero por pérdida de llaves</li><li>Servicio de plomería</li><li>Asistencia en viajes</li><li>Trámites funerarios</li>"
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"url": "image.png",
+				"alt": ""
+			}
+		},
+		"mImage": {
+			"type": "object",
+			"default": {
+				"url": "image-mobile.png",
+				"alt": ""
+			}
+		},
+		"background": {
+			"type": "string",
+			"default": "linear-gradient(97.67deg, #007953 -5.63%, #003C71 118.81%)"
+		}
+	}
+}

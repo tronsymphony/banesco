@@ -16,6 +16,31 @@ class GP_Advanced_Phone_Field extends GP_Plugin {
 	protected $_title       = 'Gravity Wiz Advanced Phone Field';
 	protected $_short_title = 'Advanced Phone Field';
 
+	/**
+	 * Defines the capabilities needed for the Add-On.
+	 *
+	 * @var array $_capabilities The capabilities needed for the Add-On
+	 */
+	protected $_capabilities = array(
+		'gp-advanced-phone-field',
+		'gp-advanced-phone-field_uninstall',
+		'gp-advanced-phone-field_settings',
+	);
+
+	/**
+	 * Defines the capability needed to access the Add-On settings page.
+	 *
+	 * @var string $_capabilities_settings_page The capability needed to access the Add-On settings page.
+	 */
+	protected $_capabilities_settings_page = 'gp-advanced-phone-field_settings';
+
+	/**
+	 * Defines the capability needed to uninstall the Add-On.
+	 *
+	 * @var string $_capabilities_uninstall The capability needed to uninstall the Add-On.
+	 */
+	protected $_capabilities_uninstall = 'gp-advanced-phone-field_uninstall';
+
 	public static function get_instance() {
 		if ( null === self::$instance ) {
 			self::$instance = new self;
@@ -53,7 +78,7 @@ class GP_Advanced_Phone_Field extends GP_Plugin {
 
 		add_filter( 'gform_register_init_scripts', array( $this, 'add_init_script' ), 10, 2 );
 
-		add_filter( 'gform_validation', array( $this, 'validation' ) );
+		add_filter( 'gform_field_validation', array( $this, 'validation' ), 10, 4 );
 
 		add_filter( 'gform_entry_meta', array( $this, 'register_meta' ), 10, 2 );
 		add_filter( 'gform_entry_post_save', array( $this, 'store_phone_proto_as_meta' ), 5, 2 ); // Lower priority so the meta is available to Feed Add-ons (priority 10)
@@ -257,76 +282,47 @@ class GP_Advanced_Phone_Field extends GP_Plugin {
 	}
 
 	/**
-	 * @param $validation_result array
+	 * @param array $result
+	 * @param string $value
+	 * @param array $form
+	 * @param GF_Field_Phone $field
 	 *
 	 * @return array
 	 */
-	public function validation( $validation_result ) {
-
-		$phone_fields    = $this->get_advanced_phone_fields( $validation_result['form'] );
-		$phone_field_ids = wp_list_pluck( $phone_fields, 'id' );
-
-		if ( empty( $phone_fields ) ) {
-			return $validation_result;
+	public function validation( $result, $value, $form, $field ) {
+		if ( ! $this->is_advanced_phone_field( $field ) ) {
+			return $result;
 		}
 
-		/**
-		 * @var array
-		 */
-		$form = $validation_result['form'];
+		$field->phoneFormat = null; // Suppress native Phone Field instructions for the format.
+
+		// Skip validating blank phone numbers if not required.
+		if ( rgblank( $value ) && ! $field->isRequired ) {
+			return $result;
+		}
 
 		$phone_util = PhoneNumberUtil::getInstance();
 
-		/**
-		 * @var $field GF_Field_Phone
-		 */
-		foreach ( $form['fields'] as &$field ) {
-			if ( ! in_array( $field['id'], $phone_field_ids, false ) ) {
-				continue;
+		try {
+			$phone_proto = $phone_util->parse( $value, null );
+			$phone_proto->setRawInput( $value );
+
+			if ( $phone_util->isValidNumber( $phone_proto ) ) {
+				return $result;
 			}
-
-			$field->phoneFormat = null; // Suppress native Phone Field instructions for the format.
-
-			$value = rgpost( sprintf( 'input_%s', str_replace( '.', '_', $field->id ) ) );
-
-			if ( GFFormsModel::is_field_hidden( $form, $field, array() ) || ! $this->should_validate_field( $field, $form ) ) {
-				continue;
-			}
-
-			// Skip validating blank phone numbers if not required.
-			if ( rgblank( $value ) && ! $field->isRequired ) {
-				continue;
-			}
-
-			try {
-				$phone_proto = $phone_util->parse( $value, null );
-				$phone_proto->setRawInput( $value );
-
-				if ( $phone_util->isValidNumber( $phone_proto ) ) {
-					continue;
-				}
-			} catch ( Exception $e ) {
-				// Intentionally empty.
-			}
-
-			$field['failed_validation']  = true;
-			$field['validation_message'] = empty( $field->errorMessage ) ? __( 'Please provide a valid phone number.', 'gp-advanced-phone-field' ) : $field->errorMessage;
-
-			// Clear out value if validation fails.
-			$_POST['input_' . $field['id']] = '';
-
-			$validation_result['is_valid'] = false;
+		} catch ( Exception $e ) {
+			// Intentionally empty.
 		}
 
-		$validation_result['form'] = $form;
+		// If a proto could not be created, we know the value provided is mega invalid. Clear it out.
+		if ( empty( $phone_proto ) ) {
+			$_POST[ 'input_' . $field['id'] ] = '';
+		}
 
-		return $validation_result;
-	}
-
-	public function should_validate_field( $field, $form ) {
-		$page_number  = GFFormDisplay::get_source_page( $field->formId );
-		$is_last_page = (string) GFFormDisplay::get_target_page( $form, $page_number, array() ) === '0';
-		return $is_last_page || (int) $page_number === (int) $field->pageNumber;
+		return array(
+			'is_valid' => false,
+			'message'  => empty( $field->errorMessage ) ? __( 'Please provide a valid phone number.', 'gp-advanced-phone-field' ) : $field->errorMessage,
+		);
 	}
 
 	/**
@@ -335,9 +331,13 @@ class GP_Advanced_Phone_Field extends GP_Plugin {
 	 * @return libphonenumber\PhoneNumber
 	 */
 	public function get_phone_number_proto( $number ) {
-		$util  = PhoneNumberUtil::getInstance();
-		$proto = $util->parse( $number, null );
-		$proto->setRawInput( $number );
+		try {
+				$util  = PhoneNumberUtil::getInstance();
+				$proto = $util->parse( $number, null );
+				$proto->setRawInput( $number );
+		} catch ( Exception $e ) {
+				return null;
+		}
 
 		/* Type */
 		$type        = $util->getNumberType( $proto );
@@ -640,6 +640,11 @@ class GP_Advanced_Phone_Field extends GP_Plugin {
 					$replacement = $proto->getNationalNumber();
 					break;
 
+				case 'nationalNumberFormatted':
+					$phone_number_util = PhoneNumberUtil::getInstance();
+					$replacement       = $phone_number_util->format( $proto, \libphonenumber\PhoneNumberFormat::NATIONAL );
+					break;
+
 				case 'raw':
 					$replacement = $proto->getRawInput();
 					break;
@@ -659,6 +664,16 @@ class GP_Advanced_Phone_Field extends GP_Plugin {
 
 			if ( $replacement || $replacement === '' ) {
 				$text = str_replace( $match[0], $replacement, $text );
+
+				/**
+				 * Filter the phone field merge tag text.
+				 *
+				 * @since 1.0.8
+				 *
+				 * @param string $text      The current phone merge text.
+				 * @param string $modifiers The merge tag modifiers.
+				 */
+				$text = apply_filters( 'gpapf_merge_tag_value', $text, $modifiers );
 			}
 		}
 

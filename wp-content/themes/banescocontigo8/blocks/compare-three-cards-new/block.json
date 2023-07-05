@@ -1,0 +1,19 @@
+{
+  "name": "acf/compare-three-cards-new",
+  "title": "Compare Three Cards New",
+  "category": "media",
+  "icon": "table-row-after",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "compare-three-cards-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

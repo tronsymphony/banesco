@@ -1,0 +1,19 @@
+{
+  "name": "acf/administration-new",
+  "title": "Administration New",
+  "category": "widgets",
+  "icon": "admin-network",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "administration-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

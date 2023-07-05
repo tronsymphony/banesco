@@ -1,0 +1,138 @@
+.primary-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px 36px;
+	min-width: 120px;
+	background: #007953;
+	border-radius: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 125%;
+	color: #ffffff;
+	transition: 0.3s;
+
+	&:hover {
+		color: #fff;
+		background: #219963;
+	}
+
+	&:active {
+		background: #007953;
+	}
+
+	&.with-icon {
+		img {
+			margin-right: 12px;
+			height: 32px;
+			width: 32px;
+			object-fit: contain;
+			flex-shrink: 0;
+		}
+	}
+
+	&.small {
+		padding: 8px 12px;
+
+		img {
+			margin-right: 8px;
+			height: 24px;
+			width: 24px;
+			object-fit: contain;
+		}
+	}
+}
+
+.outlined-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px 26px;
+	min-width: 100px;
+	background: transparent;
+	border: 1px solid #007953;
+	border-radius: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 100%;
+	color: #007953;
+	transition: 0.3s;
+
+	&:hover {
+		color: #219963;
+		border-color: #219963;
+	}
+
+	&:active {
+		background: transparent;
+	}
+
+	&.with-icon {
+		img {
+			margin-right: 12px;
+			height: 32px;
+			width: 32px;
+			object-fit: contain;
+			flex-shrink: 0;
+		}
+	}
+
+	&.small {
+		padding: 8px 12px;
+
+		img {
+			margin-right: 8px;
+			height: 24px;
+			width: 24px;
+			object-fit: contain;
+		}
+	}
+}
+
+.link-button {
+	display: inline;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #219963;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color: #219963;
+	transition: 0.3s;
+	transition-property: border-color, border-bottom-color;
+
+	&:hover {
+		color: #007953;
+		padding-bottom: 0px;
+		border-bottom-width: 2px;
+		border-bottom-color: #007953;
+	}
+
+	&:active {
+		color: #219963;
+		border-bottom-color: #219963;
+	}
+}
+
+.mobile-fixed-button {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: -14px + (-60px);
+	z-index: 98;
+	transition: 0.3s;
+
+	&.active {
+		bottom: 16px;
+	}
+
+	.primary-button {
+		width: 100%;
+		padding: 16px 36px;
+		min-height: 60px;
+		box-shadow: 0px 0px 60px rgba(40, 40, 40, 0.45);
+	}
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+}

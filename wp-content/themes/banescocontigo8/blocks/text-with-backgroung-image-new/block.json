@@ -1,0 +1,19 @@
+{
+  "name": "acf/text-with-backgroung-image-new",
+  "title": "Text With Backgroung Image New",
+  "category": "design",
+  "icon": "id",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "text-with-backgroung-image-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

@@ -1,0 +1,19 @@
+{
+  "name": "acf/content-new",
+  "title": "Content New",
+  "category": "common",
+  "icon": "welcome-view-site",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "content-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

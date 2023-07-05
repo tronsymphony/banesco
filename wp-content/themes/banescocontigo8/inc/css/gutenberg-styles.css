@@ -5,3 +5,7 @@
   text-align: center;
   color: #000;
 }
+
+.editor-styles-wrapper .quicktags-toolbar {
+  display: none;
+}

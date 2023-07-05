@@ -1,0 +1,85 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/accordions",
+	"version": "1.0.0",
+	"title": "Accordions",
+	"category": "widgets",
+	"icon": "list-view",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/accordions.js",
+	"editorStyle": "file:../../../blocks/build/accordions.css",
+	"style": "file:../../../blocks/build/style-accordions.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "92px",
+					"bottom": "104px"
+				},
+				"mobile": {
+					"top": "48px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "rgba(235, 240, 245, 0.4)"
+		},
+		"columns": {
+			"type": "string",
+			"default": "1"
+		},
+		"title": {
+			"type": "string",
+			"default": "Tutoriales y guías de uso"
+		},
+		"accordions": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Pregunta frecuente 1",
+					"iframe": "",
+					"content": ""
+				},
+				{
+					"name": "tab2",
+					"title": "Pregunta frecuente 2",
+					"iframe": "",
+					"content": ""
+				},
+				{
+					"name": "tab3",
+					"title": "Pregunta frecuente 3",
+					"iframe": "",
+					"content": ""
+				},
+				{
+					"name": "tab4",
+					"title": "Pregunta frecuente 4",
+					"iframe": "",
+					"content": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/animated-promo",
+	"version": "1.0.0",
+	"title": "Animated Promo",
+	"category": "widgets",
+	"icon": "cover-image",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/animated-promo.js",
+	"editorStyle": "file:../../../blocks/build/animated-promo.css",
+	"style": "file:../../../blocks/build/style-animated-promo.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "¡Obtén cualquier producto desde tu hogar!"
+		},
+		"description": {
+			"type": "string",
+			"default": "Completamente online y desde cualquier lugar esa tarjeta de crédito que tanto necesitas!"
+		},
+		"button": {
+			"type": "string",
+			"default": "Solicitar online"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"images": {
+			"type": "object",
+			"default": {
+				"left": {
+					"alt": "",
+					"url": "image-1.png"
+				},
+				"mLeft": {
+					"alt": "",
+					"url": "image-1-mobile.png"
+				},
+				"right": {
+					"alt": "",
+					"url": "image-2.png"
+				},
+				"mRight": {
+					"alt": "",
+					"url": "image-2-mobile.png"
+				}
+			}
+		},
+		"shadow": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

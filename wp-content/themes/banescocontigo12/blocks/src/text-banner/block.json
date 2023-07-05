@@ -1,0 +1,93 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-banner",
+	"version": "1.0.0",
+	"title": "Text banner",
+	"category": "widgets",
+	"icon": "tagcloud",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-banner.js",
+	"editorStyle": "file:../../../blocks/build/text-banner.css",
+	"style": "file:../../../blocks/build/style-text-banner.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "53px",
+					"bottom": "48px"
+				},
+				"mobile": {
+					"top": "28px",
+					"bottom": "322px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"text": "529px",
+				"mText": "285px"
+			}
+		},
+		"text": {
+			"type": "string",
+			"default": "<ul>\n<li>Opción de ahorro tanto en pesos como en dólares.</li>\n<li>Tarjeta de débito para compras nacionales, internacionales y online.</li>\n<li>Asesoría en el manejo de tus fondos.</li>\n<li>Disponibilidad de recibir estados de cuenta mensuales.</li>\n<li>Acceso a los servicios de BanescOnline y BanescoMóvil para realizar tus</br> operaciones cómodamente las 24 horas del día, los 7 días de la semana.</li>\n</ul>"
+		},
+		"extra": {
+			"type": "string",
+			"default": ""
+		},
+		"button": {
+			"type": "string",
+			"default": "Ir a MasterCard"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background.jpg"
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background-mobile.jpg"
+			}
+		},
+		"reverseDirection": {
+			"type": "boolean",
+			"default": false
+		},
+		"crop": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

@@ -1,0 +1,104 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/features",
+	"version": "1.0.0",
+	"title": "Features",
+	"category": "widgets",
+	"icon": "star-filled",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/features.js",
+	"editorStyle": "file:../../../blocks/build/features.css",
+	"style": "file:../../../blocks/build/style-features.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "50px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "25px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"features": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Título benefici #1",
+					"mTitle": "",
+					"text": "",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Título beneficio #2",
+					"mTitle": "",
+					"text": "",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Título beneficio #3",
+					"mTitle": "",
+					"text": "",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				}
+			]
+		}
+	}
+}

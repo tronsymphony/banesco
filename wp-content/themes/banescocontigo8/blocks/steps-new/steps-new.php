@@ -23,6 +23,8 @@ endif;
 $header = get_field('header');
 $description = get_field('description');
 $steps = get_field('steps', 'options');
+$add_bottom_button = get_field('add_bottom_button');
+$bottom_button = get_field('bottom_button');
 
 $header = Pacific_Helper::generate_header(array(
 	'text' => $header['title'],
@@ -34,8 +36,19 @@ $description = Pacific_Helper::generate_paragraph(array(
 	'text'  => $description,
 	'class' => 'steps-new__description'
 ));
-?>
 
+if ( $add_bottom_button ) :
+  $bottom_button = Pacific_Helper::generate_acf_link(array(
+    'link' => $bottom_button['button_link'],
+    'class' => 'banner-with-buttons-tabs-new__btn ' . $bottom_button['button_options'],
+    'link_attributes' => array(
+      'title' => $bottom_button['button_link']['title'],
+      'alt' => $bottom_button['button_link']['title'],
+      'target' => $bottom_button['button_link']['target'] ?? null
+    )
+  ));
+endif;
+?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
   <div class="container">
     <div class="steps-new__inner-container">
@@ -91,5 +104,10 @@ $description = Pacific_Helper::generate_paragraph(array(
         <?php endforeach; ?>
       <?php endif; ?>
     </div>
+    <?php if ( $add_bottom_button ) : ?>
+      <div class="steps-new__button-wrapper">
+        <?php echo $bottom_button; ?>
+      </div>
+    <?php endif; ?>
   </div>
 </section>

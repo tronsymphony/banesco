@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/other-cards",
+	"version": "1.0.0",
+	"title": "Other Cards",
+	"category": "widgets",
+	"icon": "columns",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/other-cards.js",
+	"editorStyle": "file:../../../blocks/build/other-cards.css",
+	"style": "file:../../../blocks/build/style-other-cards.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "94px",
+					"bottom": "122px"
+				},
+				"mobile": {
+					"top": "49px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "Otras personas también vieron"
+		},
+		"cards": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "MicroCréditos",
+					"text": "Haz crecer tu negocio con los MicroCréditos Banesco, creados para atender las necesidades de financiamiento a corto plazo.",
+					"link": "Conoce más",
+					"linkTarget": "/",
+					"button": "Solicitar",
+					"buttonTarget": "/",
+					"image": {
+						"alt": "",
+						"url": "image-1.jpg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Visa Clásica Internacional",
+					"text": "Obtén una línea de crédito rotativa a 36 meses para que realices tus pagos en cómodas cuotas.",
+					"link": "Conoce más",
+					"linkTarget": "/",
+					"button": "Solicitar",
+					"buttonTarget": "/",
+					"image": {
+						"alt": "",
+						"url": "image-2.jpg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "MasterCard Gold",
+					"text": "Aceptada mundialmente para compras locales e internacionales,  protección de compras y garantía extendida.",
+					"link": "Conoce más",
+					"linkTarget": "/",
+					"button": "Solicitar",
+					"buttonTarget": "/",
+					"image": {
+						"alt": "",
+						"url": "image-3.jpg"
+					}
+				}
+			]
+		}
+	}
+}

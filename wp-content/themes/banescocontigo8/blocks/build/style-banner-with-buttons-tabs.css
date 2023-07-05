@@ -63,7 +63,7 @@
   line-height: 100%;
   text-align: center;
   color: #708090;
-  background: #EBF0F5;
+  background: #ebf0f5;
   padding: 16px 69px;
   transition: 0.3s;
   white-space: nowrap;
@@ -78,7 +78,7 @@
   }
 }
 .banner-with-buttons-tabs__tab.active {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #219963;
 }
 .banner-with-buttons-tabs__tab:hover {

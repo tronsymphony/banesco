@@ -1,0 +1,19 @@
+{
+  "name": "acf/small-title-and-text-new",
+  "title": "Small Title And Text New",
+  "category": "common",
+  "icon": "menu-alt2",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "small-title-and-text-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

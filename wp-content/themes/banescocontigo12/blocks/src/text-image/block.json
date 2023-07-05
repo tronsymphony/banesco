@@ -1,0 +1,80 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-image",
+	"version": "1.0.0",
+	"title": "Text Image",
+	"category": "widgets",
+	"icon": "analytics",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-image.js",
+	"editorStyle": "file:../../../blocks/build/text-image.css",
+	"style": "file:../../../blocks/build/style-text-image.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"top": "113px",
+				"mTop": "45px",
+				"bottom": "0px",
+				"mBottom": "0px"
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"title": "24px",
+				"mTitle": "0px",
+				"description": "36px",
+				"mDescription": "24px",
+				"button": "36px",
+				"mButton": "24px",
+				"image": "0px",
+				"mImage": "43px"
+			}
+		},
+		"measurements": {
+			"type": "object",
+			"default": {
+				"imageWidth": "499px",
+				"mImageWidth": "100%",
+				"imageHeight": "315px",
+				"mImageHeight": "auto"
+			}
+		},
+		"title": {
+			"type": "string",
+			"default": "MasterCard Gold"
+		},
+		"text": {
+			"type": "string",
+			"default": "Tarjeta doble saldo aceptada mundialmente para compras<br/> internacionales, en dólares y por internet, además, tienes disponible<br/> hasta el 75% del límite de tu tarjeta para avances de efectivo."
+		},
+		"button": {
+			"type": "string",
+			"default": "Quiero que me contacten"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "image.png"
+			}
+		},
+		"reverseDirection": {
+			"type": "boolean",
+			"default": false
+		},
+		"shadow": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

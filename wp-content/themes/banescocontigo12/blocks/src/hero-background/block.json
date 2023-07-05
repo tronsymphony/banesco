@@ -1,0 +1,99 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/hero-background",
+	"version": "1.0.0",
+	"title": "Hero Background",
+	"category": "widgets",
+	"icon": "admin-home",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/hero-background.js",
+	"editorStyle": "file:../../../blocks/build/hero-background.css",
+	"style": "file:../../../blocks/build/style-hero-background.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "115px",
+					"bottom": "200px"
+				},
+				"mobile": {
+					"top": "45px",
+					"bottom": "272px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "28px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "24px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "¿Necesitas un préstamo?",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "¡No te preocupes! Te guiaremos en la dirección correcta. Cualquiera de nuestras soluciones te ayudarán a simplificar tus necesidades",
+				"mobile": ""
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#fff",
+				"description": "#fff"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "384px",
+					"description": "374px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "background-1.jpg",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "background-1-mobile.jpg",
+					"alt": ""
+				}
+			}
+		}
+	}
+}

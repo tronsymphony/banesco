@@ -1,0 +1,167 @@
+{
+    "key": "group_63d3b01f3c386",
+    "title": "Card options",
+    "fields": [
+        {
+            "key": "field_647798f322b2e",
+            "label": "Página de la Tarjeta",
+            "name": "pagina_de_la_tarjeta",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_646bd5ab5cb5a",
+            "label": "Detalles de la Tarjeta",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_646bd5cc5cb5c",
+            "label": "Compañía",
+            "name": "compania",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "MasterCard": "MasterCard",
+                "Visa": "Visa"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_646bd6775cb5d",
+            "label": "Nivel de Tarjeta",
+            "name": "nivel_de_tarjeta",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Crédito": "Crédito",
+                "Débito": "Débito"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_646bd6875cb5e",
+            "label": "Beneficios",
+            "name": "beneficios",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Internacional": "Internacional",
+                "Acceso a salas VIP en aeropuertos": "Acceso a salas VIP en aeropuertos",
+                "Servicio 24\/7": "Servicio 24\/7",
+                "Cashback": "Cashback",
+                "Puntos": "Puntos",
+                "Programa de Protección contra Fraudes": "Programa de Protección contra Fraudes",
+                "Seguro de Vida": "Seguro de Vida"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "multiple": 1,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_63d3b140b897d",
+            "label": "Más Detalles",
+            "name": "mas_detalles",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "3 o 4 líneas acerca de detalles específicos de esta tarjeta de crédito en particular. Pueden ser beneficios, promociones o intereses.",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cards"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1685561107
+}

@@ -1,0 +1,87 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/contact",
+	"version": "1.0.0",
+	"title": "Contact",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/contact.js",
+	"editorStyle": "file:../../../blocks/build/contact.css",
+	"style": "file:../../../blocks/build/style-contact.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "90px",
+					"bottom": "97px"
+				},
+				"mobile": {
+					"top": "45px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#f7f9fb"
+		},
+		"title": {
+			"type": "string",
+			"default": "Si no encuentras lo que buscas, puedes..."
+		},
+		"contacts": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"image": {
+						"url": "marker.svg",
+						"alt": ""
+					},
+					"title": "Venir a nuestras oficinas",
+					"description": "Encuentra tu sucursal más cercana",
+					"link": "https://maps.google.com/"
+				},
+				{
+					"name": "tab2",
+					"image": {
+						"url": "mail.svg",
+						"alt": ""
+					},
+					"title": "Enviarnos un correo",
+					"description": "Escríbenos a tuvoz@banesco.com.do",
+					"link": "mailto:tuvoz@banesco.com.do"
+				},
+				{
+					"name": "tab3",
+					"image": {
+						"url": "tel.svg",
+						"alt": ""
+					},
+					"title": "Hablarnos por teléfono",
+					"description": "Llámanos al 1-809-200-1101",
+					"link": "tel:+18092001101"
+				}
+			]
+		}
+	}
+}

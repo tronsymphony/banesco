@@ -1,0 +1,86 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/hero-empty",
+	"version": "1.0.0",
+	"title": "Hero Pure",
+	"category": "widgets",
+	"icon": "admin-home",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/hero-empty.js",
+	"editorStyle": "file:../../../blocks/build/hero-empty.css",
+	"style": "file:../../../blocks/build/style-hero-empty.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "83px",
+					"bottom": "142px"
+				},
+				"mobile": {
+					"top": "45px",
+					"bottom": "105px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "23px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "17px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "linear-gradient(93.27deg, #007953 -6.63%, #003C71 105.63%)"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Preguntas frecuentes",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "Bienvenido al centro de ayuda, aquí encontrarás más información sobre nuestros servicios y productos.",
+				"mobile": ""
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#fff",
+				"description": "#fff"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "568px",
+					"description": "420px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		}
+	}
+}

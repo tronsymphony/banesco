@@ -1,0 +1,126 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/hero/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+.hero {
+  position: relative;
+  padding-top: var(--paddings-top);
+  padding-bottom: var(--paddings-bottom);
+  background: var(--gradient);
+}
+@media (max-width: 767.98px) {
+  .hero {
+    padding-top: var(--paddings-top-mobile);
+    padding-bottom: var(--paddings-bottom-mobile);
+  }
+}
+.hero__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 4;
+}
+@media (max-width: 767.98px) {
+  .hero__inner {
+    flex-direction: column;
+  }
+}
+.hero__content {
+  display: block;
+}
+.hero__title {
+  margin-top: var(--margins-title);
+  max-width: var(--widths-title);
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--colors-title);
+}
+@media (max-width: 767.98px) {
+  .hero__title {
+    font-size: 36px;
+    margin-top: var(--margins-title-mobile);
+    max-width: var(--widths-title-mobile);
+  }
+}
+.hero__description {
+  margin-top: var(--margins-description);
+  max-width: var(--widths-description);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--colors-description);
+}
+@media (max-width: 767.98px) {
+  .hero__description {
+    margin-top: var(--margins-description-mobile);
+    max-width: var(--widths-description-mobile);
+  }
+}
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  margin-top: var(--margins-button);
+}
+@media (max-width: 767.98px) {
+  .hero__buttons {
+    margin-top: var(--margins-button-mobile);
+  }
+}
+.hero__button.primary-button, .hero__button.outlined-button {
+  padding: 15px 36px;
+}
+.hero__button[data-white=true].primary-button {
+  background: #fff;
+  color: #007953;
+}
+.hero__image {
+  position: relative;
+  width: var(--measurements-image-width);
+  height: var(--measurements-image-height);
+  transform: var(--measurements-image-transform);
+  z-index: 3;
+}
+@media (max-width: 767.98px) {
+  .hero__image {
+    width: var(--measurements-image-width-mobile);
+    height: var(--measurements-image-height-mobile);
+    transform: var(--measurements-image-transform-mobile);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero__image {
+    position: relative;
+    left: 50%;
+    width: 127%;
+    transform: translateX(-50%);
+  }
+}
+.hero__image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 2;
+}
+.hero__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=style-hero.css.map*/

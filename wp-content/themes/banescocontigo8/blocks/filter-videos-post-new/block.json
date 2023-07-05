@@ -1,0 +1,19 @@
+{
+  "name": "acf/filter-videos-post-new",
+  "title": "Filter Videos Post New",
+  "category": "widgets",
+  "icon": "youtube",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "filter-videos-post-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

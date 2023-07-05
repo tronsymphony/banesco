@@ -1,0 +1,117 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/contact-form",
+	"version": "1.0.0",
+	"title": "Contact Form",
+	"category": "widgets",
+	"icon": "welcome-write-blog",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/contact-form.js",
+	"editorStyle": "file:../../../blocks/build/contact-form.css",
+	"style": "file:../../../blocks/build/style-contact-form.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "112px",
+					"bottom": "117px"
+				},
+				"mobile": {
+					"top": "44px",
+					"bottom": "55px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"telephoneTitle": {
+			"type": "string",
+			"default": "Centro de atención telefónica"
+		},
+		"telephoneItem1": {
+			"type": "string",
+			"default": "Centro de atención telefónica: +1 829-893-8200"
+		},
+		"telephoneItem1Mobile": {
+			"type": "string",
+			"default": "Centro de atención: +1 829-893-8200"
+		},
+		"telephoneItem1Link": {
+			"type": "string",
+			"default": "tel:+18298938200"
+		},
+		"telephoneItem2": {
+			"type": "string",
+			"default": "Desde el interior sin cargos: +1 829-200-1101"
+		},
+		"telephoneItem2Link": {
+			"type": "string",
+			"default": "tel:+18292001101"
+		},
+		"mailTitle": {
+			"type": "string",
+			"default": "Contáctanos por correo electrónico"
+		},
+		"mailItem": {
+			"type": "string",
+			"default": "Escríbenos a tuvozrd@banesco.com"
+		},
+		"mailItemLink": {
+			"type": "string",
+			"default": "mailto:tuvozrd@banesco.com"
+		},
+		"whatsappTitle": {
+			"type": "string",
+			"default": "Contáctanos por WhatsApp"
+		},
+		"whatsappItem": {
+			"type": "string",
+			"default": "Escríbenos al +1 829 647 8100"
+		},
+		"whatsappItemLink": {
+			"type": "string",
+			"default": "tel:+18296478100"
+		},
+		"telephone": {
+			"type": "object",
+			"default": {
+				"url": "tel.svg",
+				"alt": ""
+			}
+		},
+		"mail": {
+			"type": "string",
+			"default": {
+				"url": "mail.svg",
+				"alt": ""
+			}
+		},
+		"whatsapp": {
+			"type": "string",
+			"default": {
+				"url": "whatsapp.png",
+				"alt": ""
+			}
+		}
+	}
+}

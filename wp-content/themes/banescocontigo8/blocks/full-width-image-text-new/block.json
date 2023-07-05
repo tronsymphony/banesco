@@ -1,0 +1,19 @@
+{
+  "name": "acf/full-width-image-text-new",
+  "title": "Full Width Image and Text",
+  "category": "common",
+  "icon": "media-spreadsheet",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "full-width-image-text-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

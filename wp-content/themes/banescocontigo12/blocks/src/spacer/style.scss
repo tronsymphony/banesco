@@ -1,0 +1,7 @@
+.spacer {
+	padding-top: var(--space);
+
+	@media (max-width: 767.98px) {
+		padding-top: var(--space-mobile);
+	}
+}

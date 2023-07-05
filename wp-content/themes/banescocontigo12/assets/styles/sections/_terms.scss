@@ -1,0 +1,41 @@
+.terms {
+	padding-top: 102px;
+	padding-bottom: 103px;
+	background: rgba(#ebf0f5, 0.4);
+
+	@media (max-width: 767.98px) {
+		 padding-top: 46px;
+		 padding-bottom: 40px;
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 40px;
+		line-height: 100%;
+		color: #3a4454;
+		margin-bottom: 47px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 24px;
+		}
+
+		@media (max-width: 575.98px) {
+			 font-size: 32px;
+			
+		}
+	}
+
+	&__content {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+
+		b {
+			font-size: 16px;
+		}
+
+		p + p {
+			margin-top: 20px;
+		}
+	}
+}

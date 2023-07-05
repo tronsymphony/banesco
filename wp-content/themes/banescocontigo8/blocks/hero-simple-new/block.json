@@ -1,0 +1,19 @@
+{
+  "name": "acf/hero-simple-new",
+  "title": "Hero Simple",
+  "category": "design",
+  "icon": "embed-generic",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "hero-simple-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

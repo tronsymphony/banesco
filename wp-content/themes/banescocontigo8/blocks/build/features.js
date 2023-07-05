@@ -10,7 +10,7 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ReactComponent: () => (/* binding */ SvgCheck),
+/* harmony export */   "ReactComponent": () => (/* binding */ SvgCheck),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
@@ -85,7 +85,6 @@ function Edit(_ref) {
     gradient,
     items,
     bigImages,
-    columns,
     centered
   } = attributes;
   const setItemAttribute = (tab, attribute, value) => {
@@ -378,41 +377,6 @@ function Edit(_ref) {
       bigImages: value
     }),
     className: "checkbox"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "row"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.SelectControl, {
-    label: "Increase images size",
-    value: columns.type,
-    className: "input",
-    onChange: value => {
-      const newValue = {
-        ...columns
-      };
-      newValue.type = value;
-      setAttributes({
-        columns: newValue
-      });
-    },
-    options: [{
-      value: '',
-      label: 'Select number of columns',
-      disabled: true
-    }, {
-      value: '1',
-      label: '1 Column'
-    }, {
-      value: '2',
-      label: '2 Column'
-    }, {
-      value: '3',
-      label: '3 Column'
-    }, {
-      value: '4',
-      label: '4 Column'
-    }, {
-      value: '5',
-      label: '5 Column'
-    }]
   }))));
 }
 
@@ -511,7 +475,7 @@ module.exports = window["wp"]["element"];
   \****************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/features","version":"1.0.0","title":"Features","category":"widgets","icon":"star-filled","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/features.js","editorStyle":"file:../../../blocks/build/features.css","style":"file:../../../blocks/build/style-features.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"items":{"type":"array","default":[{"name":"tab1","title":"Title #1","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab2","title":"Title #2","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab3","title":"Title #3","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab4","title":"Title #5","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab5","title":"Title #5","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}}]},"centered":{"type":"boolean","default":false},"bigImages":{"type":"boolean","default":false},"columns":{"type":"object","default":false}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/features","version":"1.0.0","title":"Features","category":"widgets","icon":"star-filled","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/features.js","editorStyle":"file:../../../blocks/build/features.css","style":"file:../../../blocks/build/style-features.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"100px","bottom":"100px"},"mobile":{"top":"50px","bottom":"50px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#FFFFFF"},"items":{"type":"array","default":[{"name":"tab1","title":"Title #1","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab2","title":"Title #2","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab3","title":"Title #3","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab4","title":"Title #5","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}},{"name":"tab5","title":"Title #5","mTitle":"","text":"Description","mText":"","widths":{"title":"280px","mTitle":"100%","text":"265px","mText":"100%"},"image":{"alt":"","url":"check.svg"}}]},"centered":{"type":"boolean","default":false},"bigImages":{"type":"boolean","default":false}}}');
 
 /***/ })
 

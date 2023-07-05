@@ -1,0 +1,122 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/posts",
+	"version": "1.0.0",
+	"title": "Posts",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/posts.js",
+	"editorStyle": "file:../../../blocks/build/posts.css",
+	"style": "file:../../../blocks/build/style-posts.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "137px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "44px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "rgba(235, 240, 245, 0.4)"
+		},
+		"title": {
+			"type": "string",
+			"default": "Tus metas son mis metas"
+		},
+		"posts1": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Cuenta de ahorros en pesos y dólares",
+					"description": "Adquiere los mejores rendimientos sobre tus ahorros, manejando tu dinero con Banesco.",
+					"button": "Conoce más",
+					"target": "/",
+					"primaryButton": "Me interesa",
+					"primaryTarget": "/",
+					"image": {
+						"url": "1.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-1.jpg",
+						"alt": ""
+					},
+					"whiteText": true,
+					"big": true,
+					"mHide": false
+				}
+			]
+		},
+		"posts2": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab2",
+					"title": "¡Protege y cuida de los tuyos!",
+					"description": "Tenemos las pólizas de seguros que <br /> tú y tu familia necesitan.",
+					"button": "Conoce más",
+					"target": "/",
+					"primaryButton": "Me interesa",
+					"primaryTarget": "/",
+					"image": {
+						"url": "2.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-2.jpg",
+						"alt": ""
+					},
+					"whiteText": false,
+					"big": false,
+					"mHide": false
+				},
+				{
+					"name": "tab3",
+					"title": "Conoce nuestas opciones de préstamos",
+					"description": "Con nuestros préstamos personales podrás consolidar deudas, disfrutar de viajes, remodelación de tu hogar,  y otras opciones con las mejores condiciones de financiamiento.",
+					"button": "Conoce más",
+					"target": "/",
+					"primaryButton": "Me interesa",
+					"primaryTarget": "/",
+					"image": {
+						"url": "3.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "",
+						"alt": ""
+					},
+					"whiteText": true,
+					"big": false,
+					"mHide": true
+				}
+			]
+		}
+	}
+}

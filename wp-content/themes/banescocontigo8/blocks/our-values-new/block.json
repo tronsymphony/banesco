@@ -1,0 +1,16 @@
+{
+  "name": "acf/our-values-new",
+  "title": "Our Values New",
+  "category": "design",
+  "icon": "superhero-alt",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "our-values-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit"
+    }
+  },
+  "pacificScripts": false
+}

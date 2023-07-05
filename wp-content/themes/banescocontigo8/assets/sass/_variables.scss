@@ -4,13 +4,43 @@ $gradient: #f7f9fb;
 $gray: #708090;
 $gray2: #748994;
 $gray3: #4a5264;
+$gray4: #a5adb4;
+$gray5: #556176;
+$gray6: #a5adb4;
+$body-text: #556176;
 $light: #ebf0f5;
 $light2: #dce1e9;
+$light3: #ebf0f566;
 $white: #fff;
+$black: #000;
+$purple: #543db8;
+$main-green: #007953;
 $green: #219963;
+$blue: #003c71;
+$blue2: #1a61ab;
+$light-blue: #59d1ff;
+$dark-blue: #003c71;
+$light-green: #f1fff9;
+$overlay: #f9f9f99e;
+$error: #e1261c;
+$dark: rgba(26, 97, 171, 0.1);
+$box-shadow: rgba(97, 97, 97, 0.2);
+$box-shadow2: rgba(15, 35, 52, 0.2);
+$drop-shadow: rgba(0, 0, 0, 0.25);
+$card-background: rgba(220, 225, 233, 0.3);
+$tag: rgba(255, 255, 255, 0.1);
+$tag-dark: rgba(0, 60, 113, 0.1);
+$tag-dark2: rgba(26, 97, 171, 0.1);
+$tag-dark3: rgba(84, 61, 184, 0.1);
 
 // Breakpoints
 $grid-breakpoints: (
+  xxs: 360px,
+  xs: 400px,
   sm: 575px,
   md: 767px,
+  lg: 992px,
+  xl: 1200px,
+  xll: 1250px,
+  xxl: 1420px,
 ) !default;

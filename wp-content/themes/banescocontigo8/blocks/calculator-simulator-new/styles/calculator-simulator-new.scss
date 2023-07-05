@@ -1,0 +1,467 @@
+.calculator-simulator-new {
+  $self: &;
+
+  &.boxed {
+    background: linear-gradient(93.81deg, $blue 0%, $light-blue 125.21%);
+    margin: 69px 0;
+
+    @include media-breakpoint-up(lg) {
+      height: 498px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 69px 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 32px 0;
+    }
+
+    .container {
+      @include media-breakpoint-up(lg) {
+        position: relative;
+      }
+
+      @include media-breakpoint-down(lg) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    #{$self}__inner-wrapper {
+      filter: drop-shadow(0px 5px 30px rgba(15, 35, 52, 0.15));
+    }
+
+    #{$self}__boxed-layout-content-wrapper {
+      width: 100%;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 347px;
+        padding-top: 139px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+      }
+    }
+
+    #{$self}__boxed-layout-title {
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 100%;
+      color: $white;
+      margin-bottom: 36px;
+    }
+
+    #{$self}__boxed-layout-description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $white;
+    }
+  }
+
+  &.full-width {
+    margin-top: var(--top-margin);
+    z-index: 10;
+    position: relative;
+  }
+
+  &__inner-wrapper {
+    background: $white;
+    border: 1px solid $light2;
+    border-radius: 10px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 32px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 12px;
+    }
+  }
+
+  &.boxed {
+    #{$self}__inner-wrapper {
+      width: 100%;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 770px;
+        z-index: 12;
+        top: -50px;
+        position: absolute;
+        height: fit-content;
+        right: 0;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: $heading-color;
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    margin-bottom: 24px;
+  }
+
+  &__form-controller {
+    width: 100%;
+
+    &:nth-child(4) {
+      @include media-breakpoint-up(sm) {
+        max-width: 288px;
+      }
+    }
+
+    &.has-error {
+      #{$self}__input-field {
+        border-color: #e1261c;
+      }
+    }
+  }
+
+  &__select-wrapper {
+    position: relative;
+
+    &:after {
+      content: '';
+      background: url('../../assets/images/icons/arrow-down.svg');
+      width: 12px;
+      height: 7px;
+      display: block;
+      position: absolute;
+      right: 12px;
+      top: calc(50% - 3px);
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+  }
+
+  &.full-width {
+    #{$self}__form-controller {
+      @include media-breakpoint-up(sm) {
+        max-width: 369px;
+      }
+
+      &:nth-child(1) {
+        &:after {
+          @include media-breakpoint-up(md) {
+            top: 40%;
+          }
+
+          @include media-breakpoint-down(md) {
+            top: 65%;
+          }
+        }
+      }
+    }
+  }
+
+  &.boxed {
+    #{$self}__form-controller {
+      @include media-breakpoint-up(md) {
+        max-width: 340px;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
+
+      &:nth-child(1) {
+        &:after {
+          top: 60%;
+        }
+      }
+    }
+  }
+
+  &.full-width {
+    #{$self}__input-wrapper {
+      display: grid;
+      gap: 24px;
+      margin-bottom: 24px;
+
+      @include media-breakpoint-up(xl) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include media-breakpoint-down(xl) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include media-breakpoint-down(md) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  &.boxed {
+    #{$self}__input-wrapper {
+      display: grid;
+      gap: 24px;
+      margin-bottom: 24px;
+
+      @include media-breakpoint-down(md) {
+        grid-template-columns: repeat(1fr, 1);
+      }
+
+      #{$self}__form-controller {
+        @include media-breakpoint-up(md) {
+          &:nth-child(1) {
+            grid-area: 1 / 1;
+          }
+
+          &:nth-child(2) {
+            grid-area: 2 / 1;
+          }
+
+          &:nth-child(3) {
+            grid-area: 2 / 2;
+          }
+
+          &:nth-child(4) {
+            grid-area: 1 / 2;
+          }
+        }
+      }
+    }
+  }
+
+  &__input-label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: $heading-color;
+    margin-bottom: 12px;
+  }
+
+  select#{$self}__input-field {
+    padding: 0 40px 0 12px;
+    cursor: pointer;
+  }
+
+  &.full-width {
+    #{$self}__input-field {
+      @include media-breakpoint-up(sm) {
+        max-width: 369px;
+      }
+    }
+  }
+
+  &.boxed {
+    #{$self}__input-field {
+      @include media-breakpoint-up(md) {
+        max-width: 340px;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__input-field {
+    background: $white;
+    border: 1px solid $gray4;
+    border-radius: 5px;
+    height: 48px;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $heading-color;
+  }
+
+  &__input-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $body-text;
+    margin-top: 12px;
+  }
+
+  &__slide-field {
+    display: flex;
+    gap: 8px;
+    padding: 4px;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 288px;
+    }
+
+    &.green {
+      #{$self}__slide-item {
+        &.active {
+          background: $green;
+        }
+      }
+    }
+
+    &.blue {
+      #{$self}__slide-item {
+        &.active {
+          background: $blue2;
+        }
+      }
+    }
+  }
+
+  &__slide-item {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border-radius: 5px;
+    color: $gray5;
+    font-weight: 400;
+    line-height: 150%;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+
+    &.active {
+      box-shadow: 0px 1px 2px $box-shadow, 0px 2px 4px $box-shadow;
+      color: $white;
+    }
+
+    &.item-hidden {
+      display: none;
+    }
+  }
+
+  &__button-controller {
+    display: flex;
+    gap: 24px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__form-button {
+    cursor: pointer;
+  }
+
+  &__result-wrapper {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &.green {
+      background: linear-gradient(90.53deg, $main-green -8.4%, $blue 112.02%);
+    }
+
+    &.blue {
+      background: linear-gradient(91.36deg, $blue2 41.31%, $blue 128.26%);
+    }
+
+    @include media-breakpoint-up(sm) {
+      padding: 24px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+
+  &__result-text {
+    line-height: 100%;
+    color: $white;
+
+    &--left {
+      font-weight: 700;
+    }
+
+    &--right {
+      font-weight: 400;
+    }
+  }
+
+  &.full-width {
+    #{$self}__result-text {
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &.boxed {
+    #{$self}__result-text {
+      &--left {
+        font-size: 20px;
+      }
+
+      &--right {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__disclaimer-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $body-text;
+  }
+
+  &__form-footer {
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: ease-in-out 0.3s;
+
+    &.form-footer--active {
+      @include media-breakpoint-up(md) {
+        max-height: 132px;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-height: 235px;
+      }
+    }
+  }
+
+  .error-message,
+  &__errors-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #e1261c;
+    margin-top: 12px;
+    display: none;
+
+    &.message--visible {
+      display: block;
+    }
+  }
+}

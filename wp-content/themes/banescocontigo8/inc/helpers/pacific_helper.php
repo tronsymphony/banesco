@@ -63,10 +63,13 @@ class Pacific_Helper {
 
 		$defaults = array(
 			'text'  => '',
-			'class' => ''
+			'class' => '',
+			'attributes' => array()
 		);
 
 		$args = wp_parse_args( $args, $defaults );
+
+		$attributes = $args['attributes'];
 
 		if ( ! $args['text'] )
 			return $output;
@@ -74,6 +77,11 @@ class Pacific_Helper {
 		$output .= '<p';
 		if ( $args['class'] )
 			$output .= ' class="' . esc_attr( $args['class'] ) . '"';
+		if ( $attributes ) :
+			foreach ( $attributes as $name => $value ) :
+				$output .= " $name=" . '"' . esc_attr( $value ) . '"';
+			endforeach;
+		endif;
 		$output .= '>';
 		$output .= wp_kses_post( $args['text'] );
 		$output .= '</p>';
@@ -95,7 +103,7 @@ class Pacific_Helper {
 
 		$defaults = array(
 			'text'  => '',
-			'class' => ''
+			'class' => '',
 		);
 
 		$args = wp_parse_args( $args, $defaults );
@@ -138,7 +146,7 @@ class Pacific_Helper {
 		);
 
 		$args = wp_parse_args( $args, $defaults );
-
+		
 		if ( ! $args['image'] )
 			return $output;
 
@@ -174,6 +182,7 @@ class Pacific_Helper {
 				endforeach;
 			endif;
 			$output .= '>';
+			$output .= '<span class="inner-content">' . $args['link_attributes']['title'] . '</span>';
 		endif;
 
 		// if ( $ext === 'svg' ) :
@@ -312,17 +321,29 @@ class Pacific_Helper {
 		$defaults = array(
 			'content'   => '',
 			'container' => 'div',
-			'classes'   => array('editor-content')
+			'classes'   => array('editor-content'),
+			'attributes' => array()
 		);
 
 		$args = wp_parse_args( $args, $defaults );
+
+		$attributes = $args['attributes'];
 
 		if ( !$args['content'] )
 			return $output;
 
 		if ( $args['container'] ) :
-			$output .= '<' . $args['container'] . ' class="' . esc_attr( implode( ' ', $args['classes'] ) ) . '">';
+			$output .= '<' . $args['container'] . ' class="' . esc_attr( implode( ' ', $args['classes'] ) ) . '"';
 		endif;
+
+		if ( $attributes ) :
+			foreach ( $attributes as $name => $value ) :
+				$output .= " $name=" . '"' . esc_attr( $value ) . '"';
+			endforeach;
+		endif;
+
+		$output .= '>';
+
 			$output .= $args['content'];
 		if ( $args['container'] ) :
 			$output .= '</' . $args['container'] . '>';

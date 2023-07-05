@@ -1,0 +1,62 @@
+.text {
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 400;
+
+	a {
+		padding-bottom: 0px;
+		border-bottom: 1px solid #219963;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		color: #219963;
+		transition: 0.3s;
+	
+		&:hover {
+			color: #007953;
+			border-bottom-width: 2px;
+			border-bottom-color: #007953;
+		}
+	
+		&:active {
+			color: #219963;
+			border-bottom-color: #219963;
+		}
+	}
+
+	h4 {
+		font-size: 18px;
+		line-height: 150%;
+
+		@media (max-width: 575.98px) {
+			font-size: 16px;
+			line-height: 150%;
+		}
+	}
+
+	ul {
+		margin-top: 5px;
+	}
+
+	ul li {
+		position: relative;
+		padding-left: 23px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 10px;
+			top: 9px;
+			width: 6px;
+			height: 6px;
+			background: #748994;
+			border-radius: 50%;
+		}
+	}
+
+	p + p {
+		margin-top: 20px;
+	}
+}
+
+//neds add .title .subtitle and etc.

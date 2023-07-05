@@ -7,8 +7,8 @@
  *
  * @package banescocontigo
  */
-
 get_header(); ?>
+<?php Pacific_theme_setup::setPostViews( get_the_ID() ); ?>
 
 <main id="primary" class="site-main main">
 	

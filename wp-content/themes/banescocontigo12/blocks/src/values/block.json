@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/values",
+	"version": "1.0.0",
+	"title": "Values",
+	"category": "widgets",
+	"icon": "feedback",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/values.js",
+	"editorStyle": "file:../../../blocks/build/values.css",
+	"style": "file:../../../blocks/build/style-values.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Nuestros valores"
+		},
+		"values": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Responsabilidad",
+					"text": "Respondemos por nuestras tareas con precisión y pasión. Cumplimos con la palabra dada. Hacemos el mejor uso del tiempo. Damos lo mejor ante toda persona.",
+					"number": "1",
+					"color": "#219963"
+				},
+				{
+					"name": "tab2",
+					"title": "Confiabilidad",
+					"text": "Decimos la verdad en toda circunstancia. Respondemos con sinceridad. Reconocemos nuestros errores. Pedimos ayuda cuando es necesario.",
+					"number": "2",
+					"color": "#1A61AB"
+				},
+				{
+					"name": "tab3",
+					"title": "Calidad",
+					"text": "Hacemos cada tarea con el mayor cuidado. Nos proponemos ser los mejores. Nos esforzamos por superar las expectativas de nuestros interlocutores.",
+					"number": "3",
+					"color": "#007953"
+				},
+				{
+					"name": "tab4",
+					"title": "Innovación",
+					"text": "Somos una organización con visión de futuro. Ofrecemos nuevas soluciones. Buscamos ideas y tecnologías que promuevan el cambio.",
+					"number": "4",
+					"color": "#543DB8"
+				}
+			]
+		}
+	}
+}

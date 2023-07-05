@@ -1,0 +1,19 @@
+{
+  "name": "acf/table-analyze-new",
+  "title": "Table Analyze New",
+  "category": "common",
+  "icon": "chart-line",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "table-analyze-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

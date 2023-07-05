@@ -1,0 +1,106 @@
+.outlined-gray {
+  background: $white;
+  color: $gray;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  min-width: 120px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  transition: 0.3s;
+  border: 1px solid $gray4;
+
+  &:hover {
+    border: 1px solid $main-green;
+    background: $main-green;
+    color: $white;
+  }
+
+  &.active {
+    border: 1px solid $main-green;
+    background: $main-green;
+    color: $white;
+  }
+}
+
+.primary-blue {
+  background: $blue2;
+  color: $white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 36px;
+  min-width: 120px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  transition: 0.3s;
+
+  &:hover {
+    background: $blue;
+  }
+}
+
+.blue-outlined {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 34px;
+  min-width: 100px;
+  background: transparent;
+  border: 1px solid $blue2;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 110%;
+  color: $blue2;
+  transition: 0.3s;
+}
+
+.white-button-blue-text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 36px;
+  min-width: 120px;
+  background: $white;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: $blue2;
+  transition: 0.3s;
+
+  &:hover {
+    background: $light;
+  }
+}
+
+.white-button {
+  &:hover {
+    background: $light;
+    color: $green;
+  }
+}
+
+.link-button {
+  border-bottom: none !important;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+  &:hover {
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+}
+
+.line-button {
+  &:hover {
+    font-weight: 900;
+  }
+}

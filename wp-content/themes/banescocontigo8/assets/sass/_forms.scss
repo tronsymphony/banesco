@@ -1,0 +1,119 @@
+.sidebar.active {
+  z-index: 1000;
+}
+
+.gravity-theme {
+  border-radius: 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 67px 48px 134px 48px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 67px 20px;
+  }
+
+  .gform_heading {
+    margin-bottom: 36px;
+
+    .gform_title {
+      font-weight: 300;
+      line-height: 100%;
+      color: $heading-color;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 30px;
+        margin-bottom: 36px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .gform_description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $gray3;
+    }
+  }
+
+  form {
+    .gform-body {
+      .gform_fields {
+        .gfield {
+          &.gfield--no-description.gfield--width-half {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .ginput_container {
+              width: 100%;
+            }
+          }
+          .gfield_label {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 100%;
+            color: $heading-color;
+
+            &:after {
+              display: none;
+            }
+          }
+
+          .ginput_container {
+            textarea {
+              height: 87px;
+            }
+
+            input,
+            select,
+            textarea {
+              &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                color: $gray4;
+              }
+            }
+          }
+
+          .gchoice {
+            display: flex;
+            align-items: start;
+
+            .gfield-choice-input {
+              max-width: 18px;
+              width: 100%;
+              height: 18px;
+              margin-top: 4px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              color: $gray5;
+            }
+          }
+        }
+      }
+    }
+    .gform_footer {
+      .gform_button {
+        width: 100%;
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.gform_confirmation_wrapper {
+  background: $white;
+  height: 100%;
+}

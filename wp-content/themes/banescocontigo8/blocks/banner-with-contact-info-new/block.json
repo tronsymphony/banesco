@@ -1,0 +1,19 @@
+{
+  "name": "acf/banner-with-contact-info-new",
+  "title": "Banner With Contact Info New",
+  "category": "widgets",
+  "icon": "star-filled",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "banner-with-contact-info-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

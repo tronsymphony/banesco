@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text",
+	"version": "1.0.0",
+	"title": "Text",
+	"category": "widgets",
+	"icon": "dismiss",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text.js",
+	"editorStyle": "file:../../../blocks/build/text.css",
+	"style": "file:../../../blocks/build/style-text.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Nuestra historia"
+		},
+		"content": {
+			"type": "string",
+			"default": "<b>Banesco Internacional</b> nace en Venezuela en el año 1986 con la creación de Escotet Casa de Bolsa. En el sector bancario comenzó su actividad en Venezuela en 1991 a través de la adquisición y toma de control de un banco regional denominado Grupo Bancentro, que a la postre se denominó Grupo Financiero Banesco.<br/><br/>Con el establecimiento de las operaciones en Panamá y Puerto Rico, entre 1992 y 1993, se inició el proceso de internacionalización de la corporación que se mantiene hasta la fecha y que le ha permitido tener presencia en diferentes localidades en el mundo, siempre guiados por una visión global de los servicios financieros. <br/><br/>En el 2006  fue creado Banesco USA Bank con sede en Miami. Esta entidad se fusionó en el 2011 con Puerto Rico para dar lugar a Banesco USA. La presencia en la región de Latinoamérica y el Caribe fue reforzada con la llegada a la República Dominicana, con la autorización de Banesco Banco Múltiple, S.A. en el 2011.<br/><br/>La expansión del Grupo continúa con la compra de SFA Banco en Curazao. Mientras que el 2019, Banesco USA adquiere Brickell Bank en Miami.<br/><br/>El modelo de internacionalización de Banesco estableció la creación de instituciones locales independientes en cada país, conformadas por un equipo nativo, con trayectoria financiera local y reputación en el mercado. <br/><br/>En conjunto, Banesco Internacional (BI) y ABANCA suman, a diciembre de 2020, 11.378 empleados, 985 oficinas y 6,9 millones de clientes. El volumen de negocio conjunto supera los 125.000 millones de dólares y el patrimonio neto sumado es de 5.283 millones de euros. "
+		}
+	}
+}

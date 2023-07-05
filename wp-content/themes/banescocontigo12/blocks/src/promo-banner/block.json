@@ -1,0 +1,78 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/promo-banner",
+	"version": "1.0.0",
+	"title": "Promo Banner",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/promo-banner.js",
+	"editorStyle": "file:../../../blocks/build/promo-banner.css",
+	"style": "file:../../../blocks/build/style-promo-banner.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "Conoce las promos que tenemos para ti"
+		},
+		"description": {
+			"type": "string",
+			"default": "Aprovecha las mejores promociones en restos, eventos, supermercados y mucho más."
+		},
+		"button": {
+			"type": "string",
+			"default": "Ver promociones"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"url": "banner.jpg",
+				"alt": ""
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"url": "banner-mobile.jpg",
+				"alt": ""
+			}
+		}
+	}
+}

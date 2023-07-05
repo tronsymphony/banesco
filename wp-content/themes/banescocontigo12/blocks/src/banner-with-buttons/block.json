@@ -1,0 +1,100 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-with-buttons",
+	"version": "1.0.0",
+	"title": "Banner With Buttons",
+	"category": "widgets",
+	"icon": "align-wide",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-with-buttons.js",
+	"editorStyle": "file:../../../blocks/build/banner-with-buttons.css",
+	"style": "file:../../../blocks/build/style-banner-with-buttons.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "98px",
+					"bottom": "110px"
+				},
+				"mobile": {
+					"top": "48px",
+					"bottom": "56px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "rgba(235, 240, 245, 0.4)"
+		},
+		"title": {
+			"type": "string",
+			"default": "Requisitos para abrir tu cuenta"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Identificación personal",
+					"description": "Cédula o pasaporte",
+					"image": {
+						"alt": "",
+						"url": "card.svg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Certificación de ingresos",
+					"description": "O 3 últimos estados de cuenta de ahorro, corriente o tarjetas de crédito",
+					"image": {
+						"alt": "",
+						"url": "pdf.svg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Completar solicitud",
+					"description": "Completar solicitud de cuenta de ahorro.",
+					"image": {
+						"alt": "",
+						"url": "page.svg"
+					}
+				}
+			]
+		},
+		"outlinedButton": {
+			"type": "string",
+			"default": "Botón secundario"
+		},
+		"outlinedButtonTarget": {
+			"type": "string",
+			"default": "/"
+		},
+		"primaryButton": {
+			"type": "string",
+			"default": "Botón principal"
+		},
+		"primaryButtonTarget": {
+			"type": "string",
+			"default": "/"
+		}
+	}
+}

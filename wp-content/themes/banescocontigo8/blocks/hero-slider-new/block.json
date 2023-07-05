@@ -1,0 +1,19 @@
+{
+  "name": "acf/hero-slider-new",
+  "title": "Hero Slider New",
+  "category": "widgets",
+  "icon": "media-interactive",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "hero-slider-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

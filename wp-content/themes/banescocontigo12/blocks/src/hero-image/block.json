@@ -1,0 +1,134 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/hero-image",
+	"version": "1.0.0",
+	"title": "Hero Image",
+	"category": "widgets",
+	"icon": "admin-home",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/hero-image.js",
+	"editorStyle": "file:../../../blocks/build/hero-image.css",
+	"style": "file:../../../blocks/build/style-hero-image.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "81px",
+					"bottom": "74px"
+				},
+				"mobile": {
+					"top": "45px",
+					"bottom": "295px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "26px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "24px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Sobre nosotros",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "<p>Banesco República Dominicana, pertenece a un grupo financiero y aseguradora multinacional con presencia en Venezuela, Panamá, Puerto Rico, Miami, República Dominicana, Colombia y España.</p>\n\n<p>Iniciamos nuestras operaciones en República Dominicana en marzo de 2011, como Banesco Banco Múltiple S.A.; cumpliendo de forma acertada con los planes de expansión trazados por el Grupo en la región. Apostamos a la excelencia en el servicio como foco principal de nuestra estrategia para atender a los segmentos a los que servimos: Banca Personal, Premium, Pyme, Empresarial y Corporativa.</p>",
+				"mobile": ""
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#fff",
+				"description": "#fff"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "444px",
+					"description": "583px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "image-1.png",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "image-1-mobile.png",
+					"alt": ""
+				},
+				"width": {
+					"desktop": "887px",
+					"mobile": "100%"
+				},
+				"height": {
+					"desktop": "429px",
+					"mobile": "auto"
+				},
+				"position": {
+					"desktop": {
+						"top": "auto",
+						"right": "-247px",
+						"bottom": "-74px",
+						"left": "auto"
+					},
+					"mobile": {
+						"top": "auto",
+						"right": "-16px",
+						"bottom": "-295px",
+						"left": "-16px"
+					}
+				}
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "background-1.jpg",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "background-1-mobile.jpg",
+					"alt": ""
+				}
+			}
+		}
+	}
+}

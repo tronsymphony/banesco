@@ -68,8 +68,33 @@ class GPAdvancedPhoneField implements GPAdvancedPhoneField {
 			.attr('id', `input_${this.formId}_${this.fieldId}_raw`)
 			.attr('name', ``);
 
-		// @todo add filter
-		this.iti = intlTelInput(this.$telInput, intlTelInputOptions);
+		/**
+		 * Filter the options passed to [intl-tel-input](https://intl-tel-input.com/) during initialization.
+		 *
+		 * @param {intlTelInput.Options} intlTelInputOptions The intlTelInput options. See https://github.com/jackocnr/intl-tel-input#initialisation-options
+		 *                                                   for a full list of the allowed options.
+		 * @param {number}               formId              The ID of the current form.
+		 * @param {number}               fieldId             The ID of the current field.
+		 * @param {GPAdvancedPhoneField} instance            The current instance of GPAdvancedPhoneField.
+		 *
+		 * @since 1.0.12
+		 */
+		this.iti = intlTelInput(
+			this.$telInput,
+			window.gform.applyFilters(
+				'gpapf_intltelinput_options',
+				intlTelInputOptions,
+				this.formId,
+				this.fieldId,
+				this
+			)
+		);
+
+		// Prevent Gravity Forms Theme Framework from resetting styles on iti.
+		// @ts-ignore
+		$(this.iti.countryList)
+			.closest('.ginput_container_phone')
+			.addClass('gform-theme__no-reset--children');
 
 		// @todo Explore adding RTL support for the Country List. For now, force LTR to avoid RTL weirdness.
 		// @ts-ignore

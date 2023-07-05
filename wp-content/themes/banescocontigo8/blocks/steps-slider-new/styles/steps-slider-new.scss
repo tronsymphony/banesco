@@ -1,0 +1,218 @@
+.steps-slider-new {
+  $self: &;
+
+  @include media-breakpoint-down(lg) {
+    padding: 20px 0 40px 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 42px 0 126px 0;
+  }
+
+  &__top-border {
+    border-top: 1px solid $light2;
+    max-width: 1220px;
+    margin: auto;
+  }
+
+  &__steps {
+    max-width: 1382px;
+    padding: 0 15px;
+    margin: auto;
+    position: relative;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      @include media-breakpoint-up(xxl) {
+        width: 40px;
+        height: 40px;
+        background: $light;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 40%;
+
+        &:after {
+          content: '';
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjMzMyAyTDEuODg1NDcgOS4yNDA3NEMxLjQxOTg2IDkuNjM5ODQgMS40MTk4NiAxMC4zNjAyIDEuODg1NDcgMTAuNzU5M0wxMC4zMzMgMTgiIHN0cm9rZT0iIzU1NjE3NiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==');
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 9px;
+          height: 16px;
+        }
+
+        &:hover {
+          transform: rotate(-180deg);
+          &:after {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMyAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIgMThMMTAuNDQ3NSAxMC43NTkzQzEwLjkxMzEgMTAuMzYwMiAxMC45MTMxIDkuNjM5ODQgMTAuNDQ3NSA5LjI0MDc0TDIgMiIgc3Ryb2tlPSIjMUE2MUFCIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K');
+            background-position-x: -1px;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(xxl) {
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+      @include media-breakpoint-up(xxl) {
+        left: -12px;
+      }
+    }
+    .swiper-button-next {
+      @include media-breakpoint-up(xxl) {
+        right: -12px;
+        transform: rotate(-180deg);
+        &:hover {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+
+  &__swiper {
+    max-width: 1250px;
+    max-width: 1249px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include media-breakpoint-down(lg) {
+      height: 330px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 367px;
+    }
+
+    .swiper-slide {
+      height: 291px;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    line-height: 100%;
+    text-align: center;
+    color: $heading-color;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-down(lg) {
+      padding-top: 40px;
+      font-size: 32px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 112px;
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $gray3;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__step {
+    background: $white;
+    border: 1px solid $light2;
+    border-radius: 10px;
+    padding: 40px 24px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    &:before {
+      content: '';
+      height: 6px;
+      width: 100%;
+      background: $blue2;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__step-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__step-image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    object-fit: cover;
+  }
+
+  &__step-counter {
+    background: $dark;
+    border-radius: 50px;
+    padding: 4px 24px;
+    color: $blue2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__step-title {
+    font-weight: 700;
+    line-height: 100%;
+    color: $heading-color;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 30px;
+    }
+  }
+
+  &__step-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $gray5;
+  }
+
+  & {
+    #{$self}__swiper {
+      #{$self}__dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        bottom: 0;
+
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background: $light2;
+          margin: 0;
+
+          &-active {
+            background: $blue2;
+          }
+        }
+      }
+    }
+  }
+}

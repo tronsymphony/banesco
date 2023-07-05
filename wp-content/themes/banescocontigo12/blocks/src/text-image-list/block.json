@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-image-list",
+	"version": "1.0.0",
+	"title": "Text Image List",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-image-list.js",
+	"editorStyle": "file:../../../blocks/build/text-image-list.css",
+	"style": "file:../../../blocks/build/style-text-image-list.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Conoce las soluciones que <br/> te ofrece BanescOnline"
+		},
+		"content": {
+			"type": "string",
+			"default": "<ul><li>Realiza transferencias 24/7.</li><li>Pago de servicios como agua, luz, teléfono, etc.</li><li>Consulta saldos y movimientos.</li><li>Consulta y descarga de estado de cuenta digitales.</li><li>Paga tus tarjetas de crédito.</li><li>Visualizar los movimientos de compras, cargos realizados y disponibilidad de fondos de tus tarjetas.</li><li>Conocer tu próxima fecha de pago y monto mínimo de pago.</li><li>Ver en línea tus puntos o cashback acreditados en tus consumos. </li><li>Gestiones automáticas en línea, como pagos.</li><li>Solicitar PIN de tarjetas.</li><li>Bloquear o activar tus tarjetas.</li></ul>"
+		},
+		"image": {
+			"type": "string",
+			"default": "image.png"
+		},
+		"mImage": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}

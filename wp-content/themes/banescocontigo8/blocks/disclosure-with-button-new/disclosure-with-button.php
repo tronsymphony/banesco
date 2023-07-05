@@ -34,7 +34,7 @@ $disclosure = Pacific_Helper::generate_paragraph(array(
     <div class="disclosure-with-button__disclosure-wrapper">
       <?php echo $disclosure; ?>
     </div>
-    <?php if ( count($buttons) > 0 ) : ?>
+    <?php if ( $buttons ) : ?>
       <div class="disclosure-with-button__button-wrapper">
         <?php foreach($buttons as $button) : ?>
           <?php 

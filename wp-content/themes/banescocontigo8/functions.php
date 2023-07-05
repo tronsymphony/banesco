@@ -102,6 +102,11 @@ function banescocontigo_scripts()
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
+
+	if ( has_block('acf/videos-instruction-new') ) {
+			// The block is present
+			wp_enqueue_script( 'youtube-script', 'https://www.youtube.com/player_api', array(), null, true );
+	} 
 }
 add_action('wp_enqueue_scripts', 'banescocontigo_scripts');
 

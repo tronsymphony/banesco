@@ -1,0 +1,118 @@
+.directors {
+	background: var(--gradient);
+
+	&__inner {
+		margin-top: var(--margins-top);
+		margin-bottom: var(--margins-bottom);
+		padding-top: var(--paddings-top);
+		padding-bottom: var(--paddings-bottom);
+
+		@media (max-width: 767.98px) {
+			margin-top: var(--margins-top--mobile);
+			margin-bottom: var(--margins-bottom--mobile);
+			padding-top: var(--paddings-top--mobile);
+			padding-bottom: var(--paddings-bottom--mobile);
+		}
+	}
+
+	&__title {
+		display: block;
+		max-width: 400px;
+		margin: 0 auto;
+		font-weight: 300;
+		font-size: 35px;
+		line-height: 100%;
+		text-align: center;
+		color: #3a4454;
+
+		@media (max-width: 575.98px) {
+			font-size: 36px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 8px -16px 0;
+		padding: 0 16px;
+
+		@media (max-width: 767.98px) {
+			overflow-x: auto;
+			flex-wrap: nowrap;
+		}
+
+		@media (max-width: 767.98px) {
+			margin-top: 44px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		background: #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 48px;
+		width: 33.33%;
+
+		@media (max-width: 1199.98px) {
+			width: 50%;
+		}
+
+		@media (max-width: 767.98px) {
+			margin-top: 0;
+			flex-shrink: 0;
+			width: 220px;
+			margin-right: 16px;
+		}
+
+		&-image {
+			width: 200px;
+			height: 200px;
+
+			@media (max-width: 767.98px) {
+				width: 150px;
+				height: 150px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&-title {
+			margin-top: 25px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 100%;
+			text-align: center;
+			color: #3a4454;
+
+			@media (max-width: 767.98px) {
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 110%;
+			}
+		}
+
+		&-text {
+			margin-top: 3px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			text-align: center;
+			color: #748994;
+			max-width: 303px;
+
+			@media (max-width: 767.98px) {
+				margin-top: 3px;
+				font-size: 16px;
+				line-height: 140%;
+				max-width: none;
+			}
+		}
+	}
+}

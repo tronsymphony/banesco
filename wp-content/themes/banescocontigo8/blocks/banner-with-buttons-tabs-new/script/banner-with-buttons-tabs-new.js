@@ -16,20 +16,20 @@ tabs.map((tab) => {
     e.target.classList.add('active')
 
     contents.map((content) => {
-      if (content.classList.contains('active')) content.classList.remove('active')
-    })
+      if (content.classList.contains('active')) {
+        content.classList.remove('active')
+      }
 
-    if (e.target.classList.contains('first_tab_title')) {
-      document.querySelector('.first_tab_content').classList.add('active')
-    } else {
-      document.querySelector('.second_tab_content').classList.add('active')
-    }
+      if (e.target.getAttribute('data-tab') === content.getAttribute('data-tab')) {
+        content.classList.add('active')
+      }
+    })
   })
 })
 
 showHideButtons.map((button) => {
   button.addEventListener('click', (e) => {
-    e.target.classList.toggle('active')
+    e.target.parentElement.classList.toggle('active')
 
     e.target.parentElement.nextElementSibling.classList.toggle('active')
   })

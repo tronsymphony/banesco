@@ -1,0 +1,92 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/values/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.values {
+  background: linear-gradient(90deg, #007953 -15.33%, #003c71 113.67%);
+}
+.values__inner {
+  padding-top: 94px;
+  padding-bottom: 119px;
+}
+@media (max-width: 767.98px) {
+  .values__inner {
+    padding-top: 48px;
+    padding-bottom: 51px;
+  }
+}
+.values__title {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 575.98px) {
+  .values__title {
+    font-size: 36px;
+  }
+}
+.values__list {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  margin: 52px -16px 0;
+  padding: 0 16px;
+}
+@media (max-width: 767.98px) {
+  .values__list {
+    margin-top: 35px;
+  }
+}
+.values__item {
+  position: relative;
+  background: #ffffff;
+  margin-top: 23px;
+  padding: 57px 25px 31px 36px;
+  min-width: 287px;
+  border: 1px solid #dce1e9;
+  border-top: 8px solid #dce1e9;
+  border-radius: 10px;
+}
+@media (min-width: 1200px) {
+  .values__item {
+    filter: drop-shadow(0px 10px 60px rgba(15, 35, 52, 0.35));
+  }
+}
+.values__item-number {
+  position: absolute;
+  left: 36px;
+  top: -30.5px;
+  width: 61px;
+  height: 61px;
+  background: #ffffff;
+  border: 6px solid #1a61ab;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 49px;
+  color: #1a61ab;
+}
+.values__item-title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  color: #3a4454;
+}
+.values__item-text {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #748994;
+}
+.values__item + .values__item {
+  margin-left: 24px;
+}
+
+/*# sourceMappingURL=style-values.css.map*/

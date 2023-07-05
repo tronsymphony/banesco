@@ -9,7 +9,7 @@
   },
   "example": {
     "attributes": {
-      "mode": "edit",
+      "mode": "preview",
       "data": {
         "preview_image_help": "screenshot.png"
       }

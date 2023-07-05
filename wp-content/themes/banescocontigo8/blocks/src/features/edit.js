@@ -7,7 +7,6 @@ import {
 	TabPanel,
 	TextControl,
 	CheckboxControl,
-	SelectControl,
 	Button,
 } from '@wordpress/components'
 
@@ -21,7 +20,7 @@ import icon from './assets/check.svg'
  */
 
 export default function Edit({ attributes, setAttributes }) {
-	const { paddings, margins, gradient, items, bigImages, columns, centered } = attributes
+	const { paddings, margins, gradient, items, bigImages, centered } = attributes
 
 	const setItemAttribute = (tab, attribute, value) => {
 		setAttributes({
@@ -312,28 +311,6 @@ export default function Edit({ attributes, setAttributes }) {
 						checked={bigImages}
 						onChange={(value) => setAttributes({ bigImages: value })}
 						className="checkbox"
-					/>
-				</div>
-				<div className="row">
-					<SelectControl
-						label="Increase images size"
-
-						value={columns.type}
-						className="input"
-						onChange={(value) => {
-							const newValue = { ...columns }
-							newValue.type = value
-							setAttributes({ columns: newValue })
-						}}
-
-						options={ [
-							{ value: '', label: 'Select number of columns', disabled: true },
-							{ value: '1', label: '1 Column' },
-							{ value: '2', label: '2 Column' },
-							{ value: '3', label: '3 Column' },
-							{ value: '4', label: '4 Column' },
-							{ value: '5', label: '5 Column' },
-						] }
 					/>
 				</div>
 			</Placeholder>

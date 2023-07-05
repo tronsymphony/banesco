@@ -1,0 +1,19 @@
+{
+  "name": "acf/two-column-image-text-new",
+  "title": "Two Column Image Text New",
+  "category": "media",
+  "icon": "image-flip-horizontal",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "two-column-image-text-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

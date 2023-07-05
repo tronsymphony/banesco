@@ -1,0 +1,151 @@
+.videos-instruction-new {
+  $self: &;
+
+  @include media-breakpoint-down(lg) {
+    padding: 50px 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 112px 0;
+  }
+
+  &__title {
+    font-weight: 300;
+    line-height: 100%;
+    text-align: center;
+    color: $heading-color;
+
+    @include media-breakpoint-down(md) {
+      font-size: 22px;
+      margin-bottom: 32px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__video-wrapper {
+    display: flex;
+    gap: 40px;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__video {
+    display: flex;
+    flex-direction: column;
+    background: $gradient;
+    border: 1px solid $light2;
+    border-radius: 10px;
+
+    @include media-breakpoint-down(xl) {
+      padding: 33px 36px 39px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 63px 66px 69px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 30px 16px 34px;
+    }
+  }
+
+  &__video-title {
+    font-weight: 700;
+    line-height: 100%;
+    color: $heading-color;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
+  }
+
+  &__video-description {
+    font-weight: 400;
+    line-height: 150%;
+    color: $gray3;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 36px;
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__video-embed {
+    position: relative;
+    margin-bottom: 36px;
+    cursor: pointer;
+    max-width: 469px;
+
+    &:hover {
+      &:after {
+        opacity: 0.7;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      content: '';
+      background-image: url('data:image/svg+xml,%3Csvg viewBox=%270 0 81 78%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cellipse cx=%2740.5%27 cy=%2739%27 rx=%2740.5%27 ry=%2739%27 fill=%27black%27 fill-opacity=%270.8%27/%3E%3Cpath d=%27M53.5793 36.0825C55.6356 37.2258 55.6356 40.1833 53.5793 41.3265L35.5998 51.3226C33.6001 52.4343 31.142 50.9884 31.142 48.7005V28.7085C31.142 26.4206 33.6001 24.9748 35.5998 26.0865L53.5793 36.0825Z%27 fill=%27white%27/%3E%3C/svg%3E%0A');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 81px;
+      height: 78px;
+      transform: translate(-50%, -50%);
+      transition: 0.3s;
+      z-index: 3;
+    }
+
+    &.active {
+      &:after,
+      #{$self}__video-thumbnail {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  &__video-thumbnail {
+    position: absolute;
+    max-width: 469px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__bottom-wrapper {
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 20px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 64px;
+    }
+  }
+
+  &__bottom-button {
+    line-height: 100%;
+  }
+}

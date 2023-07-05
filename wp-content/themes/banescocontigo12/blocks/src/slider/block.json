@@ -1,0 +1,82 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/slider",
+	"version": "1.0.0",
+	"title": "Slider",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/slider.js",
+	"editorStyle": "file:../../../blocks/build/slider.css",
+	"style": "file:../../../blocks/build/style-slider.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "-84px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "-76px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Estoy buscando un crédito comercial de...",
+				"mobile": ""
+			}
+		},
+		"slider": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Monto a solicitar",
+					"mobile": ""
+				}
+			}
+		},
+		"counter": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Plazo en años",
+					"mobile": ""
+				}
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Simular Préstamo",
+					"mobile": ""
+				}
+			}
+		}
+	}
+}

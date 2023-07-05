@@ -1,0 +1,215 @@
+.hero-slider-new {
+  $self: &;
+  background: $light;
+
+  &__swiper {
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      height: 600px;
+    }
+
+    @include media-breakpoint-down(xl) {
+      height: 526px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      height: 400px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 663px;
+    }
+
+    .swiper-slide {
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__background-image {
+    width: 100%;
+    object-fit: cover;
+
+    @include media-breakpoint-up(xl) {
+      height: 600px;
+    }
+
+    @include media-breakpoint-down(xl) {
+      height: 526px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      height: 400px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 663px;
+    }
+
+    &--desktop {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__content-wrapper {
+    width: 100%;
+    position: absolute;
+
+    @include media-breakpoint-up(sm) {
+      top: 122px;
+      z-index: 111;
+      max-width: 470px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      top: 28px;
+      left: 0;
+      padding: 28px 15px 16px;
+    }
+  }
+
+  &__content {
+    font-weight: 300;
+    line-height: 100%;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 48px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 40px;
+    }
+
+    &.dark {
+      color: $main-green;
+    }
+
+    &.light {
+      color: $white;
+    }
+
+    &.blue {
+      color: $blue2;
+    }
+  }
+
+  &__details {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray3;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 36px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 20px;
+    }
+  }
+
+  & {
+    #{$self}__btn {
+      @include media-breakpoint-up(lg) {
+        margin-top: 36px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  & {
+    #{$self}__dots {
+      @include media-breakpoint-up(xl) {
+        bottom: 95px !important;
+      }
+
+      @include media-breakpoint-down(xl) {
+        bottom: 45px !important;
+      }
+
+      @include media-breakpoint-down(md) {
+        bottom: 20px !important;
+      }
+
+      @include media-breakpoint-down(xs) {
+        bottom: 60px !important;
+      }
+
+      @include media-breakpoint-down(xxs) {
+        bottom: 92px !important;
+      }
+
+      @include media-breakpoint-down(md) {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 91.96px;
+        height: 2.98px;
+        background: $gray6;
+        opacity: 0.5;
+        border-radius: 0;
+        transition: 1s;
+
+        @include media-breakpoint-down(md) {
+          flex: 1 0 10%;
+        }
+
+        &.swiper-pagination-bullet-active {
+          width: 194.96px;
+          position: relative;
+          opacity: 1;
+
+          @include media-breakpoint-down(md) {
+            flex: 124.17px;
+            width: 124.17px;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background: $blue2;
+            animation-name: proggress-pagination;
+            animation-duration: 10s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes proggress-pagination {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

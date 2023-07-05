@@ -1,0 +1,19 @@
+{
+  "name": "acf/contact-bank-info-component",
+  "title": "Contact Bank Info Component",
+  "category": "design",
+  "icon": "spotify",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "contact-bank-info-component.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/hero-with-qr",
+	"version": "1.0.0",
+	"title": "Hero With QR",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/hero-with-qr.js",
+	"editorStyle": "file:../../../blocks/build/hero-with-qr.css",
+	"style": "file:../../../blocks/build/style-hero-with-qr.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Banca Móvil"
+		},
+		"content": {
+			"type": "string",
+			"default": "<b>¡Utiliza nuestra Banca Móvil donde sea y cuando sea!</b> Disfruta de su seguro acceso a través de huella digital y rápidos envíos de dinero con wally para clientes Banesco Panamá."
+		},
+		"mContent": {
+			"type": "string",
+			"default": "¡Utiliza nuestra Banca Móvil donde sea y cuando sea! Disfruta de su seguro acceso a través de huella digital y rápidos envíos de dinero con wally para clientes Banesco Panamá."
+		},
+		"appstore": {
+			"type": "string",
+			"default": "appstore.png"
+		},
+		"appstoreLink": {
+			"type": "string",
+			"default": "/"
+		},
+		"googleplay": {
+			"type": "string",
+			"default": "googleplay.png"
+		},
+		"googleplayLink": {
+			"type": "string",
+			"default": "/"
+		},
+		"qr": {
+			"type": "string",
+			"default": "qr.png"
+		},
+		"qrText": {
+			"type": "string",
+			"default": "¡Escanea<br/> el código QR<br/> desde tu móvil<br/> y descárgala ya!"
+		},
+		"qrBackground": {
+			"type": "string",
+			"default": "linear-gradient(127.94deg, #1A61AB -12.84%, #007953 137.13%)"
+		},
+		"background": {
+			"type": "string",
+			"default": "background.jpg"
+		},
+		"mBackground": {
+			"type": "string",
+			"default": "background-mobile.jpg"
+		}
+	}
+}

@@ -1,0 +1,128 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-with-info",
+	"version": "1.0.0",
+	"title": "Banner With Info",
+	"category": "widgets",
+	"icon": "align-center",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-with-info.js",
+	"editorStyle": "file:../../../blocks/build/banner-with-info.css",
+	"style": "file:../../../blocks/build/style-banner-with-info.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "99px",
+					"bottom": "97px"
+				},
+				"mobile": {
+					"top": "48px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "¿Cómo puedo solicitar mi cuenta de ahorro?"
+		},
+		"bannerIcon": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "icon.svg"
+			}
+		},
+		"bannerTitle": {
+			"type": "string",
+			"default": "En línea"
+		},
+		"bannerSubtitle": {
+			"type": "string",
+			"default": "Solicitalo en línea"
+		},
+		"bannerContent": {
+			"type": "string",
+			"default": "<ul>\n<li>Ventaja de solicitar online 1</li>\n<li>Ventaja de solicitar online 2</li>\n<li>Ventaja de solicitar online 3</li>\n</ul>"
+		},
+		"button": {
+			"type": "string",
+			"default": "Solicitar online"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "En nuestras sucursales",
+					"link": "Encuentra tu sucursal más cercana",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "pin.svg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Por correo electrónico",
+					"link": "Escríbenos a tuvoz@banesco.com.do",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "mail.svg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Por teléfono",
+					"link": "Llámanos al 1-809-200-1101",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "tel.svg"
+					}
+				}
+			]
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background.jpg"
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background-mobile.jpg"
+			}
+		}
+	}
+}

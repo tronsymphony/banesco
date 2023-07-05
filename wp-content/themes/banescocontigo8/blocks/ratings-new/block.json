@@ -1,0 +1,19 @@
+{
+  "name": "acf/ratings-new",
+  "title": "Ratings New",
+  "category": "widgets",
+  "icon": "upload",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "ratings-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

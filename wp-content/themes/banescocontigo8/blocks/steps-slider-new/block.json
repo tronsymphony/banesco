@@ -1,0 +1,19 @@
+{
+  "name": "acf/steps-slider-new",
+  "title": "Steps Slider new",
+  "category": "design",
+  "icon": "slides",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "steps-slider-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

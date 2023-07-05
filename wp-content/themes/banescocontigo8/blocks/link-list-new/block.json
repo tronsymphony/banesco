@@ -1,0 +1,19 @@
+{
+  "name": "acf/link-list-new",
+  "title": "Link List New",
+  "category": "common",
+  "icon": "list-view",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "link-list-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

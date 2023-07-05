@@ -1,0 +1,89 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/other-cards-white",
+	"version": "1.0.0",
+	"title": "Other Cards White",
+	"category": "widgets",
+	"icon": "excerpt-view",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/other-cards-white.js",
+	"editorStyle": "file:../../../blocks/build/other-cards-white.css",
+	"style": "file:../../../blocks/build/style-other-cards-white.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "94px",
+					"bottom": "99px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "52px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "Otras tarjetas que se adaptan a tus necesidades"
+		},
+		"cards": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "MasterCard Platinum",
+					"text": "Obtén múltiples beneficios como MasterAssist, 100% de avance de efectivo del límite de tu tarjeta y mucho más.",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "image-1.png"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Visa Clásica Internacional",
+					"text": "Obtén una línea de crédito rotativa a 36 meses para que realices tus pagos en cómodas cuotas.",
+					"target": "/",
+					"image": {
+						"alt": "",
+						"url": "image-2.png"
+					}
+				}
+			]
+		},
+		"extra": {
+			"type": "string",
+			"default": "<b>¿Aún no estas seguro?</b> <span>Compara estas tarjetas con la Mastercard Gold</span>"
+		},
+		"button": {
+			"type": "string",
+			"default": "Comparar tarjetas"
+		},
+		"buttonTarget": {
+			"type": "string",
+			"default": "/"
+		}
+	}
+}

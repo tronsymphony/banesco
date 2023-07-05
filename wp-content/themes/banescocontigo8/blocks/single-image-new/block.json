@@ -1,0 +1,16 @@
+{
+  "name": "acf/single-image-new",
+  "title": "Single Image New",
+  "category": "design",
+  "icon": "format-image",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "single-image-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit"
+    }
+  },
+  "pacificScripts": false
+}

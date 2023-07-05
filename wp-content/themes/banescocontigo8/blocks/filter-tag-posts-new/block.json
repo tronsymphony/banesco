@@ -1,0 +1,19 @@
+{
+  "name": "acf/filter-tag-posts-new",
+  "title": "Filter Tag Posts New",
+  "category": "common",
+  "icon": "tag",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "filter-tag-posts-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

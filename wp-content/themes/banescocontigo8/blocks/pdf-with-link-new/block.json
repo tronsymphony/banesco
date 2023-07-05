@@ -1,0 +1,19 @@
+{
+  "name": "acf/pdf-with-link-new",
+  "title": "PDF With Link New",
+  "category": "common",
+  "icon": "pdf",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "pdf-with-link-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

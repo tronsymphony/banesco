@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/posts-new",
+	"version": "1.0.0",
+	"title": "Posts New",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/posts-new.js",
+	"editorStyle": "file:../../../blocks/build/posts-new.css",
+	"style": "file:../../../blocks/build/style-posts-new.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Descubre lo nuevo"
+		},
+		"posts": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "No es realidad virtual, es BanescoXperience",
+					"description": "¿Has experimentado la sensación de querer regresar al banco?",
+					"button": "Conoce más",
+					"target": "/",
+					"image": "1.png",
+					"mImage": "",
+					"big": false
+				},
+				{
+					"name": "tab2",
+					"title": "¡Conoce a Vane, tu asistente virtual Banesco!",
+					"description": "Consulta tus saldos, puntos Banesco, ubicación y horarios de sucursales.",
+					"button": "Conoce más",
+					"target": "/",
+					"image": "2.png",
+					"mImage": "m-2.png",
+					"big": true
+				}
+			]
+		}
+	}
+}

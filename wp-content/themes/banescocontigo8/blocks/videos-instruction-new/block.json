@@ -1,0 +1,16 @@
+{
+  "name": "acf/videos-instruction-new",
+  "title": "Videos instruction New",
+  "category": "widgets",
+  "icon": "youtube",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "videos-instruction-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit"
+    }
+  },
+  "pacificScripts": true
+}

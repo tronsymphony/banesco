@@ -1,0 +1,16 @@
+{
+  "name": "acf/latest-posts",
+  "title": "Latest Posts",
+  "category": "design",
+  "icon": "coffee",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "latest-posts.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit"
+    }
+  },
+  "pacificScripts": false
+}

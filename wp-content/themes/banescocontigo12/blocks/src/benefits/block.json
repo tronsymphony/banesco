@@ -1,0 +1,113 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/benefits",
+	"version": "1.0.0",
+	"title": "Benefits",
+	"category": "widgets",
+	"icon": "star-empty",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/benefits.js",
+	"editorStyle": "file:../../../blocks/build/benefits.css",
+	"style": "file:../../../blocks/build/style-benefits.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"benefits": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Tarjetas de Crédito",
+					"text": "Tarjetas de Crédito",
+					"image": {
+						"url": "1.svg",
+						"alt": ""
+					},
+					"target": "/"
+				},
+				{
+					"name": "tab2",
+					"title": "Cuentas",
+					"text": "Cuentas",
+					"image": {
+						"url": "2.svg",
+						"alt": ""
+					},
+					"target": "/"
+				},
+				{
+					"name": "tab3",
+					"title": "Certificados de Depósito",
+					"text": "Certificados de Depósito",
+					"image": {
+						"url": "3.svg",
+						"alt": ""
+					},
+					"target": "/"
+				},
+				{
+					"name": "tab4",
+					"title": "Préstamos",
+					"text": "Préstamos",
+					"image": {
+						"url": "4.svg",
+						"alt": ""
+					},
+					"target": "/"
+				},
+				{
+					"name": "tab5",
+					"title": "Seguros",
+					"text": "Seguros",
+					"image": {
+						"url": "5.svg",
+						"alt": ""
+					},
+					"target": "/"
+				},
+				{
+					"name": "tab6",
+					"title": "Ver todos los productos",
+					"text": "Ver todos los productos",
+					"image": {
+						"url": "6.svg",
+						"alt": ""
+					},
+					"target": "/"
+				}
+			]
+		}
+	}
+}

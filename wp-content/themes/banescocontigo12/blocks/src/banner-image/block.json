@@ -1,0 +1,86 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-image",
+	"version": "1.0.0",
+	"title": "Banner Image",
+	"category": "widgets",
+	"icon": "align-wide",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-image.js",
+	"editorStyle": "file:../../../blocks/build/banner-image.css",
+	"style": "file:../../../blocks/build/style-banner-image.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "62px",
+					"bottom": "71px"
+				},
+				"mobile": {
+					"top": "39px",
+					"bottom": "210px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "Protección accidentes personales"
+		},
+		"description": {
+			"type": "string",
+			"default": "Permite disponer del capital asegurado para hacerle frente a las consecuencias de un accidente (invalidez o pérdida de un miembro), o indemnizar a la familia del asegurado en caso de su fallecimiento accidental."
+		},
+		"button": {
+			"type": "string",
+			"default": "Ver más"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"primaryButton": {
+			"type": "string",
+			"default": "Solicitar ahora"
+		},
+		"primaryButtonTarget": {
+			"type": "string",
+			"default": "/"
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background.jpg"
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background-mobile.jpg"
+			}
+		}
+	}
+}

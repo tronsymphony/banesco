@@ -1,0 +1,129 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/hero",
+	"version": "1.0.0",
+	"title": "Hero",
+	"category": "widgets",
+	"icon": "admin-home",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/hero.js",
+	"editorStyle": "file:../../../blocks/build/hero.css",
+	"style": "file:../../../blocks/build/style-hero.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"top": "100px",
+				"mTop": "45px",
+				"bottom": "140px",
+				"mBottom": "280px"
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"title": "0px",
+				"mTitle": "0px",
+				"description": "30px",
+				"mDescription": "25px",
+				"button": "30px",
+				"mButton": "15px"
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#fff",
+				"description": "#fff"
+			}
+		},
+		"measurements": {
+			"type": "object",
+			"default": {
+				"imageWidth": "803px",
+				"mImageWidth": "100%",
+				"imageHeight": "595px",
+				"mImageHeight": "auto",
+				"imageTransform": "translateX(130px)",
+				"mImageTransform": "translateX(0px)"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"title": "444px",
+				"mTitle": "100%",
+				"description": "520px",
+				"mDescription": "100%"
+			}
+		},
+		"title": {
+			"type": "string",
+			"default": "Activa la Tarjeta<br/>\nde Débito para<br/>\ntu Cuenta Verde"
+		},
+		"mTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"default": "Ahora con tu Tarjeta de Débito Banesco puedes completar tus compras en Bolívares con cambio en la Cuenta Verde en cualquier comercio a nivel nacional."
+		},
+		"mDescription": {
+			"type": "string",
+			"default": ""
+		},
+		"button": {
+			"type": "string",
+			"default": ""
+		},
+		"outlinedButton": {
+			"type": "boolean",
+			"default": false
+		},
+		"whiteButton": {
+			"type": "boolean",
+			"default": false
+		},
+		"target": {
+			"type": "string",
+			"default": ""
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": ""
+			}
+		},
+		"mImage": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": ""
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "linear-gradient(93.27deg, #007953 -6.63%, #003C71 105.63%)"
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background.jpg"
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background-mobile.jpg"
+			}
+		}
+	}
+}

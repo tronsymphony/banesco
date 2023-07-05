@@ -1,0 +1,19 @@
+{
+  "name": "acf/features-new",
+  "title": "Features New",
+  "category": "common",
+  "icon": "randomize",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "features-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

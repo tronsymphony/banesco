@@ -144,6 +144,7 @@
                             <div class="banner-with-buttons-tabs__item-description text"><?= $item['description'] ?></div>
                           <?php endif; ?>
                           <?php if ($item['button']) : ?>
+                            <?php var_dump($item['button']); ?>
                             <div class="banner-with-buttons-tabs__item-button link-button"><?= $item['button'] ?></div>
                           <?php endif; ?>
                         </div>

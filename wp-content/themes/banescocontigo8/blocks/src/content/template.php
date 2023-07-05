@@ -25,14 +25,14 @@
     <div class="container">
       <div class="content__inner">
         <?php if ($attributes['title']['desktop'] || $attributes['title']['mobile']) : ?>
-          <h2 class="content__title">
+          <h3 class="content__title">
             <?php if ($attributes['title']['desktop']) : ?>
               <span class="<?= ($attributes['title']['mobile']) ? 'only-desktop' : '' ?>"><?= $attributes['title']['desktop'] ?></span>
             <?php endif; ?>
             <?php if ($attributes['title']['mobile']) : ?>
               <span class="only-mobile"><?= $attributes['title']['mobile'] ?></span>
             <?php endif; ?>
-          </h2>
+          </h3>
         <?php endif; ?>
         <?php if ($attributes['content']['desktop'] || $attributes['content']['mobile']) : ?>
           <div class="content__content text">

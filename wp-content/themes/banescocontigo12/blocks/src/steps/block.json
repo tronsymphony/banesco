@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/steps",
+	"version": "1.0.0",
+	"title": "Steps",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/steps.js",
+	"editorStyle": "file:../../../blocks/build/steps.css",
+	"style": "file:../../../blocks/build/style-steps.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "¿Cómo activar mi Banca Móvil?"
+		},
+		"steps": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"suptitle": "Paso 1",
+					"title": "Regístrate",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet neque leo, nec tincidunt sem vehicula sed. Praesent vel justo sodales, tincidunt lacus in, gravida dolor. Nam ornare maximus rutrum.",
+					"first_link_title": "Crear nueva cuenta",
+					"first_link_value": "/",
+					"second_link_title": "",
+					"second_link_value": ""
+				},
+				{
+					"name": "tab2",
+					"suptitle": "Paso 2",
+					"title": "Verifica tu identidad",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet neque leo, nec tincidunt sem vehicula sed. Praesent vel justo sodales, tincidunt lacus in, gravida dolor. Nam ornare maximus rutrum.",
+					"first_link_title": "Necesito ayuda",
+					"first_link_value": "/",
+					"second_link_title": "Ver videotutorial",
+					"second_link_value": "/"
+				},
+				{
+					"name": "tab3",
+					"suptitle": "Paso 3",
+					"title": "Ingresa tus datos",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet neque leo, nec tincidunt sem vehicula sed. Praesent vel justo sodales, tincidunt lacus in, gravida dolor. Nam ornare maximus rutrum.",
+					"first_link_title": "",
+					"first_link_value": "",
+					"second_link_title": "",
+					"second_link_value": ""
+				},
+				{
+					"name": "tab4",
+					"suptitle": "Paso 4",
+					"title": "¡Listo!",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet neque leo, nec tincidunt sem vehicula sed. Praesent vel justo sodales, tincidunt lacus in, gravida dolor. Nam ornare maximus rutrum.",
+					"first_link_title": "Crear nueva cuenta",
+					"first_link_value": "/",
+					"second_link_title": "",
+					"second_link_value": "",
+					"appstore": "/",
+					"googleplay": "/"
+				}
+			]
+		}
+	}
+}

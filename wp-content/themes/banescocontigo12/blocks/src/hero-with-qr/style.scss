@@ -1,0 +1,150 @@
+.hero-with-qr {
+	position: relative;
+	padding-top: 118px;
+	padding-bottom: 116px;
+
+	@media (max-width: 767.98px) {
+		padding-top: 45px;
+		padding-bottom: 213px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__text {
+		max-width: 437px;
+
+		@media (max-width: 767.98px) {
+			max-width: 330px;
+		}
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 48px;
+		line-height: 100%;
+		color: #ffffff;
+		max-width: 392px;
+
+		@media (max-width: 575.98px) {
+			font-size: 36px;
+			line-height: 100%;
+		}
+	}
+
+	&__content {
+		margin-top: 23px;
+		font-size: 16px;
+		line-height: 150%;
+		color: #ffffff;
+
+		@media (max-width: 767.98px) {
+			margin-top: 21px;
+		}
+	}
+
+	&__buttons {
+		margin-top: 27px;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 767.98px) {
+			margin-top: 24px;
+		}
+	}
+
+	&__appstore,
+	&__googleplay {
+		display: block;
+		width: 182px;
+		height: 54px;
+
+		@media (max-width: 767.98px) {
+			width: 156px;
+			height: 46px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__appstore {
+		margin-right: 18px;
+
+		@media (max-width: 767.98px) {
+			margin-right: 16px;
+		}
+	}
+
+	&__qr {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 61px 45px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+
+		&-text {
+			position: relative;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 100%;
+			text-align: right;
+			color: #ffffff;
+			z-index: 2;
+			max-width: 229px;
+		}
+
+		&-image {
+			position: relative;
+			margin-top: 50px;
+			width: 150px;
+			height: 150px;
+			z-index: 2;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+
+		&-background {
+			position: absolute;
+			top: -46px;
+			right: -67px;
+			width: 374px;
+			height: 374px;
+			border-radius: 50%;
+			z-index: 1;
+		}
+	}
+
+	&__background {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

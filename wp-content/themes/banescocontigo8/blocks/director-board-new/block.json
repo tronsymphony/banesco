@@ -1,0 +1,19 @@
+{
+  "name": "acf/director-board-new",
+  "title": "Director Board New",
+  "category": "widgets",
+  "icon": "businessman",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "director-board-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

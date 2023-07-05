@@ -1,0 +1,74 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-image-reverse",
+	"version": "1.0.0",
+	"title": "Text Image Reverse",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-image-reverse.js",
+	"editorStyle": "file:../../../blocks/build/text-image-reverse.css",
+	"style": "file:../../../blocks/build/style-text-image-reverse.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "Nuestro equipo"
+		},
+		"content": {
+			"type": "string",
+			"default": "Banesco Banco Múltiple, S.A., en aras de fortalecer el compromiso con sus colaboradores, clientes y entidades reguladoras; ha estructurado un gobierno corporativo funcional a nivel del grupo bancario cuyo principal objetivo es el de garantizar una orientación estratégica, el control efectivo del Consejo de Administración de Banesco Holding Financiero, S.L. y la responsabilidad de su grupo y accionistas. En este sentido, mantiene cuerpos colegiados con líneas jerárquicas y de alcance a todos los niveles de la organización."
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"url": "image.png",
+				"alt": ""
+			}
+		},
+		"mImage": {
+			"type": "object",
+			"default": {
+				"url": "",
+				"alt": ""
+			}
+		},
+		"reverse": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

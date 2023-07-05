@@ -24,7 +24,6 @@
 .text-image-slider__text {
   position: relative;
   margin-left: 148px;
-  width: 50%;
 }
 @media (max-width: 767.98px) {
   .text-image-slider__text {
@@ -57,6 +56,7 @@
 }
 @media (max-width: 767.98px) {
   .text-image-slider__title {
+    padding-left: 84px;
     margin-top: 0;
   }
 }
@@ -93,14 +93,6 @@
     margin-top: 28px;
   }
 }
-.text-image-slider__modal {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  color: #219963;
-  margin: 1rem 10px 0;
-}
 .text-image-slider__buttons {
   margin-top: 39px;
   display: flex;
@@ -130,7 +122,8 @@
   margin-right: 18px;
 }
 .text-image-slider__image {
-  width: 50%;
+  width: 476px;
+  height: 734px;
 }
 @media (max-width: 767.98px) {
   .text-image-slider__image {

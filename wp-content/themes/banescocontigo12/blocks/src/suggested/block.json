@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/suggested",
+	"version": "1.0.0",
+	"title": "Suggested",
+	"category": "widgets",
+	"icon": "star-empty",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/suggested.js",
+	"editorStyle": "file:../../../blocks/build/suggested.css",
+	"style": "file:../../../blocks/build/style-suggested.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "68px",
+					"bottom": "115px"
+				},
+				"mobile": {
+					"top": "37px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Título benefici #1",
+					"button": "Ver más",
+					"target": "/",
+					"primaryButton": "Solicitar ahora",
+					"primaryButtonTarget": "/"
+				},
+				{
+					"name": "tab2",
+					"title": "Título benefici #2",
+					"button": "Ver más",
+					"target": "/",
+					"primaryButton": "Solicitar ahora",
+					"primaryButtonTarget": "/"
+				}
+			]
+		}
+	}
+}

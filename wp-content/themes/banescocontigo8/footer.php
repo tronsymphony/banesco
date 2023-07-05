@@ -56,15 +56,17 @@ $has_sidebar_1 = is_active_sidebar('sidebar-1');
 	</div>
 </div>
 
-<div class="footer__text">
-	<div class="container">
-		<div class="footer__text-inner">
-			<div class="footer__text-content">
-				<?php the_theme_field('footer_legal_warning', '<b>Aviso Legal:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla et libero pretium tristique. Proin in orci arcu. Praesent quis odio tempus, blandit ex quis, porttitor lorem. Aenean felis nisl, gravida vel lacus id, cursus pretium nulla. Suspendisse ultrices enim vel accumsan rutrum. Sed sit amet vulputate lorem. Phasellus metus ex, suscipit blandit odio ac, imperdiet venenatis mi. Ut quis eros a magna ornare luctus. Phasellus sodales tortor nulla, sed varius dolor convallis id.'); ?>
+<?php if (get_theme_field('footer_legal_warning', true)) : ?>
+	<div class="footer__text">
+		<div class="container">
+			<div class="footer__text-inner">
+				<div class="footer__text-content">
+					<?php the_theme_field('footer_legal_warning', '<b>Aviso Legal:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla et libero pretium tristique. Proin in orci arcu. Praesent quis odio tempus, blandit ex quis, porttitor lorem. Aenean felis nisl, gravida vel lacus id, cursus pretium nulla. Suspendisse ultrices enim vel accumsan rutrum. Sed sit amet vulputate lorem. Phasellus metus ex, suscipit blandit odio ac, imperdiet venenatis mi. Ut quis eros a magna ornare luctus. Phasellus sodales tortor nulla, sed varius dolor convallis id.'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+<?php endif; ?>
 
 <footer id="colophon" class="site-footer footer">
 	<div class="container">
@@ -377,13 +379,20 @@ $has_sidebar_1 = is_active_sidebar('sidebar-1');
 				this._visibleScroll();
 
 				const lastUrl = sessionStorage.getItem("last-url");
+				const uri = window.location.toString();
+				// if (lastUrl.indexOf('#') == -1) {
+				// 	history.pushState("", document.title, window.location.pathname + window.location.search);
+				// } else {
+				// 	const lastHash = lastUrl.substr(lastUrl.indexOf('#'));
+				// 	window.location.hash = lastHash;
+				// }
 
-				if (lastUrl.indexOf('#') == -1) {
-					history.pushState("", document.title, window.location.pathname + window.location.search);
-				} else {
-					const lastHash = lastUrl.substr(lastUrl.indexOf('#'));
-					window.location.hash = lastHash;
-				}
+				if (uri.indexOf('#') > 0) {
+          console.log(uri);
+          const clean_uri = uri.substring(0, uri.indexOf('#'));
+
+          window.history.replaceState({}, document.title, clean_uri);
+        }
 
 			} else {
 				console.error(`The sidebar window by id '${id}' not found!`);

@@ -1,0 +1,1 @@
+{"version":3,"file":"./style-spacer.css","mappings":";;;AAAA;EACC;AACD;AACC;EAHD;IAIE;EAEA;AACF,C","sources":["webpack://banescocontigo/./blocks/src/spacer/style.scss"],"sourcesContent":[".spacer {\n\tpadding-top: var(--space);\n\n\t@media (max-width: 767.98px) {\n\t\tpadding-top: var(--space-mobile);\n\t}\n}\n"],"names":[],"sourceRoot":""}

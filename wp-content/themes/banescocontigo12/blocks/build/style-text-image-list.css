@@ -1,0 +1,101 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/text-image-list/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+.text-image-list {
+  padding-top: 46px;
+  padding-bottom: 48px;
+}
+@media (max-width: 767.98px) {
+  .text-image-list {
+    padding-top: 20px;
+    padding-bottom: 27px;
+  }
+}
+.text-image-list__inner {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .text-image-list__inner {
+    flex-direction: column;
+  }
+}
+.text-image-list__text {
+  margin-top: 36px;
+  margin-left: 20px;
+}
+@media (max-width: 767.98px) {
+  .text-image-list__text {
+    margin-top: 47px;
+    margin-left: 0;
+  }
+}
+.text-image-list__title {
+  color: #3a4454;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  max-width: 500px;
+}
+@media (max-width: 575.98px) {
+  .text-image-list__title {
+    font-size: 32px;
+    line-height: 100%;
+  }
+}
+.text-image-list__content {
+  margin-top: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #748994;
+}
+.text-image-list__content ul li {
+  position: relative;
+  padding-left: 23px;
+}
+.text-image-list__content ul li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: #748994;
+  border-radius: 50%;
+}
+@media (max-width: 767.98px) {
+  .text-image-list__content {
+    margin-top: 28px;
+  }
+}
+.text-image-list__image {
+  position: relative;
+  top: 0;
+  left: -44px;
+  width: 654px;
+  height: 476px;
+  flex-shrink: 0;
+}
+.text-image-list__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 1199.98px) {
+  .text-image-list__image {
+    width: 400px;
+    height: 313.64px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-image-list__image {
+    left: 50%;
+    width: 430.92px;
+    height: 313.64px;
+    transform: translate(-50%);
+  }
+}
+
+/*# sourceMappingURL=style-text-image-list.css.map*/

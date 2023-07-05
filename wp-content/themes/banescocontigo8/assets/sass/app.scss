@@ -1,4 +1,7 @@
 @import 'variables';
 @import 'mixins';
+@import 'legacy-style-fixes';
+@import 'buttons';
+@import 'forms';
 
 @import '../../blocks/**/styles/*.scss';

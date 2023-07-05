@@ -1,0 +1,102 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/promo-grid",
+	"version": "1.0.0",
+	"title": "Promo Grid",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/promo-grid.js",
+	"editorStyle": "file:../../../blocks/build/promo-grid.css",
+	"style": "file:../../../blocks/build/style-promo-grid.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "70px",
+					"bottom": "92px"
+				},
+				"mobile": {
+					"top": "36px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "Tu seguridad es nuestra prioridad"
+		},
+		"item1title": {
+			"type": "string",
+			"default": "Protege tu información"
+		},
+		"item1description": {
+			"type": "string",
+			"default": "No guardes información en tu computadora, tu usuario de acceso a los canales digitales y claves son exclusivamente de uso personal e intransferible."
+		},
+		"item2title": {
+			"type": "string",
+			"default": "En Banesco te cuidamos"
+		},
+		"item2description": {
+			"type": "string",
+			"default": "Banesco nunca te solicitará información personal de cuentas, tarjetas o claves por ningún medio (teléfono, correo electrónico o enlaces activos en otras paginas)."
+		},
+		"item3title": {
+			"type": "string",
+			"default": "En caso de robo o extravío"
+		},
+		"item3description": {
+			"type": "string",
+			"default": "En caso de robo o extravío de tu celular, bloquea tu Token <br/> a través de BanescOnline, Sucursal o nuestro centro de atención."
+		},
+		"item4title": {
+			"type": "string",
+			"default": "Bloqueos de protección"
+		},
+		"item4description": {
+			"type": "string",
+			"default": "Toma en cuenta que, por seguridad, tu sesión cerrará después de 10 minutos de inactividad. Al terminar de realizar cualquier operación cierra tu sesión en el dispositivo."
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"url": "image.png",
+				"alt": ""
+			}
+		},
+		"mImage": {
+			"type": "object",
+			"default": {
+				"url": "image-mobile.png",
+				"alt": ""
+			}
+		},
+		"background": {
+			"type": "string",
+			"default": "linear-gradient(97.67deg, #007953 -5.63%, #003C71 118.81%)"
+		}
+	}
+}

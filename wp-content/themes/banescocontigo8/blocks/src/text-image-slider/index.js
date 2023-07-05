@@ -4,11 +4,11 @@ import './style.scss'
 
 import json from './block.json'
 import Edit from './edit'
-import Save from './save'
+import save from './save'
 
 const { name } = json
 
 registerBlockType(name, {
 	edit: Edit,
-	save: Save,
+	save,
 })

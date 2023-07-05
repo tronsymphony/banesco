@@ -1,0 +1,102 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/posts-latest",
+	"version": "1.0.3",
+	"title": "Posts Latest",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/posts-latest.js",
+	"editorStyle": "file:../../../blocks/build/posts-latest.css",
+	"style": "file:../../../blocks/build/style-posts-latest.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "126px",
+					"bottom": "131px"
+				},
+				"mobile": {
+					"top": "43px",
+					"bottom": "26px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"title": {
+			"type": "string",
+			"default": "Entérate de las últimas noticias"
+		},
+		"posts": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Banesco Banco Múltiple realiza encuentro con reconocidos periodistas",
+					"description": "El banco convoca a las organizaciones sociales que trabajan en las áreas de la salud o la educación en favor de poblaciones vulnerables, a participar por los recursos del Presupuesto Participativo Carabobo 2022, una iniciativa de su Programa de Responsabilidad Social Empresarial y Sostenibilidad.",
+					"button": "Ver más",
+					"target": "/",
+					"image": {
+						"url": "1.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Banesco abrió su Presupuesto Participativo",
+					"description": "El banco distribuirá 99.000 bolívares este año para apoyar proyectos de beneficio social en ocho estados del país y el Distrito Capital.",
+					"button": "Ver más",
+					"target": "/",
+					"image": {
+						"url": "2.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Banesco apoyó 12 programas sociales en el primer trimestre de 2022",
+					"description": "Durante los primeros tres meses del año, el instituto bancario destinó fondos a los programas de sus Socios...",
+					"button": "Ver más",
+					"target": "/",
+					"image": {
+						"url": "3.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-3.jpg",
+						"alt": ""
+					}
+				}
+			]
+		}
+	}
+}
