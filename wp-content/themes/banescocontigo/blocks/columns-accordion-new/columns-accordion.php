@@ -42,8 +42,9 @@ $module_name = 'module_'.time();
 
                         while( have_rows('tarjetas') ) : the_row();
                             ?>
-                            <div class="swiper-slide" data-slidecolumn="<?php echo get_sub_field('column'); ?>" data-textrow="<?php echo get_sub_field('text_row'); ?>">
+                            <div class="swiper-slide" <?php if (get_sub_field('active_tarjeta')){ echo "id='activetarjeta' data-slidesindex='". get_row_index() . "'"; } ?>    data-slidecolumn="<?php echo get_sub_field('column'); ?>" data-textrow="<?php echo get_sub_field('text_row'); ?>">
                                 <div class="card">
+                                
                                     <h3 class="title"><?php echo get_sub_field('title'); ?></h3>
                                     <div class="content">
                                     <?php echo get_sub_field('text'); ?>
@@ -121,10 +122,6 @@ $module_name = 'module_'.time();
                         endwhile;
                     endif;
                     ?>
-
-        
-
-            
         
     </div>
 
@@ -250,9 +247,19 @@ additionalContentTriggerArray.forEach((item) => {
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script type="module">
+
+const activetarjeta = document.getElementById('activetarjeta');
+console.log(activetarjeta)
+let initSlide = activetarjeta.dataset.slidesindex - 1;
+
+
 const tarjeta_swiper = new Swiper(".tarjeta_swiper", {
     loop: true,
-    slidesPerView: 1,
+    // slidesPerView: auto,
+    slidesPerView: 'auto',
+
+
+    initialSlide: initSlide,
 
     // Navigation arrows
     navigation: {

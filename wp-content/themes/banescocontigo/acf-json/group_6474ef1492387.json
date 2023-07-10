@@ -269,6 +269,27 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
+                    "key": "field_64ac3a0d06e8e",
+                    "label": "Active Tarjeta",
+                    "name": "active_tarjeta",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_6492157dd5206"
+                },
+                {
                     "key": "field_64921593d5207",
                     "label": "Title",
                     "name": "title",
@@ -545,5 +566,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688577059
+    "modified": 1689008673
 }
