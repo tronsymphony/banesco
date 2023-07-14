@@ -1,0 +1,217 @@
+.compare-three-cards-new {
+  @include media-breakpoint-down(md) {
+    padding: var(--padding-top--mobile) 0 var(--padding-bottom--mobile) 0;
+    margin: var(--margin-top--mobile) 0 var(--margin-bottom--mobile) 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: var(--padding-top) 0 var(--padding-bottom) 0;
+    margin: var(--margin-top--mobile) 0 var(--margin-bottom--mobile) 0;
+  }
+
+  &__cards {
+    display: grid;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 54px;
+    }
+  }
+
+  &__card {
+    background: $white;
+    border: 1px solid $light2;
+    border-radius: 10px;
+  }
+
+  &__card-top {
+    background: $card-background;
+    display: flex;
+    gap: 23px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 27px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+
+  &__card-image {
+    max-width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      position: relative;
+    }
+  }
+
+  &__card-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    color: $blue2;
+    word-break: break-word;
+    max-width: 154px;
+
+    @include media-breakpoint-down(sm) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__card-bottom {
+    @include media-breakpoint-up(sm) {
+      padding: 43px 27px 27px 27px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+
+  &__card-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray3;
+    margin-bottom: 24px;
+  }
+
+  &__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__checkbox-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $gray5;
+  }
+
+  &__popup {
+    background: $white;
+    padding: 37px 0 33px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    z-index: 90;
+    box-shadow: 0px -15px 60px rgba(15, 35, 52, 0.15);
+    transform: translateY(250px);
+    transition: 0.3s;
+
+    &.active {
+      transform: translateY(0);
+
+      .compare-three-cards-new__popup-inner-close {
+        top: -55px;
+      }
+
+      &.collapsed {
+        transform: translateY(210px) !important;
+
+        .compare-three-cards-new__popup-inner-close {
+          transform: scale(1, -1);
+        }
+      }
+    }
+
+    .container {
+      position: relative;
+    }
+  }
+
+  &__popup-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(lg) {
+      height: 185px;
+      overflow-x: scroll;
+      flex-direction: column;
+    }
+
+    &-close {
+      position: absolute;
+      top: 0px;
+      right: 11px;
+      width: 38px;
+      height: 38px;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6654_12348)'%3E%3Cpath d='M7.41 8.58997L12 13.17L16.59 8.58997L18 9.99997L12 16L6 9.99997L7.41 8.58997Z' fill='%23007953'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6654_12348'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: center;
+      background-color: #fff;
+      box-shadow: 0px 5px 15px rgba(15, 35, 52, 0.2);
+      border-radius: 50%;
+      transition: 0.3s;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__popup-item {
+    position: relative;
+    flex-shrink: 0;
+    width: 241px;
+    height: 185px;
+
+    &.active {
+      .compare-three-cards-new__popup-item-close {
+        display: block;
+      }
+    }
+  }
+
+  &__popup-item-close {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: -9px;
+    width: 24px;
+    height: 24px;
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__popup-item-image {
+    width: 241px;
+    height: 185px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

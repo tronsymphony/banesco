@@ -1,11 +1,11 @@
 {
-  "name": "acf/faq-tabs",
-  "title": "FAQ Accordion Filter",
-  "category": "widgets",
-  "icon": "media-interactive",
+  "name": "acf/compare-three-cards-new",
+  "title": "Compare Three Cards New",
+  "category": "media",
+  "icon": "table-row-after",
   "acf": {
     "mode": "edit",
-    "renderTemplate": "faq-tabs.php"
+    "renderTemplate": "compare-three-cards-new.php"
   },
   "example": {
     "attributes": {

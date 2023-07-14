@@ -42,19 +42,19 @@ $module_name = 'module_'.time();
 
                         while( have_rows('tarjetas') ) : the_row();
                             ?>
-                            <div class="swiper-slide" <?php if (get_sub_field('active_tarjeta')){ echo "id='activetarjeta' data-slidesindex='". get_row_index() . "'"; } ?>    data-slidecolumn="<?php echo get_sub_field('column'); ?>" data-textrow="<?php echo get_sub_field('text_row'); ?>">
-                                <div class="card">
+                            <div class="swiper-slide" data-activebg="<?php  if(get_sub_field('active_bg_background')){echo get_sub_field('active_bg_background'); }else {echo '#000';} ; ?>" <?php if (get_sub_field('active_tarjeta')){ echo "id='activetarjeta' data-slidesindex='". get_row_index() . "'"; } ?>  data-slidecolumn="<?php echo get_sub_field('column'); ?>" data-textrow="<?php echo get_sub_field('text_row'); ?>">
+                                <div class="card" >
                                 
                                     <h3 class="title"><?php echo get_sub_field('title'); ?></h3>
-                                    <div class="content">
-                                    <?php echo get_sub_field('text'); ?>
-                                    </div>
+                                        <div class="content">
+                                            <?php echo get_sub_field('text'); ?>
+                                        </div>
                                     <div class="link">
                                     
                                         <?php $link = get_sub_field('link'); ?>
                                         <?php if(!empty($link['url'])): ?>
                                         <a href="<?php echo $link['url']; ?>">
-                                        <?php echo $link['title']; ?>
+                                            <?php _e('Ver más'); ?>
                                         </a>
                                         <?php endif; ?>
                                     </div>
@@ -71,13 +71,12 @@ $module_name = 'module_'.time();
 
 
             </div>
-            <div class="swiper-button-prev">
+            <!-- <div class="swiper-button-prev">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 29L24.7302 18.6567C25.147 18.3181 25.147 17.6819 24.7302 17.3433L12 7" stroke="#232323"
                         stroke-width="3.38462" stroke-linecap="round" />
                 </svg>
-
-            </div>
+            </div> -->
             <div class="swiper-button-next">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 29L24.7302 18.6567C25.147 18.3181 25.147 17.6819 24.7302 17.3433L12 7" stroke="#232323"
@@ -254,49 +253,35 @@ let initSlide = activetarjeta.dataset.slidesindex - 1;
 
 
 const tarjeta_swiper = new Swiper(".tarjeta_swiper", {
-    loop: true,
-    // slidesPerView: auto,
     slidesPerView: 'auto',
-
-
     initialSlide: initSlide,
+    cssWidthAndHeight: true,
+    spaceBetween: 0,
+    visibilityFullFit: true,
+    autoResize: false,
 
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
     on: {
         realIndexChange: function() {
-            let index = this.realIndex + 1; /* slide 1 => slides[1] */
-            let current_data = this.slides[index].dataset.slidecolumn;
-            let textrow = this.slides[index].dataset.textrow;
+            let index = this.realIndex;
+            let currentcard = this.slides[index];
+            let bg = this.slides[index].dataset.activebg;
+            let childBg= this.slides[index].children[0];
 
-            let contentTab = document.querySelector(`[data-column="${current_data}"]`);
-            let content = document.querySelector(`[data-content-col="${current_data}"]`);
-            let infoColumns = document.querySelector(`[data-infocolumn="${textrow}"]`);
 
-            const contentInfo = document.querySelectorAll('.info_columns');
-            const contentInfoArray = [...contentInfo];
+            document.querySelectorAll('.tarjeta_swiper .card').forEach((ele) => {
+                ele.style.background = '';
+            });
 
-            contentInfoArray.forEach((item) => {
-                item.classList.remove('active');
-            })
-            buttonsArray.forEach((item) => {
-                item.classList.remove('active');
-            })
-            contentArray.forEach((item) => {
-                item.classList.remove('active');
-            })
-
-            infoColumns.classList.add('active');
-            contentTab.classList.add('active');
-            content.classList.add('active');
-
+            childBg.style.background = bg;
 
         },
     }
-
 
 });
 </script>

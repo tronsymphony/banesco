@@ -145,7 +145,7 @@ const swiper = new Swiper('.swiper-tabs', {
     },
     loop:true,
     watchSlidesProgress: true,
- 
+    autoHeight:true,
     slideToClickedSlide:true,
     breakpoints: {
         // when window width is >= 320px

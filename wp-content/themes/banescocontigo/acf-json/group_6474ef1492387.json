@@ -375,11 +375,11 @@
                     "parent_repeater": "field_6492157dd5206"
                 },
                 {
-                    "key": "field_649215b4d520b",
-                    "label": "Column",
-                    "name": "column",
+                    "key": "field_64ada9dc0bb2a",
+                    "label": "Active BG Background",
+                    "name": "active_bg_background",
                     "aria-label": "",
-                    "type": "select",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -388,47 +388,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "choices": {
-                        "1": "1",
-                        "2": "2"
-                    },
-                    "default_value": 1,
-                    "return_format": "value",
-                    "multiple": 0,
-                    "allow_null": 0,
-                    "ui": 0,
-                    "ajax": 0,
+                    "default_value": "",
+                    "maxlength": "",
                     "placeholder": "",
-                    "parent_repeater": "field_6492157dd5206"
-                },
-                {
-                    "key": "field_64a596cc94a65",
-                    "label": "Text Row",
-                    "name": "text_row",
-                    "aria-label": "",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "1": "1",
-                        "2": "2",
-                        "3": "3",
-                        "4": "4",
-                        "5": "5"
-                    },
-                    "default_value": false,
-                    "return_format": "value",
-                    "multiple": 0,
-                    "allow_null": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
                     "parent_repeater": "field_6492157dd5206"
                 }
             ]
@@ -566,5 +530,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689008673
+    "modified": 1689102849
 }

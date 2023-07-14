@@ -11,6 +11,11 @@
     }
   }
 
+
+  .swiper-autoheight .swiper-wrapper {
+    height: auto!important;
+  }
+
   .swiper-slide.swiper-slide-active span.nav-link {
     background: radial-gradient(95.67% 99.07% at 7.02% 93.3%, #007953 0%, #003C71 100%)
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */

@@ -72,15 +72,36 @@
   .tabs_content {
     padding: 67px 1rem 0 0;
   }
+
   .swiper-slide {
-    width: 80%;
-}
+    // width: 80%;
+    width: 420px;
+  }
+
+  .swiper-slide {
+    opacity: .5;
+    .card {
+    }
+  }
+
+
+  .swiper-slide.swiper-slide-active {
+    opacity: 1;
+  }
+
+  .swiper-slide.swiper-slide-next {
+    opacity: 1;
+  }
+
+  .swiper-slide.swiper-slide-next+.swiper-slide {
+    opacity: 1;
+  }
 
   .card {
     position: relative;
     border: 1px solid #DCE1E9;
     padding: 44px 36px;
-    border-radius: 5px;
+    border-radius: 10px;
     max-width: 360px;
     min-height: 280px;
     display: grid;
@@ -145,7 +166,7 @@
 .container {}
 
 .tarjetas_slider {
-  padding: 0 60px;
+  padding: 0 0px;
   position: relative;
   max-width: 1220px;
   margin: 0 auto;
@@ -224,7 +245,7 @@
 
 .columns-accordion {
   .tarjeta_swiper {
-    max-width: 500px;
+    // max-width: 500px;
     overflow: visible !important;
     margin: 0;
     position: static;
@@ -233,7 +254,6 @@
       .card {
         border-radius: 10px;
         border: 1px solid var(--lines, #DCE1E9);
-        background: linear-gradient(135deg, #8E9191 26.84%, #565656 69.81%);
 
         h3.title {
           color: #fff;

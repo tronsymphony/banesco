@@ -18,27 +18,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_card1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/card1.png */ "./blocks/src/cards/assets/card1.png");
-/* harmony import */ var _assets_card2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/card2.png */ "./blocks/src/cards/assets/card2.png");
-/* harmony import */ var _assets_card3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/card3.png */ "./blocks/src/cards/assets/card3.png");
-/* harmony import */ var _assets_card4_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/card4.png */ "./blocks/src/cards/assets/card4.png");
-/* harmony import */ var _assets_card5_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/card5.png */ "./blocks/src/cards/assets/card5.png");
-/* harmony import */ var _assets_card6_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/card6.png */ "./blocks/src/cards/assets/card6.png");
-/* harmony import */ var _assets_card7_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/card7.png */ "./blocks/src/cards/assets/card7.png");
-/* harmony import */ var _assets_card8_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/card8.png */ "./blocks/src/cards/assets/card8.png");
-/* harmony import */ var _assets_card9_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/card9.png */ "./blocks/src/cards/assets/card9.png");
 
 
 
 
-
-
-
-
-
-
-
-
+// import SVG1 from './assets/card1.png'
+// import SVG2 from './assets/card2.png'
+// import SVG3 from './assets/card3.png'
+// import SVG4 from './assets/card4.png'
+// import SVG5 from './assets/card5.png'
+// import SVG6 from './assets/card6.png'
+// import SVG7 from './assets/card7.png'
+// import SVG8 from './assets/card8.png'
+// import SVG9 from './assets/card9.png'
 
 /**
  * @param {Object}   param0
@@ -56,35 +48,44 @@ function Edit(_ref) {
     paddings,
     margins,
     gradient,
-    cards
+    filter1,
+    filter2,
+    filter3
   } = attributes;
-  const setItemAttribute = (tab, attribute, value) => {
-    setAttributes({
-      cards: cards.map(card => {
-        if (card.name === tab.name) {
-          return {
-            ...card,
-            [attribute]: value
-          };
-        }
-        return card;
-      })
-    });
-  };
-  const removeItem = tab => {
-    setAttributes({
-      cards: cards.filter(card => card.name !== tab.name)
-    });
-  };
-  const addItem = name => {
-    setAttributes({
-      cards: [...cards, {
-        name: name,
-        title: 'New',
-        image: ''
-      }]
-    });
-  };
+
+  // const setItemAttribute = (tab, attribute, value) => {
+  // 	setAttributes({
+  // 		cards: cards.map((card) => {
+  // 			if (card.name === tab.name) {
+  // 				return {
+  // 					...card,
+  // 					[attribute]: value,
+  // 				}
+  // 			}
+  // 			return card
+  // 		}),
+  // 	})
+  // }
+
+  // const removeItem = (tab) => {
+  // 	setAttributes({
+  // 		cards: cards.filter((card) => card.name !== tab.name),
+  // 	})
+  // }
+
+  // const addItem = (name) => {
+  // 	setAttributes({
+  // 		cards: [
+  // 			...cards,
+  // 			{
+  // 				name: name,
+  // 				title: 'New',
+  // 				image: '',
+  // 			},
+  // 		],
+  // 	})
+  // }
+
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Placeholder, {
     label: 'Cards'
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorAdvancedControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -204,89 +205,34 @@ function Edit(_ref) {
     onChange: value => setAttributes({
       gradient: value
     })
-  }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TabPanel, {
-    tabs: cards
-  }, tab => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Placeholder, {
-    className: 'placeholder'
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "row"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-    label: "Title",
-    value: tab.title,
+    label: "Filter #1",
+    value: filter1,
     className: "input",
-    onChange: value => setItemAttribute(tab, 'title', value)
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextareaControl, {
-    label: "Text",
-    value: tab.text,
-    className: "input",
-    onChange: value => setItemAttribute(tab, 'text', value)
+    onChange: value => setAttributes({
+      filter1: value
+    })
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "row"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.BaseControl, {
-    label: "Image"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUpload, {
-    onSelect: value => setItemAttribute(tab, 'image', value),
-    type: "image",
-    render: _ref2 => {
-      let {
-        open
-      } = _ref2;
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-        className: "button",
-        onClick: open
-      }, tab.image == 'card1.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card1_png__WEBPACK_IMPORTED_MODULE_3__,
-        alt: "icon"
-      }) : tab.image == 'card2.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card2_png__WEBPACK_IMPORTED_MODULE_4__,
-        alt: "icon"
-      }) : tab.image == 'card3.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card3_png__WEBPACK_IMPORTED_MODULE_5__,
-        alt: "icon"
-      }) : tab.image == 'card4.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card4_png__WEBPACK_IMPORTED_MODULE_6__,
-        alt: "icon"
-      }) : tab.image == 'card5.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card5_png__WEBPACK_IMPORTED_MODULE_7__,
-        alt: "icon"
-      }) : tab.image == 'card6.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card6_png__WEBPACK_IMPORTED_MODULE_8__,
-        alt: "icon"
-      }) : tab.image == 'card7.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card7_png__WEBPACK_IMPORTED_MODULE_9__,
-        alt: "icon"
-      }) : tab.image == 'card8.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card8_png__WEBPACK_IMPORTED_MODULE_10__,
-        alt: "icon"
-      }) : tab.image == 'card9.png' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: _assets_card9_png__WEBPACK_IMPORTED_MODULE_11__,
-        alt: "icon"
-      }) : tab.image && tab.image.url && tab.image.alt ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: tab.image.url,
-        alt: tab.image.alt
-      }) : 'Insert');
-    }
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-    icon: "dismiss",
-    showTooltip: "true",
-    label: "Delete image",
-    className: "delete-button",
-    onClick: () => setItemAttribute(tab, 'image', '')
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-    icon: "cover-image",
-    showTooltip: "true",
-    label: "Set default image",
-    className: "default-image-button n1",
-    onClick: () => setItemAttribute(tab, 'image', 'card1.png')
-  }))), cards.length > 1 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-    variant: "primary",
-    className: "primary-button",
-    onClick: () => removeItem(tab)
-  }, "Delete"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-    variant: "primary",
-    className: "primary-button",
-    onClick: () => addItem(Math.random())
-  }, "Add new")));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+    label: "Filter #2",
+    value: filter2,
+    className: "input",
+    onChange: value => setAttributes({
+      filter2: value
+    })
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+    label: "Filter #3",
+    value: filter3,
+    className: "input",
+    onChange: value => setAttributes({
+      filter3: value
+    })
+  }))));
 }
 
 /***/ }),
@@ -325,96 +271,6 @@ const {
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card1.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card1.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card1.4fbfd187.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card2.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card2.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card2.838da7ad.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card3.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card3.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card3.f677b387.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card4.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card4.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card4.7d1fcee8.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card5.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card5.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card5.e51122f6.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card6.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card6.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card6.7e978a8d.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card7.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card7.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card7.b5879045.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card8.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card8.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card8.e51122f6.png";
-
-/***/ }),
-
-/***/ "./blocks/src/cards/assets/card9.png":
-/*!*******************************************!*\
-  !*** ./blocks/src/cards/assets/card9.png ***!
-  \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/card9.6a028c56.png";
 
 /***/ }),
 
@@ -464,7 +320,7 @@ module.exports = window["wp"]["element"];
   \*************************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/cards","version":"1.0.0","title":"Cards","category":"widgets","icon":"screenoptions","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/cards.js","editorStyle":"file:../../../blocks/build/cards.css","style":"file:../../../blocks/build/style-cards.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"105px","bottom":"200px"},"mobile":{"top":"45px","bottom":"45px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#f7f9fb"},"cards":{"type":"array","default":[{"name":"tab1","title":"MasterCard<br/> Standard","text":"Aceptada en comercios y cajeros en todo el mundo, con Multicrédito Banesco para diferir 1.5 veces el límite de tu crédito.","image":"card1.png"},{"name":"tab2","title":"MasterCard<br/> Gold","text":"Aceptada mundialmente para compras locales e internacionales,  protección de compras y garantía extendida.","image":"card2.png"},{"name":"tab3","title":"MasterCard<br/> Platinum","text":"Obtén múltiples beneficios como MasterAssist, 100% de avance de efectivo del límite de tu tarjeta y mucho más.","image":"card3.png"},{"name":"tab4","title":"MasterCard<br/> Black","text":"Tu mejor momento empieza ahora ¡vívelo! Banesco pone a tu disposición una tarjeta que de cualquier lugar al que quieras llegar.","image":"card4.png"},{"name":"tab5","title":"Visa<br/> Débito","text":"Con emisión gratuita, disponible para compras nacionales e internacionales.","image":"card5.png"},{"name":"tab6","title":"Visa Clásica<br/> Internacional","text":"Aceptada en comercios y cajeros en todo el mundo, además, cuentas con acceso a Multicrédito Banesco.","image":"card6.png"},{"name":"tab7","title":"Visa<br/> Gold","text":"Tarjeta doble saldo aceptada mundialmente para compras internacionales, en dólares y por internet.","image":"card7.png"},{"name":"tab8","title":"Visa<br/> Infinite","text":"El complemento perfecto para tu estilo de vida, con Visa Concierge, Seguro de Auto y muchos beneficios más.","image":"card8.png"},{"name":"tab9","title":"Visa<br/> Platinum","text":"Obtén garantía extendida de tus compras, protección de precios, y múltiples beneficios más que te harán vivir al máximo.","image":"card9.png"}]}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"banescocontigo/cards","version":"1.0.0","title":"Cards","category":"widgets","icon":"screenoptions","supports":{"html":false},"textdomain":"blocks","editorScript":"file:../../../blocks/build/cards.js","editorStyle":"file:../../../blocks/build/cards.css","style":"file:../../../blocks/build/style-cards.css","attributes":{"paddings":{"type":"object","default":{"desktop":{"top":"105px","bottom":"200px"},"mobile":{"top":"45px","bottom":"45px"}}},"margins":{"type":"object","default":{"desktop":{"top":"0px","bottom":"0px"},"mobile":{"top":"0px","bottom":"0px"}}},"gradient":{"type":"string","default":"#f7f9fb"},"filter1":{"type":"string","default":"Compañía"},"filter2":{"type":"string","default":"Nivel de tarjeta"},"filter3":{"type":"string","default":"Tipo de tarjeta"}}}');
 
 /***/ })
 
@@ -556,18 +412,6 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		};
 /******/ 	}();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	!function() {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
@@ -582,26 +426,6 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	!function() {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
