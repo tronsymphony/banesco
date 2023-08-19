@@ -1,0 +1,43 @@
+// features block
+.features-icon-70 {
+    .features__item-image {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.features-icon-48 {
+    .features__item-image {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+
+// banner with info
+.banner-with-info-green-marks {
+    .banner-with-info__content-body ul li::before {
+        content: url('data:image/svg+xml,%3Csvg viewBox=%270 0 18 13%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M6.39942 12.6352C6.19103 12.8342 5.8958 13 5.63531 13C5.37482 13 5.07959 12.8259 4.86252 12.6269L0 7.98406L1.54559 6.50829L5.64399 10.4216L16.4805 0L18 1.50064L6.39942 12.6352Z%27 fill=%27%23027953%27/%3E%3C/svg%3E%0A');
+    }
+}
+
+
+// four-cards
+.four-cards-green-blue{
+    .four-cards__item {
+        background: linear-gradient(180deg, #007953 0%, rgba(44, 164, 130, 0.48) 100%);
+        .four-cards__item-title{
+            color: #fff;
+        }
+        .four-cards__item-description {
+            color: #fff;
+        }
+    }
+    
+    .four-cards__item:nth-child(2) {
+        background: linear-gradient(143deg, #1A61AB 0%, #59D1FF 100%);
+    }
+    .text ul > li::before {
+        background: #fff;
+    }
+}

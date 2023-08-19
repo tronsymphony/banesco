@@ -25,10 +25,35 @@ if (!empty($block['align'])) :
 endif;
 
 $module_name = 'module_'.time();
+$content = get_field('content');
+$add_read_more_content = get_field('add_read_more_content');
+$read_more_text = get_field('read_more_text');
+$read_less_text = get_field('read_less_text');
+$read_more_content = get_field('read_more_content');
+$hidden_content = get_field('hidden_content');
+
+$content = Pacific_Helper::generate_wysiwyg(array(
+    'content'=> $content,
+    'classes' => array('text-image-columns__content')
+));
+
+$read_more_content = Pacific_Helper::generate_wysiwyg(array(
+    'content'=> $read_more_content,
+    'classes' => array('text-image-columns__content read-more-content')
+));
+
+$read_more_button = Pacific_Helper::generate_paragraph(array(
+	'text'  => $read_more_text,
+	'class' => 'text-image-columns__readmore-button',
+    // 'attributes' => array(
+    //     'data-readmore' => $read_more_text,
+    //     'data-readless' => $read_less_text,
+    // ),
+));
 ?>
 
 <?php 
-$block_styling= get_field('block_styling'); 
+$block_styling = get_field('block_styling'); 
 ?>
 
 
@@ -54,7 +79,22 @@ $block_styling= get_field('block_styling');
                 <div class="text-image-columns__text">
                     <h2 class="text-image-columns__title"><?php echo get_field('title'); ?></h2>
                     <div class="text-image-columns__content">
-                        <?php echo get_field('content'); ?>
+                        <div data-content>
+                            <?php echo $content; ?>
+                            <?php if ( $add_read_more_content && $read_less_text && $read_more_text && $read_more_content ) : ?>
+                                <?php echo $read_more_content; ?>
+                                <div 
+                                    class="text-image-columns__readmore-wrapper" 
+                                    data-readmore="<?php echo $read_more_text; ?>" 
+                                    data-readless="<?php echo $read_less_text; ?>"
+                                >
+                                    <span class="text-image-columns__pluss"></span>
+                                    <?php echo $read_more_button; ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        
+                        <div data-view-more></div>
                     </div>
                     <?php if(get_field('enable_popup')): ?>
                     <div class="text-image-columns__modal text-image-columns__modal-popup" data-target="<?= $module_name; ?>">+

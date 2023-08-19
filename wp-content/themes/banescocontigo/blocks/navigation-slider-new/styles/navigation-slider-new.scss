@@ -13,7 +13,7 @@
 
 
   .swiper-autoheight .swiper-wrapper {
-    height: auto!important;
+    height: auto !important;
   }
 
   .swiper-slide.swiper-slide-active span.nav-link {
@@ -23,13 +23,16 @@
     border: 1px solid #DCE1E9;
     color: #fff;
   }
+
   .swiper-slide {
     height: auto;
     opacity: .25;
   }
+
   .swiper-slide-visible {
     opacity: 1;
   }
+
   .accordions__item.active .accordions__item-body {
     max-height: 1000%;
   }
@@ -78,7 +81,7 @@
     @media screen and (min-width:768px) {
       width: 60px;
       height: 60px;
-      top:80px;
+      top: 80px;
     }
 
     svg {
@@ -132,7 +135,8 @@
       a {
         text-decoration-line: underline;
         color: #219963;
-        &:hover{
+
+        &:hover {
           color: #000;
         }
       }
@@ -155,5 +159,22 @@
         border-bottom: 1px solid #DCE1E9;
       }
     }
+  }
+
+  .text {
+    a {
+      &:hover {
+        font-weight: 900;
+        color: #219963;
+      }
+    }
+  }
+
+  .swiper-fade .swiper-slide {
+    max-height: 200px;
+  }
+
+  .swiper-fade .swiper-slide-active {
+    max-height: unset;
   }
 }

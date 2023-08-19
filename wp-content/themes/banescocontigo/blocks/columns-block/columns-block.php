@@ -85,14 +85,16 @@ $block_styling= get_field('block_styling');
                             </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('title')) : ?>
-                            <h3 class="columns-block__item-title"><?= get_sub_field('title') ?></h3>
+                            <h3 class="columns-block__item-title" style="color:<?= get_sub_field('text_color') ?>;"><?= get_sub_field('title') ?></h3>
                             <?php endif; ?>
                             <?php if (get_sub_field('description')) : ?>
-                            <h4 class="columns-block__item-description"><?= get_sub_field('description') ?></h4>
+                            <h4 class="columns-block__item-description" style="color:<?= get_sub_field('text_color') ?>;"><?= get_sub_field('description') ?></h4>
                             <?php endif; ?>
+
                             <?php if (get_sub_field('button')) : ?>
                             <div class="columns-block__item-buttons">
-                                <a class="columns-block__item-link-btn link-btn <?php if (get_sub_field('white_btn')){echo'link-btn-white';} ?>"
+                                <a class="columns-block__item-link-btn link-btn <?php if (get_sub_field('button_type')){echo'button_type_'.get_sub_field('button_type');} ?> <?php if (get_sub_field('white_btn')){echo'link-btn-white';} ?>"
+                                style="color:<?= get_sub_field('button_color') ?>;"
                                     href="<?= get_sub_field('target') ?>">
                                     <?= get_sub_field('button') ?>
                                 </a>

@@ -1,0 +1,19 @@
+{
+  "name": "acf/product-grid-new",
+  "title": "Product Grid New",
+  "category": "widgets",
+  "icon": "cart",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "product-grid-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

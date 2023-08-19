@@ -1,0 +1,19 @@
+{
+  "name": "acf/contact-new",
+  "title": "Contact New",
+  "category": "design",
+  "icon": "spotify",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "contact-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "edit",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

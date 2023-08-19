@@ -220,6 +220,49 @@
 	}
 }
 
+.blue-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px 34px;
+	min-width: 100px;
+	background: transparent;
+	border: 1px solid #1A61AB;
+	border-radius: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 110%;
+	color: #ffffff;
+	background-color: #1A61AB;
+	transition: 0.3s;
+	
+	&:hover {
+		background-color: lighten( #1A61AB, 10% );
+		border-color: lighten( #1A61AB, 10% );
+	}
+	
+	&.with-icon {
+		img {
+			margin-right: 12px;
+			height: 32px;
+			width: 32px;
+			object-fit: contain;
+			flex-shrink: 0;
+		}
+	}
+
+	&.small {
+		padding: 8px 12px;
+
+		img {
+			margin-right: 8px;
+			height: 24px;
+			width: 24px;
+			object-fit: contain;
+		}
+	}
+}
+
 .link-button {
 	display: inline;
 	padding-bottom: 1px;
@@ -230,9 +273,7 @@
 	color: #219963;
 	transition: 0.3s;
 	transition-property: color, border-bottom-color;
-	br {
-		display: none;
-	}
+
 	&:hover {
 		color: #007953;
 		padding-bottom: 0px;

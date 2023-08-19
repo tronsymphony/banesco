@@ -1,4 +1,53 @@
+.button-link-blue {
+  .text-image-columns {
+    .text-image-columns__readmore-button {
+      color: $blue2;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+
+      &:hover {
+        font-weight: 900;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+    }
+
+    .text-image-columns__pluss {
+      background: $blue2;
+
+      &::before {
+        background: $blue2;
+      }
+    }
+  }
+}
+
+.button-link-green {
+  .text-image-columns {
+    .text-image-columns__readmore-button {
+      color: $green;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+
+      &:hover {
+        font-weight: 900;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+    }
+
+    .text-image-columns__pluss {
+      background: $green;
+
+      &::before {
+        background: $main-green;
+      }
+    }
+  }
+}
+
 .text-image-columns {
+  $self: &;
   background: var(--gradient);
 
   margin-top: var(--margins-top--mobile);
@@ -11,9 +60,6 @@
     margin-bottom: var(--margins-bottom);
     padding-top: var(--padding-top);
     padding-bottom: var(--paddings-bottom);
-  }
-
-  .container {
   }
 
   &-reverse {
@@ -30,14 +76,18 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 767.98px) {
+    @include media-breakpoint-up(md) {
+      gap: 56px;
+    }
+
+    @include media-breakpoint-down(md) {
+      gap: 25px;
       flex-direction: column;
     }
   }
 
   &__text {
     position: relative;
-    margin-left: 148px;
     width: 50%;
 
     @media (max-width: 767.98px) {
@@ -69,6 +119,7 @@
     font-size: 40px;
     line-height: 100%;
     color: #3a4454;
+    margin-bottom: 29px;
 
     @media (max-width: 767.98px) {
       // padding-left: 24px + 60px;
@@ -83,11 +134,24 @@
   }
 
   &__content {
-    margin-top: 29px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #748994;
+    color: $gray3;
+
+    &.read-more-content {
+      max-height: 0;
+      pointer-events: none;
+      transition: max-height 0.3s ease-in-out;
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      &.readmore-active {
+        pointer-events: all;
+        max-height: 1000px;
+        margin-top: 0;
+      }
+    }
 
     ul li {
       position: relative;
@@ -100,13 +164,48 @@
         top: 9px;
         width: 6px;
         height: 6px;
-        background: #748994;
+        background: $gray3;
         border-radius: 50%;
       }
     }
+  }
 
-    @media (max-width: 767.98px) {
-      margin-top: 28px;
+  &__readmore-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 10px;
+
+    &.readmore-active {
+      #{$self}__pluss {
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__pluss {
+    position: relative;
+    display: block;
+    margin-right: 10px;
+    right: 0;
+    width: 14px;
+    height: 2px;
+    border-radius: 4px;
+    transition: background 0.2s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2px;
+      height: 14px;
+      border-radius: 4px;
+      transition: opacity 0.2s;
     }
   }
 
@@ -166,7 +265,6 @@
   }
 }
 
-
 .text-image-columns__modal {
   position: relative;
   cursor: pointer;
@@ -177,8 +275,8 @@
     position: fixed;
     top: 50%;
     left: 0;
-    background: #FFFFFF;
-    border: 1px solid #DCE1E9;
+    background: #ffffff;
+    border: 1px solid #dce1e9;
     border-radius: 10px;
     padding: 50px 65px;
     right: 0;
@@ -186,7 +284,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #4A5264;
+    color: #4a5264;
     z-index: 900;
     max-width: 750px;
     margin: 0 auto;
@@ -204,7 +302,6 @@
       opacity: 1;
       visibility: visible;
       transform: translate(0%, -50%);
-
     }
 
     &-title {
@@ -212,9 +309,8 @@
       font-weight: 700;
       font-size: 30px;
       line-height: 100%;
-      color: #3A4454;
+      color: #3a4454;
       margin: 0 0 1rem;
-
     }
 
     &-overlay {
@@ -226,7 +322,7 @@
       background-color: rgba(0, 0, 0, 0.3);
       opacity: 0;
       z-index: 100;
-      transition: all .6s;
+      transition: all 0.6s;
       visibility: hidden;
 
       &.active-modal {

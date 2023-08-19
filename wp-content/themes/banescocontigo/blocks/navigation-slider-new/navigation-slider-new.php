@@ -146,6 +146,8 @@ const swiper = new Swiper('.swiper-tabs', {
     loop:true,
     watchSlidesProgress: true,
     autoHeight:true,
+    calculateHeight:true,
+
     slideToClickedSlide:true,
     breakpoints: {
         // when window width is >= 320px
@@ -205,4 +207,5 @@ document.querySelectorAll('.accordions').forEach(function(accordions) {
       })
     })
   })
+  
 </script>

@@ -210,6 +210,18 @@
 							background-image: url(./assets/images/menu/bag.svg);
 						}
 					}
+					
+					&.headset > a {
+						&::before {
+							background-image: url(./assets/images/menu/headset.svg);
+						}
+			        }
+			        
+			        &.ticket > a {
+			            &::before {
+			                background-image: url(./assets/images/menu/ticket.svg);
+			            }
+			        }
 				}
 
 				&:hover,

@@ -1,0 +1,19 @@
+{
+  "name": "acf/block-grid-new",
+  "title": "Block Grid New",
+  "category": "common",
+  "icon": "grid-view",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "block-grid-new.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}
